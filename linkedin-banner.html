@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>LinkedIn Banner — Pedro Delgado Henriques</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0d0d10; --bg2:#14151a; --bg3:#1c1e25; --bg-warm:#17130e;
+    --border:#2a2d36; --border2:#3a3d47;
+    --text:#ece8df; --text-dim:#c4bfb4; --muted:#807c73;
+    --accent:#ff7a3c; --gold:#d4a857; --blue:#6fa8d3; --plum:#b18cf0;
+    --serif:"Instrument Serif",Georgia,serif;
+    --sans:"Inter",system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#222;font-family:var(--sans);color:var(--text);-webkit-font-smoothing:antialiased}
+  body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:1.2rem;padding:2rem}
+  .hint{font-family:var(--mono);font-size:0.78rem;color:#aaa;max-width:1584px;text-align:center;line-height:1.6}
+  .hint b{color:var(--accent)}
+  .hint code{background:#000;padding:2px 6px;border-radius:3px;color:var(--gold)}
+
+  /* ===== BANNER (1584 x 396) ===== */
+  .banner{
+    width:1584px; height:396px;
+    background:radial-gradient(ellipse 80% 100% at 20% 50%, #1a1611 0%, #0d0d10 60%);
+    position:relative; overflow:hidden;
+    border:1px solid var(--border);
+    font-family:var(--sans);
+    display:grid;
+    grid-template-columns: 1fr 460px;
+    align-items:center;
+    padding: 0 70px 0 70px;
+    gap: 50px;
+  }
+
+  /* ambient grid */
+  .banner::before{
+    content:""; position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,122,60,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,122,60,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 80%);
+    pointer-events:none;
+  }
+  /* warm glow */
+  .banner::after{
+    content:""; position:absolute; top:-100px; right:-100px;
+    width:500px; height:500px;
+    background: radial-gradient(circle, rgba(255,122,60,0.12) 0%, transparent 60%);
+    pointer-events:none;
+  }
+
+  /* LEFT: identity */
+  .left{ position:relative; z-index:2; max-width:780px; }
+
+  .status{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--mono); font-size:0.66rem;
+    color:var(--muted); letter-spacing:0.18em; text-transform:uppercase;
+    background:rgba(255,122,60,0.06);
+    border:1px solid rgba(255,122,60,0.22);
+    padding: 6px 12px; border-radius:99px;
+    margin-bottom: 18px;
+  }
+  .status .pulse{
+    width:7px; height:7px; border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 0 0 rgba(255,122,60,0.7);
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,122,60,0.6)}
+    70%{box-shadow:0 0 0 10px rgba(255,122,60,0)}
+    100%{box-shadow:0 0 0 0 rgba(255,122,60,0)}
+  }
+  .status .dot{color:var(--accent)}
+
+  h1{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size: 76px;
+    line-height:0.98;
+    letter-spacing:-0.02em;
+    color:var(--text);
+    margin-bottom: 14px;
+  }
+  h1 em{ font-style:italic; color:var(--gold); }
+  h1 .dot{ color:var(--accent); }
+
+  .roles{
+    font-family:var(--mono);
+    font-size: 0.95rem;
+    color:var(--text-dim);
+    letter-spacing:0.01em;
+    margin-bottom: 22px;
+  }
+  .roles strong{ color:var(--accent); font-weight:600 }
+  .roles .sep{ color:var(--mute-soft, #4a463e); margin: 0 10px; }
+
+  .stack{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-bottom: 22px;
+  }
+  .tag{
+    font-family:var(--mono); font-size:0.72rem;
+    color:var(--text-dim);
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    padding: 5px 11px; border-radius:5px;
+    letter-spacing:0.02em;
+  }
+  .tag.hot{ color:var(--accent); border-color:rgba(255,122,60,0.35); background:rgba(255,122,60,0.05) }
+  .tag.gold{ color:var(--gold); border-color:rgba(212,168,87,0.35); background:rgba(212,168,87,0.05) }
+
+  .url{
+    font-family:var(--mono); font-size:0.92rem;
+    color:var(--text);
+    display:inline-flex; align-items:center; gap:10px;
+    border-top:1px solid var(--border);
+    padding-top: 16px;
+  }
+  .url .arrow{ color:var(--accent); }
+  .url .host{ color:var(--muted); }
+  .url .path{ color:var(--gold); }
+
+  /* RIGHT: code card */
+  .card{
+    position:relative; z-index:2;
+    width: 460px;
+    background:linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,122,60,0.08);
+  }
+  .card-head{
+    display:flex; align-items:center; gap:12px;
+    padding: 11px 16px;
+    background: var(--bg3);
+    border-bottom:1px solid var(--border);
+    font-family:var(--mono); font-size:0.72rem; color:var(--muted);
+  }
+  .dots{ display:flex; gap:6px; }
+  .dots span{ width:10px; height:10px; border-radius:50%; background:var(--border2) }
+  .dots span:nth-child(1){ background:#e07a78 }
+  .dots span:nth-child(2){ background:#d4a857 }
+  .dots span:nth-child(3){ background:#7fb86c }
+
+  .card-body{
+    font-family:var(--mono); font-size:0.78rem; line-height:1.6;
+    padding: 14px 18px 16px;
+    color:var(--text-dim);
+  }
+  .c{ color:var(--muted); font-style:italic }
+  .k{ color:var(--plum); }
+  .s{ color:var(--green, #7fb86c); }
+  .n{ color:var(--gold); }
+  .b{ color:var(--accent); font-weight:600 }
+  .str{ color:#bce0a0 }
+  .cur{
+    display:inline-block; width:8px; height:13px;
+    background:var(--accent); vertical-align:-2px; margin-left:2px;
+    animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{50%{opacity:0}}
+
+  /* download note */
+  .download-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .download-actions button{
+    font-family:var(--mono); font-size:0.75rem;
+    background:var(--accent); color:#0d0d10; border:none;
+    padding:8px 14px; border-radius:5px; cursor:pointer; font-weight:600;
+  }
+  .download-actions button.alt{ background:transparent; color:var(--accent); border:1px solid var(--accent) }
+</style>
+</head>
+<body>
+
+<div class="hint">
+  Banner do LinkedIn — <b>1584 × 396 px</b>. Tira screenshot só do retângulo abaixo (ou abre o DevTools, clica com botão direito no banner → "Capture node screenshot") e faz upload em <code>LinkedIn → Editar capa</code>.
+</div>
+
+<div class="banner" id="banner">
+
+  <!-- LEFT: identity -->
+  <div class="left">
+    <div class="status">
+      <span class="pulse"></span>
+      Disponível para oportunidades
+    </div>
+
+    <h1>Pedro <em>Delgado</em> Henriques<span class="dot">.</span></h1>
+
+    <div class="roles">
+      <strong>Software Engineer</strong>
+      <span class="sep">·</span>
+      Game Dev C++
+      <span class="sep">·</span>
+      Full-Stack .NET / Web
+    </div>
+
+    <div class="stack">
+      <span class="tag hot">C++</span>
+      <span class="tag hot">.NET</span>
+      <span class="tag">C#</span>
+      <span class="tag">React</span>
+      <span class="tag">PHP</span>
+      <span class="tag">Magento</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Kubernetes</span>
+      <span class="tag">RabbitMQ</span>
+      <span class="tag gold">FIAP · Pós .NET</span>
+    </div>
+
+    <div class="url">
+      <span class="arrow">→</span>
+      <span class="host">pedrodelgadohenriques1</span><span class="path">.github.io</span>
+    </div>
+  </div>
+
+  <!-- RIGHT: profile.cpp card -->
+  <div class="card">
+    <div class="card-head">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span>profile.cpp</span>
+    </div>
+    <div class="card-body">
+      <div><span class="c">// who.cpp</span></div>
+      <div><span class="k">struct</span> <span class="s">Engineer</span> {</div>
+      <div>&nbsp;&nbsp;name = <span class="str">"Pedro D. Henriques"</span>;</div>
+      <div>&nbsp;&nbsp;base = <span class="str">"Londrina · BR"</span>;</div>
+      <div>&nbsp;&nbsp;stack = { <span class="b">C++</span>, <span class="b">.NET</span>, <span class="b">React</span> };</div>
+      <div>&nbsp;&nbsp;current = <span class="str">"slots @ Firepot"</span>;</div>
+      <div>&nbsp;&nbsp;years = <span class="n">5</span>;</div>
+      <div>&nbsp;&nbsp;hire_me = <span class="n">true</span>;<span class="cur"></span></div>
+      <div>};</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="download-actions">
+  <button onclick="downloadPng()">Baixar como PNG (1584×396)</button>
+  <button class="alt" onclick="window.print()">Imprimir / PDF</button>
+</div>
+
+<script>
+  // Download banner as PNG using html-to-image style trick via canvas
+  async function downloadPng(){
+    const banner = document.getElementById('banner');
+    // Use foreignObject SVG trick
+    const w = 1584, h = 396;
+    const clone = banner.cloneNode(true);
+    clone.style.margin = '0';
+    const xhtml = new XMLSerializer().serializeToString(clone);
+    const styles = Array.from(document.styleSheets).map(s=>{
+      try{ return Array.from(s.cssRules).map(r=>r.cssText).join('\n') }catch(e){ return '' }
+    }).join('\n');
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+        <foreignObject width="100%" height="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>${styles}</style>
+            ${xhtml}
+          </div>
+        </foreignObject>
+      </svg>`;
+    const blob = new Blob([svg], {type:'image/svg+xml;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const img = new Image();
+    img.onload = ()=>{
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#0d0d10';
+      ctx.fillRect(0,0,w,h);
+      ctx.drawImage(img,0,0,w,h);
+      URL.revokeObjectURL(url);
+      canvas.toBlob((b)=>{
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(b);
+        a.download = 'pedro-linkedin-banner.png';
+        a.click();
+      }, 'image/png');
+    };
+    img.onerror = ()=>{
+      alert('Falha no download automático. Use screenshot manual ou DevTools → "Capture node screenshot".');
+    };
+    img.src = url;
+  }
+</script>
+
+</body>
+</html>
