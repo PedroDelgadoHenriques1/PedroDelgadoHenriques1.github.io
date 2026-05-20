@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pedro Delgado Henriques — Engenheiro de Software</title>
+<meta name="description" content="Engenheiro de Software com 5+ anos — Game Dev C++, .NET, Full Stack Web. Londrina/PR." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+<div id="scroll-bar"></div>
+
+<!-- =================== NAV =================== -->
+<nav id="navbar">
+  <a href="#top" class="nav-logo"><span class="sym">@</span>pedro<span class="dim">.delgado</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#education">Formação</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="curriculo.pdf" download class="nav-cv">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      CV
+    </a>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">Sobre</a>
+  <a href="#experience" onclick="closeMobile()">Experiência</a>
+  <a href="#projects" onclick="closeMobile()">Projetos</a>
+  <a href="#skills" onclick="closeMobile()">Stack</a>
+  <a href="#education" onclick="closeMobile()">Formação</a>
+  <a href="#contact" onclick="closeMobile()">Contato</a>
+  <a href="curriculo.pdf" download>Baixar CV</a>
+</div>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-status h-in h-1">
+        <span class="pulse"></span>
+        DISPONÍVEL PARA OPORTUNIDADES
+      </div>
+
+      <h1 class="h-in h-2">
+        Pedro <em>Delgado</em><br/>Henriques.
+      </h1>
+
+      <div class="hero-roles h-in h-3">
+        <strong>Software Engineer</strong>
+        <span class="sep">·</span>
+        Londrina, BR
+        <span class="sep">·</span>
+        5+ anos
+      </div>
+
+      <p class="hero-desc h-in h-4">
+        Construo <strong>jogos de slot machine em C++</strong> sobre engine proprietária na Firepot Gaming, com 
+        background em <strong>full-stack web</strong> (Magento, PHP, React) e formação atual em 
+        <span class="accent">Arquitetura .NET</span> pela FIAP. Já ensinei Python pra iniciantes 
+        e mantive lojas com tráfego real em produção.
+      </p>
+
+      <div class="hero-cta h-in h-5">
+        <a href="#projects" class="btn btn-primary">
+          Ver projetos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Entrar em contato</a>
+      </div>
+
+      <div class="hero-stats h-in h-6">
+        <div>
+          <div class="stat-n">5+</div>
+          <div class="stat-l">ANOS DE EXP.</div>
+        </div>
+        <div>
+          <div class="stat-n">3</div>
+          <div class="stat-l">EMPRESAS</div>
+        </div>
+        <div>
+          <div class="stat-n">12+</div>
+          <div class="stat-l">PROJETOS LIVE</div>
+        </div>
+        <div>
+          <div class="stat-n">B2</div>
+          <div class="stat-l">INGLÊS AVANÇADO</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card h-in h-4">
+      <div class="hero-card-header">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span>profile.cpp</span>
+      </div>
+      <div class="hero-card-body">
+        <div><span class="c">// who.cpp</span></div>
+        <div><span class="k">struct</span> <span class="s">Engineer</span> {</div>
+        <div>&nbsp;&nbsp;name = <span class="s">"Pedro D. Henriques"</span>;</div>
+        <div>&nbsp;&nbsp;base = <span class="s">"Londrina · BR"</span>;</div>
+        <div>&nbsp;&nbsp;</div>
+        <div>&nbsp;&nbsp;stack[] = {</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="b">C++</span>, <span class="b">C#</span>, <span class="b">.NET</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="b">PHP</span>, <span class="b">React</span>, <span class="b">Python</span></div>
+        <div>&nbsp;&nbsp;};</div>
+        <div>&nbsp;&nbsp;</div>
+        <div>&nbsp;&nbsp;current = <span class="s">"slots @ Firepot"</span>;</div>
+        <div>&nbsp;&nbsp;learning = <span class="s">".NET arch · FIAP"</span>;</div>
+        <div>&nbsp;&nbsp;years = <span class="n">5</span>;</div>
+        <div>&nbsp;&nbsp;hire_me = <span class="n">true</span>;<span class="cur"></span></div>
+        <div>};</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Sobre</span>
+      <h2>Generalista por <em>formação</em>, especialista por <em>obsessão</em>.</h2>
+    </div>
+    <div class="about-wrap">
+      <div class="about-text reveal delay-1">
+        <p>
+          Sou <strong>Engenheiro de Software</strong> formado pela UniSenaiPR. Comecei na web —
+          PHP, Magento, e-commerce de verdade com tráfego real — e fui migrando pra
+          stacks mais pesados. Hoje meu dia a dia é <span class="h">C++ puro</span> em engine
+          proprietária, modelando matemática de slot machines.
+        </p>
+        <p>
+          Em paralelo, curso a <strong>Pós em Arquitetura .NET pela FIAP</strong>,
+          onde construí um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes.
+          Já ensinei <strong>Python</strong> pra turmas iniciantes — entender como explicar código
+          mudou como eu escrevo código.
+        </p>
+        <p>
+          Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong>.
+          Inglês avançado, perfil autodidata, à vontade tanto no terminal quanto numa reunião de planejamento.
+        </p>
+      </div>
+
+      <div class="about-facts reveal delay-2">
+        <div class="fact">
+          <div class="fact-label">Hoje</div>
+          <div class="fact-val">Game Dev <span class="pop">C++</span></div>
+          <div class="fact-sub">Firepot Gaming · slot machines</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Estudando</div>
+          <div class="fact-val">Arquitetura <span class="pop">.NET</span></div>
+          <div class="fact-sub">Pós-Tech FIAP + Alura</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Background</div>
+          <div class="fact-val">Full-Stack <span class="pop">Web</span></div>
+          <div class="fact-sub">PHP · Magento · React · 3 anos</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Idiomas</div>
+          <div class="fact-val">PT-BR · <span class="pop">EN</span></div>
+          <div class="fact-sub">Português nativo · Inglês B2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== EXPERIENCE =================== -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Trajetória</span>
+      <h2>De lojas online a <em>slot engines</em>.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item firepot reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-head">
+          <span class="tl-company">Firepot Gaming</span>
+          <span class="tl-date">dez/2024 — atual</span>
+        </div>
+        <div class="tl-role">
+          Desenvolvedor de Jogos C++ — Pleno
+          <span class="slot-mini" aria-hidden="true"><span>7</span><span>★</span><span>$</span></span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Desenvolvimento de slot machines em <strong>C++ puro</strong> sobre engine proprietária com assets 2D</li>
+          <li>Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas existentes</li>
+          <li>Refatoração de módulos críticos: renderização de símbolos, RNG e sistema de animação</li>
+          <li>Modelagem matemática de volatilidade e tuning de RTP — de alta a baixa variância</li>
+          <li>Elaboração de Game Design Documents completos (mecânicas, paytable, fluxo, regras de bônus)</li>
+          <li>Migração de jogos legados entre versões da engine mantendo estabilidade em produção</li>
+        </ul>
+        <a href="https://www.firepotgaming.com/slots" target="_blank" rel="noopener" class="tl-link">
+          firepotgaming.com/slots
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <div class="tl-tags">
+          <span class="tag">C++</span><span class="tag">Game Engine</span><span class="tag">RNG</span>
+          <span class="tag">Math Models</span><span class="tag">GDD</span><span class="tag">CI/CD</span><span class="tag">Git</span>
+        </div>
+      </div>
+
+      <div class="tl-item ensina reveal delay-1">
+        <div class="tl-marker"></div>
+        <div class="tl-head">
+          <span class="tl-company">Ensina Mais</span>
+          <span class="tl-date">jun/2024 — dez/2024</span>
+        </div>
+        <div class="tl-role">Professor de Programação — Python</div>
+        <ul class="tl-bullets">
+          <li>Aulas de Python pra iniciantes — lógica de programação, estruturas de dados e boas práticas</li>
+          <li>Elaboração de material didático, exercícios práticos e acompanhamento individual de cada aluno</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tag">Python</span><span class="tag">Didática</span><span class="tag">Mentoria</span>
+        </div>
+      </div>
+
+      <div class="tl-item bis reveal delay-2">
+        <div class="tl-marker"></div>
+        <div class="tl-head">
+          <span class="tl-company">Bis2Bis E-commerce</span>
+          <span class="tl-date">out/2021 — mai/2024</span>
+        </div>
+        <div class="tl-role">Desenvolvedor Full-Stack — Júnior → Pleno</div>
+        <ul class="tl-bullets">
+          <li>Promovido de Júnior a Pleno assumindo projetos de maior complexidade e ownership técnico</li>
+          <li>Full-stack com <strong>PHP, JavaScript e Magento</strong> — lojas virtuais pra múltiplos clientes</li>
+          <li>Integração com APIs SOAP e manipulação de XML pra conexão com ERPs externos</li>
+          <li>SEO técnico, otimização de performance e ciclo completo da concepção ao deploy</li>
+          <li>Entrega de lojas virtuais com integrações customizadas em produção</li>
+        </ul>
+        <a href="https://www.worldcombat.com.br/" target="_blank" rel="noopener" class="tl-link">
+          worldcombat.com.br
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <div class="tl-tags">
+          <span class="tag">PHP</span><span class="tag">Magento</span><span class="tag">JavaScript</span>
+          <span class="tag">SOAP API</span><span class="tag">SEO</span><span class="tag">MySQL</span><span class="tag">jQuery</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PROJECTS =================== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Projetos</span>
+      <h2>Coisas que <em>construí</em>, e o que cada uma quer dizer.</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 1. Microservices (FEATURED) -->
+      <a class="proj feat reveal" href="https://github.com/FIAP-PosTech-2025" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-network">
+            <svg viewBox="0 0 760 220" preserveAspectRatio="xMidYMid meet">
+              <!-- edges -->
+              <path class="edge active" d="M 110 110 C 180 110, 200 60, 270 60" />
+              <path class="edge active" d="M 110 110 C 180 110, 200 160, 270 160" />
+              <path class="edge" d="M 380 60 C 460 60, 460 110, 540 110" />
+              <path class="edge" d="M 380 160 C 460 160, 460 110, 540 110" />
+              <path class="edge active" d="M 650 110 C 700 110, 720 60, 720 60" style="stroke:transparent" />
+              <path class="edge active" d="M 540 110 C 600 110, 640 60, 700 60" />
+              <path class="edge active" d="M 540 110 C 600 110, 640 160, 700 160" />
+
+              <!-- node: Users -->
+              <g transform="translate(20, 80)">
+                <rect class="node-bg hot" x="0" y="0" width="180" height="60" rx="10" />
+                <text class="node-icon" x="22" y="36" fill="#ff7a3c">◉</text>
+                <text class="node-label" x="44" y="28">UsersAPI</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">auth · profiles · jwt</text>
+              </g>
+
+              <!-- node: Catalog -->
+              <g transform="translate(270, 30)">
+                <rect class="node-bg" x="0" y="0" width="170" height="60" rx="10" />
+                <text class="node-icon" x="22" y="36" fill="#6fa8d3">▣</text>
+                <text class="node-label" x="44" y="28">CatalogAPI</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">products · search</text>
+              </g>
+
+              <!-- node: Payments -->
+              <g transform="translate(270, 130)">
+                <rect class="node-bg" x="0" y="0" width="170" height="60" rx="10" />
+                <text class="node-icon" x="22" y="36" fill="#d4a857">$</text>
+                <text class="node-label" x="44" y="28">PaymentsAPI</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">stripe · pix · cards</text>
+              </g>
+
+              <!-- node: Orchestration -->
+              <g transform="translate(490, 80)">
+                <rect class="node-bg hot" x="0" y="0" width="170" height="60" rx="10" />
+                <text class="node-icon" x="22" y="36" fill="#ff7a3c">◆</text>
+                <text class="node-label" x="44" y="28">Orchestrator</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">RabbitMQ · saga</text>
+              </g>
+
+              <!-- node: Notifications -->
+              <g transform="translate(680, 30)">
+                <rect class="node-bg" x="0" y="0" width="60" height="60" rx="10" />
+                <text class="node-icon" x="22" y="40" fill="#b18cf0">✉</text>
+              </g>
+              <!-- node: Cache -->
+              <g transform="translate(680, 130)">
+                <rect class="node-bg" x="0" y="0" width="60" height="60" rx="10" />
+                <text class="node-icon" x="22" y="40" fill="#e07a78">⚡</text>
+              </g>
+            </svg>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill fiap">FIAP · Pós-Tech</span>
+            <span>2025–2026</span>
+            <span>·</span>
+            <span>Em construção</span>
+          </div>
+          <div class="proj-name">Plataforma de e-commerce em <em>microsserviços</em></div>
+          <div class="proj-desc">
+            Sistema distribuído com 5 serviços independentes, comunicação assíncrona via RabbitMQ e cache
+            distribuído com Redis. Cada serviço aplica Clean Architecture e DDD, orquestrado via Kubernetes.
+            Projeto integrador da pós-graduação.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">.NET 8</span><span class="tag">C#</span>
+            <span class="tag">RabbitMQ</span><span class="tag">Redis</span>
+            <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+            <span class="tag">Clean Arch</span><span class="tag">DDD</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. World Combat -->
+      <a class="proj w-half reveal delay-1" href="https://www.worldcombat.com.br/" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-product">
+            <div class="image"><div class="glove"></div></div>
+            <div class="info">
+              <div class="brand">World Combat</div>
+              <div class="pname">Luva de Boxe Profissional 14oz</div>
+              <div class="stars">★★★★★</div>
+              <div class="price-row">
+                <span class="price-old">R$ 389</span>
+                <span class="price-new">R$ 279</span>
+              </div>
+              <div class="cart">Adicionar ao carrinho</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill live"><span class="d"></span>LIVE</span>
+            <span class="pill work">Bis2Bis</span>
+          </div>
+          <div class="proj-name">World Combat — e-commerce em <em>Magento</em></div>
+          <div class="proj-desc">
+            Loja de artes marciais (BJJ, Boxe, Muay Thai) com integração SOAP pro ERP do cliente,
+            SEO técnico e performance otimizada. Em produção com tráfego real.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Magento</span><span class="tag">PHP</span>
+            <span class="tag">SOAP</span><span class="tag">SEO</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Agenda -->
+      <a class="proj w-half reveal delay-2" href="https://github.com/PedroDelgadoHenriques1/laravel-react-docker-agenda" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-calendar">
+            <div class="month">
+              <span class="month-name">Outubro <span style="color:var(--muted)">2026</span></span>
+              <span class="nav-arrows">‹ &nbsp; ›</span>
+            </div>
+            <div class="week"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div>
+            <div class="days">
+              <div class="day muted">28</div>
+              <div class="day muted">29</div>
+              <div class="day muted">30</div>
+              <div class="day">1</div>
+              <div class="day">2<span class="ev a">Sprint</span></div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day today">6</div>
+              <div class="day">7<span class="ev b">Review</span></div>
+              <div class="day">8</div>
+              <div class="day">9<span class="ev c">Deploy</span></div>
+              <div class="day">10</div>
+              <div class="day">11</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn">Personal</span>
+            <span>Open source</span>
+          </div>
+          <div class="proj-name">Agenda — Laravel + <em>React</em> + Docker</div>
+          <div class="proj-desc">
+            App full-stack de agendamentos. API REST em Laravel consumida por SPA em React,
+            tudo containerizado com Docker e pronto pra deploy.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Laravel</span><span class="tag">React</span>
+            <span class="tag">Docker</span><span class="tag">REST</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. AES Cipher -->
+      <a class="proj w-third reveal delay-1" href="https://github.com/PedroDelgadoHenriques1/CIFRA-AES" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-cipher">
+            <div class="row">
+              <span class="label">PLAIN</span>
+              <span class="text">Olá, mundo!</span>
+            </div>
+            <div class="step"><span class="lock">●</span> AES-256 · CBC mode</div>
+            <div class="arrow">↓</div>
+            <div class="row">
+              <span class="label">CIPHER</span>
+              <span class="text cipher">8F3A·B27C·09EE·D4A2…</span>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill sec">Segurança</span>
+          </div>
+          <div class="proj-name"><em>CIFRA</em>-AES</div>
+          <div class="proj-desc">
+            Implementação do AES (Advanced Encryption Standard) — criptografia simétrica feita do zero
+            como exercício de fundamentos.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">AES</span><span class="tag">Crypto</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Pixel game -->
+      <a class="proj w-third reveal delay-2" href="https://github.com/PedroDelgadoHenriques1/Jogo-de-Plataforma-2D-Udemy" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-game">
+            <div class="sky-sun"></div>
+            <div class="clouds"></div>
+            <div class="hills"></div>
+            <div class="coin"></div>
+            <div class="ground"></div>
+            <div class="hero-px"></div>
+            <div class="scanlines"></div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn">Estudo</span>
+          </div>
+          <div class="proj-name">Plataforma 2D em <em>Unity</em></div>
+          <div class="proj-desc">
+            Jogo 2D em Unity feito durante curso — primeiro contato com game dev. 
+            Hoje atuo profissionalmente com C++ em engine proprietária.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. ML / extra slot -->
+      <a class="proj w-third reveal delay-3" href="https://github.com/PedroDelgadoHenriques1" target="_blank" rel="noopener">
+        <div class="proj-visual" style="background:linear-gradient(135deg,#14151a 0%,#1c1e25 100%);display:flex;align-items:center;justify-content:center;padding:1.4rem">
+          <div style="font-family:var(--mono);font-size:0.7rem;color:var(--muted);text-align:center;line-height:1.8">
+            <div style="font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--gold);margin-bottom:0.4rem">+ mais</div>
+            <div>experiments · ML · scripts</div>
+            <div>github.com/PedroDelgadoHenriques1</div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn">GitHub</span>
+          </div>
+          <div class="proj-name">Lab pessoal</div>
+          <div class="proj-desc">
+            PyTorch, TensorFlow, scripts de automação, exercícios da pós e protótipos.
+            Repositório vivo de aprendizado.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Sandbox</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== SKILLS =================== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stack</span>
+      <h2>Ferramentas em <em>uso diário</em>.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block reveal">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Game Development</span>
+          <span class="num">01</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">C++</span><span class="stag">C#</span>
+          <span class="stag">Unity</span><span class="stag">Custom Engine</span>
+          <span class="stag">RNG</span><span class="stag">GDD</span>
+          <span class="stag">Math Models</span>
+        </div>
+      </div>
+      <div class="skill-block reveal delay-1">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Backend / .NET</span>
+          <span class="num">02</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">.NET 8</span><span class="stag">ASP.NET Core</span>
+          <span class="stag">Entity Framework</span><span class="stag">Node.js</span>
+          <span class="stag">Django</span><span class="stag">Zend</span>
+        </div>
+      </div>
+      <div class="skill-block reveal delay-2">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Web Full-Stack</span>
+          <span class="num">03</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">PHP</span><span class="stag">Laravel</span>
+          <span class="stag">Magento</span><span class="stag">React</span>
+          <span class="stag">jQuery</span><span class="stag">SASS/LESS</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Mensageria & APIs</span>
+          <span class="num">04</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">RabbitMQ</span><span class="stag">Redis</span>
+          <span class="stag">SOAP</span><span class="stag">REST</span>
+          <span class="stag">XML</span>
+        </div>
+      </div>
+      <div class="skill-block reveal delay-1">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Cloud & DevOps</span>
+          <span class="num">05</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">Docker</span><span class="stag">Kubernetes</span>
+          <span class="stag">AWS</span><span class="stag">Huawei Cloud</span>
+          <span class="stag">CI/CD</span><span class="stag">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="skill-block reveal delay-2">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Banco de Dados</span>
+          <span class="num">06</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">SQL Server</span><span class="stag">MySQL</span>
+          <span class="stag">SQLite</span><span class="stag">ORM</span>
+          <span class="stag">UML</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-block-head">
+          <span class="skill-block-title">ML & Data</span>
+          <span class="num">07</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">Python</span><span class="stag">PyTorch</span>
+          <span class="stag">TensorFlow</span><span class="stag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-block reveal delay-1">
+        <div class="skill-block-head">
+          <span class="skill-block-title">Segurança</span>
+          <span class="num">08</span>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">AES / RSA</span><span class="stag">XSS Prevention</span>
+          <span class="stag">Code Security</span>
+          <span class="stag">Clean Code</span><span class="stag">SOLID</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== EDUCATION =================== -->
+<section id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Formação</span>
+      <h2>Onde <em>aprendi</em> o que sei.</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <span class="edu-status ongoing"><span class="d"></span>Em andamento</span>
+        <div class="edu-degree">Pós em Arquitetura de <em>Sistemas .NET</em></div>
+        <div class="edu-school">FIAP + Alura · Pós-Tech</div>
+        <div class="edu-meta">
+          <span>360h</span>
+          <span>jan/2025 — dez/2026</span>
+        </div>
+      </div>
+      <div class="edu-card reveal delay-1">
+        <span class="edu-status done"><span class="d"></span>Concluído</span>
+        <div class="edu-degree">Bacharel em <em>Engenharia de Software</em></div>
+        <div class="edu-school">UniSenaiPR · Faculdade da Indústria</div>
+        <div class="edu-meta">
+          <span>4 anos</span>
+          <span>2021 — jul/2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <span class="eyebrow">Contato</span>
+      <h2 style="margin-top:1rem">Vamos <em>conversar</em>?</h2>
+      <p>
+        Aberto a posições full-time, freelas e colaborações.
+        Me chame pelo canal que preferir — respondo rápido.
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:pedrodelgadohenriques1@gmail.com" class="clink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          E-mail
+        </a>
+        <a href="tel:+5543999926087" class="clink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (43) 99992-6087
+        </a>
+        <a href="https://github.com/PedroDelgadoHenriques1" target="_blank" rel="noopener" class="clink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="curriculo.pdf" download class="clink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Pedro Delgado Henriques · Londrina/PR</div>
+  <div class="right">
+    <a href="https://github.com/PedroDelgadoHenriques1" target="_blank" rel="noopener">github</a>
+    <a href="mailto:pedrodelgadohenriques1@gmail.com">email</a>
+    <a href="curriculo.pdf" download>cv</a>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
