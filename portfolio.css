@@ -105,6 +105,22 @@ nav {
 }
 .nav-cv:hover { background: var(--accent); border-color: var(--accent); color: #0d0d10; }
 
+.nav-lang {
+  font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em;
+  padding: 0.4rem 0.6rem; border-radius: 6px;
+  border: 1px solid var(--border2); background: transparent;
+  color: var(--muted);
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-lang:hover { border-color: var(--accent); }
+.nav-lang .lang-opt {
+  cursor: pointer; padding: 0 0.1rem; transition: color 0.2s;
+}
+.nav-lang .lang-opt:hover { color: var(--text); }
+.nav-lang .lang-opt.active { color: var(--accent); font-weight: 600; }
+.nav-lang .lang-sep { color: var(--mute-soft); }
+
 .hamburger { display: none; }
 .mobile-menu { display: none; }
 
@@ -816,7 +832,11 @@ footer a:hover { color: var(--accent); }
   .edu-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
-  .nav-links, .nav-cv { display: none; }
+  .nav-links, .nav-cv, .nav-lang { display: none; }
+  .mobile-menu .mobile-lang {
+    display: inline-flex; align-self: flex-start;
+    margin-top: 0.8rem;
+  }
   .hamburger {
     display: flex; flex-direction: column; gap: 5px;
     background: none; border: none; padding: 4px;

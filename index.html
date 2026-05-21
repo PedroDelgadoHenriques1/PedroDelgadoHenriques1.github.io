@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pedro Delgado Henriques — Engenheiro de Software</title>
-<meta name="description" content="Engenheiro de Software com 5+ anos — Game Dev C++, .NET, Full Stack Web. Londrina/PR." />
+<title data-i18n="meta.title">Pedro Delgado Henriques — Software Engineer</title>
+<meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Software Engineer with 5+ years — Game Dev C++, .NET, Full Stack Web. Londrina/PR." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -19,13 +19,18 @@
   <a href="#top" class="nav-logo"><span class="sym">@</span>pedro<span class="dim">.delgado</span></a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#experience">Experiência</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#skills">Stack</a></li>
-      <li><a href="#education">Formação</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Stack</a></li>
+      <li><a href="#education" data-i18n="nav.education">Education</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
+    <button class="nav-lang" id="lang-toggle" aria-label="Language toggle" type="button">
+      <span class="lang-opt" data-lang="en">EN</span>
+      <span class="lang-sep">·</span>
+      <span class="lang-opt" data-lang="pt">PT</span>
+    </button>
     <a href="curriculo.pdf" download class="nav-cv">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       CV
@@ -35,13 +40,18 @@
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#about" onclick="closeMobile()">Sobre</a>
-  <a href="#experience" onclick="closeMobile()">Experiência</a>
-  <a href="#projects" onclick="closeMobile()">Projetos</a>
-  <a href="#skills" onclick="closeMobile()">Stack</a>
-  <a href="#education" onclick="closeMobile()">Formação</a>
-  <a href="#contact" onclick="closeMobile()">Contato</a>
-  <a href="curriculo.pdf" download>Baixar CV</a>
+  <a href="#about" onclick="closeMobile()" data-i18n="nav.about">About</a>
+  <a href="#experience" onclick="closeMobile()" data-i18n="nav.experience">Experience</a>
+  <a href="#projects" onclick="closeMobile()" data-i18n="nav.projects">Projects</a>
+  <a href="#skills" onclick="closeMobile()" data-i18n="nav.skills">Stack</a>
+  <a href="#education" onclick="closeMobile()" data-i18n="nav.education">Education</a>
+  <a href="#contact" onclick="closeMobile()" data-i18n="nav.contact">Contact</a>
+  <a href="curriculo.pdf" download data-i18n="nav.downloadCv">Download CV</a>
+  <button class="nav-lang mobile-lang" id="lang-toggle-mobile" aria-label="Language toggle" type="button">
+    <span class="lang-opt" data-lang="en">EN</span>
+    <span class="lang-sep">·</span>
+    <span class="lang-opt" data-lang="pt">PT</span>
+  </button>
 </div>
 
 <!-- =================== HERO =================== -->
@@ -50,7 +60,7 @@
     <div class="hero-left">
       <div class="hero-status h-in h-1">
         <span class="pulse"></span>
-        DISPONÍVEL PARA OPORTUNIDADES
+        <span data-i18n="hero.status">AVAILABLE FOR OPPORTUNITIES</span>
       </div>
 
       <h1 class="h-in h-2">
@@ -62,40 +72,40 @@
         <span class="sep">·</span>
         Londrina, BR
         <span class="sep">·</span>
-        5+ anos
+        <span data-i18n="hero.years">5+ years</span>
       </div>
 
-      <p class="hero-desc h-in h-4">
-        Construo <strong>jogos de slot machine em C++</strong> sobre engine proprietária na Firepot Gaming, com 
-        background em <strong>full-stack web</strong> (Magento, PHP, React) e formação atual em 
-        <span class="accent">Arquitetura .NET</span> pela FIAP. Já ensinei Python pra iniciantes 
-        e mantive lojas com tráfego real em produção.
+      <p class="hero-desc h-in h-4" data-i18n="hero.desc">
+        I build <strong>slot machine games in C++</strong> on a proprietary engine at Firepot Gaming, with a
+        background in <strong>full-stack web</strong> (Magento, PHP, React) and ongoing studies in
+        <span class="accent">.NET Architecture</span> at FIAP. I've also taught Python to beginners
+        and maintained production stores with real traffic.
       </p>
 
       <div class="hero-cta h-in h-5">
         <a href="#projects" class="btn btn-primary">
-          Ver projetos
+          <span data-i18n="hero.cta.projects">View projects</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="#contact" class="btn btn-ghost">Entrar em contato</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">Get in touch</a>
       </div>
 
       <div class="hero-stats h-in h-6">
         <div>
           <div class="stat-n">5+</div>
-          <div class="stat-l">ANOS DE EXP.</div>
+          <div class="stat-l" data-i18n="hero.stat.years">YEARS OF EXP.</div>
         </div>
         <div>
           <div class="stat-n">3</div>
-          <div class="stat-l">EMPRESAS</div>
+          <div class="stat-l" data-i18n="hero.stat.companies">COMPANIES</div>
         </div>
         <div>
           <div class="stat-n">12+</div>
-          <div class="stat-l">PROJETOS LIVE</div>
+          <div class="stat-l" data-i18n="hero.stat.projects">LIVE PROJECTS</div>
         </div>
         <div>
           <div class="stat-n">B2</div>
-          <div class="stat-l">INGLÊS AVANÇADO</div>
+          <div class="stat-l" data-i18n="hero.stat.english">ADVANCED ENGLISH</div>
         </div>
       </div>
     </div>
@@ -130,49 +140,49 @@
 <section id="about">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Sobre</span>
-      <h2>Generalista por <em>formação</em>, especialista por <em>obsessão</em>.</h2>
+      <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+      <h2 data-i18n="about.title">Generalist by <em>training</em>, specialist by <em>obsession</em>.</h2>
     </div>
     <div class="about-wrap">
       <div class="about-text reveal delay-1">
-        <p>
-          Sou <strong>Engenheiro de Software</strong> formado pela UniSenaiPR. Comecei na web —
-          PHP, Magento, e-commerce de verdade com tráfego real — e fui migrando pra
-          stacks mais pesados. Hoje meu dia a dia é <span class="h">C++ puro</span> em engine
-          proprietária, modelando matemática de slot machines.
+        <p data-i18n="about.p1">
+          I'm a <strong>Software Engineer</strong> with a bachelor's from UniSenaiPR. I started on the web —
+          PHP, Magento, real e-commerce with real traffic — and gradually moved to
+          heavier stacks. Today my daily work is <span class="h">pure C++</span> on a
+          proprietary engine, modeling slot-machine math.
         </p>
-        <p>
-          Em paralelo, curso a <strong>Pós em Arquitetura .NET pela FIAP</strong>,
-          onde construí um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes.
-          Já ensinei <strong>Python</strong> pra turmas iniciantes — entender como explicar código
-          mudou como eu escrevo código.
+        <p data-i18n="about.p2">
+          In parallel, I'm taking a <strong>postgrad in .NET Architecture at FIAP</strong>,
+          where I built a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes.
+          I've also taught <strong>Python</strong> to beginner classes — learning how to explain code
+          changed how I write it.
         </p>
-        <p>
-          Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong>.
-          Inglês avançado, perfil autodidata, à vontade tanto no terminal quanto numa reunião de planejamento.
+        <p data-i18n="about.p3">
+          I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>.
+          Advanced English, self-taught profile, comfortable both in the terminal and in a planning meeting.
         </p>
       </div>
 
       <div class="about-facts reveal delay-2">
         <div class="fact">
-          <div class="fact-label">Hoje</div>
-          <div class="fact-val">Game Dev <span class="pop">C++</span></div>
+          <div class="fact-label" data-i18n="about.fact.today.label">Today</div>
+          <div class="fact-val" data-i18n="about.fact.today.val">Game Dev <span class="pop">C++</span></div>
           <div class="fact-sub">Firepot Gaming · slot machines</div>
         </div>
         <div class="fact">
-          <div class="fact-label">Estudando</div>
-          <div class="fact-val">Arquitetura <span class="pop">.NET</span></div>
-          <div class="fact-sub">Pós-Tech FIAP + Alura</div>
+          <div class="fact-label" data-i18n="about.fact.studying.label">Studying</div>
+          <div class="fact-val" data-i18n="about.fact.studying.val"><span class="pop">.NET</span> Architecture</div>
+          <div class="fact-sub" data-i18n="about.fact.studying.sub">FIAP Pós-Tech + Alura</div>
         </div>
         <div class="fact">
-          <div class="fact-label">Background</div>
-          <div class="fact-val">Full-Stack <span class="pop">Web</span></div>
-          <div class="fact-sub">PHP · Magento · React · 3 anos</div>
+          <div class="fact-label" data-i18n="about.fact.bg.label">Background</div>
+          <div class="fact-val" data-i18n="about.fact.bg.val">Full-Stack <span class="pop">Web</span></div>
+          <div class="fact-sub" data-i18n="about.fact.bg.sub">PHP · Magento · React · 3 years</div>
         </div>
         <div class="fact">
-          <div class="fact-label">Idiomas</div>
-          <div class="fact-val">PT-BR · <span class="pop">EN</span></div>
-          <div class="fact-sub">Português nativo · Inglês B2</div>
+          <div class="fact-label" data-i18n="about.fact.lang.label">Languages</div>
+          <div class="fact-val" data-i18n="about.fact.lang.val">PT-BR · <span class="pop">EN</span></div>
+          <div class="fact-sub" data-i18n="about.fact.lang.sub">Native Portuguese · B2 English</div>
         </div>
       </div>
     </div>
@@ -183,8 +193,8 @@
 <section id="experience">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Trajetória</span>
-      <h2>De lojas online a <em>slot engines</em>.</h2>
+      <span class="eyebrow" data-i18n="exp.eyebrow">Career</span>
+      <h2 data-i18n="exp.title">From online stores to <em>slot engines</em>.</h2>
     </div>
 
     <div class="timeline">
@@ -192,19 +202,19 @@
         <div class="tl-marker"></div>
         <div class="tl-head">
           <span class="tl-company">Firepot Gaming</span>
-          <span class="tl-date">dez/2024 — atual</span>
+          <span class="tl-date" data-i18n="exp.firepot.date">Dec/2024 — now</span>
         </div>
         <div class="tl-role">
-          Desenvolvedor de Jogos C++ — Pleno
+          <span data-i18n="exp.firepot.role">C++ Game Developer — Mid-Level</span>
           <span class="slot-mini" aria-hidden="true"><span>7</span><span>★</span><span>$</span></span>
         </div>
         <ul class="tl-bullets">
-          <li>Desenvolvimento de slot machines em <strong>C++ puro</strong> sobre engine proprietária com assets 2D</li>
-          <li>Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas existentes</li>
-          <li>Refatoração de módulos críticos: renderização de símbolos, RNG e sistema de animação</li>
-          <li>Modelagem matemática de volatilidade e tuning de RTP — de alta a baixa variância</li>
-          <li>Elaboração de Game Design Documents completos (mecânicas, paytable, fluxo, regras de bônus)</li>
-          <li>Migração de jogos legados entre versões da engine mantendo estabilidade em produção</li>
+          <li data-i18n="exp.firepot.b1">Slot machine development in <strong>pure C++</strong> on a proprietary engine with 2D assets</li>
+          <li data-i18n="exp.firepot.b2">Implementation of bonus rounds, free spins and cascading reels integrated with existing systems</li>
+          <li data-i18n="exp.firepot.b3">Refactoring of critical modules: symbol rendering, RNG and animation system</li>
+          <li data-i18n="exp.firepot.b4">Mathematical modeling of volatility and RTP tuning — from high to low variance</li>
+          <li data-i18n="exp.firepot.b5">Full Game Design Documents (mechanics, paytable, flow, bonus rules)</li>
+          <li data-i18n="exp.firepot.b6">Migration of legacy games between engine versions while keeping production stability</li>
         </ul>
         <a href="https://www.firepotgaming.com/slots" target="_blank" rel="noopener" class="tl-link">
           firepotgaming.com/slots
@@ -220,15 +230,17 @@
         <div class="tl-marker"></div>
         <div class="tl-head">
           <span class="tl-company">Ensina Mais</span>
-          <span class="tl-date">jun/2024 — dez/2024</span>
+          <span class="tl-date" data-i18n="exp.ensina.date">Jun/2024 — Dec/2024</span>
         </div>
-        <div class="tl-role">Professor de Programação — Python</div>
+        <div class="tl-role" data-i18n="exp.ensina.role">Programming Teacher — Python</div>
         <ul class="tl-bullets">
-          <li>Aulas de Python pra iniciantes — lógica de programação, estruturas de dados e boas práticas</li>
-          <li>Elaboração de material didático, exercícios práticos e acompanhamento individual de cada aluno</li>
+          <li data-i18n="exp.ensina.b1">Python classes for beginners — programming logic, data structures and best practices</li>
+          <li data-i18n="exp.ensina.b2">Course materials, practical exercises and individual follow-up with each student</li>
         </ul>
         <div class="tl-tags">
-          <span class="tag">Python</span><span class="tag">Didática</span><span class="tag">Mentoria</span>
+          <span class="tag">Python</span>
+          <span class="tag" data-i18n="exp.ensina.tag1">Teaching</span>
+          <span class="tag" data-i18n="exp.ensina.tag2">Mentorship</span>
         </div>
       </div>
 
@@ -236,15 +248,15 @@
         <div class="tl-marker"></div>
         <div class="tl-head">
           <span class="tl-company">Bis2Bis E-commerce</span>
-          <span class="tl-date">out/2021 — mai/2024</span>
+          <span class="tl-date" data-i18n="exp.bis.date">Oct/2021 — May/2024</span>
         </div>
-        <div class="tl-role">Desenvolvedor Full-Stack — Júnior → Pleno</div>
+        <div class="tl-role" data-i18n="exp.bis.role">Full-Stack Developer — Jr → Mid-Level</div>
         <ul class="tl-bullets">
-          <li>Promovido de Júnior a Pleno assumindo projetos de maior complexidade e ownership técnico</li>
-          <li>Full-stack com <strong>PHP, JavaScript e Magento</strong> — lojas virtuais pra múltiplos clientes</li>
-          <li>Integração com APIs SOAP e manipulação de XML pra conexão com ERPs externos</li>
-          <li>SEO técnico, otimização de performance e ciclo completo da concepção ao deploy</li>
-          <li>Entrega de lojas virtuais com integrações customizadas em produção</li>
+          <li data-i18n="exp.bis.b1">Promoted from Junior to Mid-Level by taking on more complex projects and technical ownership</li>
+          <li data-i18n="exp.bis.b2">Full-stack work with <strong>PHP, JavaScript and Magento</strong> — online stores for multiple clients</li>
+          <li data-i18n="exp.bis.b3">Integration with SOAP APIs and XML handling for connection to external ERPs</li>
+          <li data-i18n="exp.bis.b4">Technical SEO, performance optimization and full cycle from concept to deploy</li>
+          <li data-i18n="exp.bis.b5">Delivery of online stores with custom integrations live in production</li>
         </ul>
         <a href="https://www.worldcombat.com.br/" target="_blank" rel="noopener" class="tl-link">
           worldcombat.com.br
@@ -263,8 +275,8 @@
 <section id="projects">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Projetos</span>
-      <h2>Coisas que <em>construí</em>, e o que cada uma quer dizer.</h2>
+      <span class="eyebrow" data-i18n="proj.eyebrow">Projects</span>
+      <h2 data-i18n="proj.title">Things I've <em>built</em>, and what each one means.</h2>
     </div>
 
     <div class="projects-grid">
@@ -336,13 +348,13 @@
             <span class="pill fiap">FIAP · Pós-Tech</span>
             <span>2025–2026</span>
             <span>·</span>
-            <span>Em construção</span>
+            <span data-i18n="proj.p1.status">In progress</span>
           </div>
-          <div class="proj-name">Plataforma de e-commerce em <em>microsserviços</em></div>
-          <div class="proj-desc">
-            Sistema distribuído com 5 serviços independentes, comunicação assíncrona via RabbitMQ e cache
-            distribuído com Redis. Cada serviço aplica Clean Architecture e DDD, orquestrado via Kubernetes.
-            Projeto integrador da pós-graduação.
+          <div class="proj-name" data-i18n="proj.p1.name">E-commerce platform in <em>microservices</em></div>
+          <div class="proj-desc" data-i18n="proj.p1.desc">
+            Distributed system with 5 independent services, async communication via RabbitMQ and distributed
+            cache with Redis. Each service applies Clean Architecture and DDD, orchestrated via Kubernetes.
+            Capstone project of the postgrad program.
           </div>
           <div class="proj-tech">
             <span class="tag">.NET 8</span><span class="tag">C#</span>
@@ -360,13 +372,13 @@
             <div class="image"><div class="glove"></div></div>
             <div class="info">
               <div class="brand">World Combat</div>
-              <div class="pname">Luva de Boxe Profissional 14oz</div>
+              <div class="pname" data-i18n="proj.p2.glove">Professional Boxing Glove 14oz</div>
               <div class="stars">★★★★★</div>
               <div class="price-row">
                 <span class="price-old">R$ 389</span>
                 <span class="price-new">R$ 279</span>
               </div>
-              <div class="cart">Adicionar ao carrinho</div>
+              <div class="cart" data-i18n="proj.p2.cart">Add to cart</div>
             </div>
           </div>
           <div class="proj-arrow">
@@ -378,10 +390,10 @@
             <span class="pill live"><span class="d"></span>LIVE</span>
             <span class="pill work">Bis2Bis</span>
           </div>
-          <div class="proj-name">World Combat — e-commerce em <em>Magento</em></div>
-          <div class="proj-desc">
-            Loja de artes marciais (BJJ, Boxe, Muay Thai) com integração SOAP pro ERP do cliente,
-            SEO técnico e performance otimizada. Em produção com tráfego real.
+          <div class="proj-name" data-i18n="proj.p2.name">World Combat — <em>Magento</em> e-commerce</div>
+          <div class="proj-desc" data-i18n="proj.p2.desc">
+            Martial arts store (BJJ, Boxing, Muay Thai) with SOAP integration to the client's ERP,
+            technical SEO and optimized performance. Live in production with real traffic.
           </div>
           <div class="proj-tech">
             <span class="tag">Magento</span><span class="tag">PHP</span>
@@ -395,10 +407,18 @@
         <div class="proj-visual">
           <div class="viz-calendar">
             <div class="month">
-              <span class="month-name">Outubro <span style="color:var(--muted)">2026</span></span>
+              <span class="month-name"><span data-i18n="proj.p3.month">October</span> <span style="color:var(--muted)">2026</span></span>
               <span class="nav-arrows">‹ &nbsp; ›</span>
             </div>
-            <div class="week"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div>
+            <div class="week">
+              <span data-i18n="proj.p3.d1">S</span>
+              <span data-i18n="proj.p3.d2">M</span>
+              <span data-i18n="proj.p3.d3">T</span>
+              <span data-i18n="proj.p3.d4">W</span>
+              <span data-i18n="proj.p3.d5">T</span>
+              <span data-i18n="proj.p3.d6">F</span>
+              <span data-i18n="proj.p3.d7">S</span>
+            </div>
             <div class="days">
               <div class="day muted">28</div>
               <div class="day muted">29</div>
@@ -423,12 +443,12 @@
         <div class="proj-body">
           <div class="proj-meta">
             <span class="pill learn">Personal</span>
-            <span>Open source</span>
+            <span data-i18n="proj.p3.opensource">Open source</span>
           </div>
-          <div class="proj-name">Agenda — Laravel + <em>React</em> + Docker</div>
-          <div class="proj-desc">
-            App full-stack de agendamentos. API REST em Laravel consumida por SPA em React,
-            tudo containerizado com Docker e pronto pra deploy.
+          <div class="proj-name" data-i18n="proj.p3.name">Agenda — Laravel + <em>React</em> + Docker</div>
+          <div class="proj-desc" data-i18n="proj.p3.desc">
+            Full-stack scheduling app. REST API in Laravel consumed by a React SPA,
+            all containerized with Docker and ready to deploy.
           </div>
           <div class="proj-tech">
             <span class="tag">Laravel</span><span class="tag">React</span>
@@ -443,7 +463,7 @@
           <div class="viz-cipher">
             <div class="row">
               <span class="label">PLAIN</span>
-              <span class="text">Olá, mundo!</span>
+              <span class="text" data-i18n="proj.p4.plain">Hello, world!</span>
             </div>
             <div class="step"><span class="lock">●</span> AES-256 · CBC mode</div>
             <div class="arrow">↓</div>
@@ -458,12 +478,12 @@
         </div>
         <div class="proj-body">
           <div class="proj-meta">
-            <span class="pill sec">Segurança</span>
+            <span class="pill sec" data-i18n="proj.p4.pill">Security</span>
           </div>
           <div class="proj-name"><em>CIFRA</em>-AES</div>
-          <div class="proj-desc">
-            Implementação do AES (Advanced Encryption Standard) — criptografia simétrica feita do zero
-            como exercício de fundamentos.
+          <div class="proj-desc" data-i18n="proj.p4.desc">
+            Implementation of AES (Advanced Encryption Standard) — symmetric cryptography built from scratch
+            as a fundamentals exercise.
           </div>
           <div class="proj-tech">
             <span class="tag">AES</span><span class="tag">Crypto</span>
@@ -489,12 +509,12 @@
         </div>
         <div class="proj-body">
           <div class="proj-meta">
-            <span class="pill learn">Estudo</span>
+            <span class="pill learn" data-i18n="proj.p5.pill">Study</span>
           </div>
-          <div class="proj-name">Plataforma 2D em <em>Unity</em></div>
-          <div class="proj-desc">
-            Jogo 2D em Unity feito durante curso — primeiro contato com game dev. 
-            Hoje atuo profissionalmente com C++ em engine proprietária.
+          <div class="proj-name" data-i18n="proj.p5.name">2D Platformer in <em>Unity</em></div>
+          <div class="proj-desc" data-i18n="proj.p5.desc">
+            2D game in Unity built during a course — first contact with game dev.
+            Today I work professionally with C++ on a proprietary engine.
           </div>
           <div class="proj-tech">
             <span class="tag">Unity</span><span class="tag">C#</span>
@@ -506,7 +526,7 @@
       <a class="proj w-third reveal delay-3" href="https://github.com/PedroDelgadoHenriques1" target="_blank" rel="noopener">
         <div class="proj-visual" style="background:linear-gradient(135deg,#14151a 0%,#1c1e25 100%);display:flex;align-items:center;justify-content:center;padding:1.4rem">
           <div style="font-family:var(--mono);font-size:0.7rem;color:var(--muted);text-align:center;line-height:1.8">
-            <div style="font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--gold);margin-bottom:0.4rem">+ mais</div>
+            <div style="font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--gold);margin-bottom:0.4rem" data-i18n="proj.p6.more">+ more</div>
             <div>experiments · ML · scripts</div>
             <div>github.com/PedroDelgadoHenriques1</div>
           </div>
@@ -515,10 +535,10 @@
           <div class="proj-meta">
             <span class="pill learn">GitHub</span>
           </div>
-          <div class="proj-name">Lab pessoal</div>
-          <div class="proj-desc">
-            PyTorch, TensorFlow, scripts de automação, exercícios da pós e protótipos.
-            Repositório vivo de aprendizado.
+          <div class="proj-name" data-i18n="proj.p6.name">Personal lab</div>
+          <div class="proj-desc" data-i18n="proj.p6.desc">
+            PyTorch, TensorFlow, automation scripts, postgrad exercises and prototypes.
+            A living repository of learning.
           </div>
           <div class="proj-tech">
             <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Sandbox</span>
@@ -534,8 +554,8 @@
 <section id="skills">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Stack</span>
-      <h2>Ferramentas em <em>uso diário</em>.</h2>
+      <span class="eyebrow" data-i18n="skills.eyebrow">Stack</span>
+      <h2 data-i18n="skills.title">Tools in <em>daily use</em>.</h2>
     </div>
     <div class="skills-grid">
       <div class="skill-block reveal">
@@ -574,7 +594,7 @@
       </div>
       <div class="skill-block reveal">
         <div class="skill-block-head">
-          <span class="skill-block-title">Mensageria & APIs</span>
+          <span class="skill-block-title" data-i18n="skills.messaging">Messaging & APIs</span>
           <span class="num">04</span>
         </div>
         <div class="skill-tags">
@@ -596,7 +616,7 @@
       </div>
       <div class="skill-block reveal delay-2">
         <div class="skill-block-head">
-          <span class="skill-block-title">Banco de Dados</span>
+          <span class="skill-block-title" data-i18n="skills.db">Databases</span>
           <span class="num">06</span>
         </div>
         <div class="skill-tags">
@@ -617,7 +637,7 @@
       </div>
       <div class="skill-block reveal delay-1">
         <div class="skill-block-head">
-          <span class="skill-block-title">Segurança</span>
+          <span class="skill-block-title" data-i18n="skills.security">Security</span>
           <span class="num">08</span>
         </div>
         <div class="skill-tags">
@@ -634,26 +654,26 @@
 <section id="education">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Formação</span>
-      <h2>Onde <em>aprendi</em> o que sei.</h2>
+      <span class="eyebrow" data-i18n="edu.eyebrow">Education</span>
+      <h2 data-i18n="edu.title">Where I <em>learned</em> what I know.</h2>
     </div>
     <div class="edu-grid">
       <div class="edu-card reveal">
-        <span class="edu-status ongoing"><span class="d"></span>Em andamento</span>
-        <div class="edu-degree">Pós em Arquitetura de <em>Sistemas .NET</em></div>
+        <span class="edu-status ongoing"><span class="d"></span><span data-i18n="edu.fiap.status">In progress</span></span>
+        <div class="edu-degree" data-i18n="edu.fiap.degree">Postgrad in <em>.NET Systems Architecture</em></div>
         <div class="edu-school">FIAP + Alura · Pós-Tech</div>
         <div class="edu-meta">
           <span>360h</span>
-          <span>jan/2025 — dez/2026</span>
+          <span data-i18n="edu.fiap.dates">Jan/2025 — Dec/2026</span>
         </div>
       </div>
       <div class="edu-card reveal delay-1">
-        <span class="edu-status done"><span class="d"></span>Concluído</span>
-        <div class="edu-degree">Bacharel em <em>Engenharia de Software</em></div>
+        <span class="edu-status done"><span class="d"></span><span data-i18n="edu.senai.status">Completed</span></span>
+        <div class="edu-degree" data-i18n="edu.senai.degree">Bachelor's in <em>Software Engineering</em></div>
         <div class="edu-school">UniSenaiPR · Faculdade da Indústria</div>
         <div class="edu-meta">
-          <span>4 anos</span>
-          <span>2021 — jul/2025</span>
+          <span data-i18n="edu.senai.duration">4 years</span>
+          <span data-i18n="edu.senai.dates">2021 — Jul/2025</span>
         </div>
       </div>
     </div>
@@ -664,16 +684,16 @@
 <section id="contact">
   <div class="container">
     <div class="contact-wrap reveal">
-      <span class="eyebrow">Contato</span>
-      <h2 style="margin-top:1rem">Vamos <em>conversar</em>?</h2>
-      <p>
-        Aberto a posições full-time, freelas e colaborações.
-        Me chame pelo canal que preferir — respondo rápido.
+      <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+      <h2 style="margin-top:1rem" data-i18n="contact.title">Let's <em>talk</em>?</h2>
+      <p data-i18n="contact.desc">
+        Open to full-time positions, freelance work and collaborations.
+        Reach out on your preferred channel — I respond fast.
       </p>
       <div class="contact-grid">
         <a href="mailto:pedrodelgadohenriques1@gmail.com" class="clink">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-          E-mail
+          <span data-i18n="contact.email">Email</span>
         </a>
         <a href="tel:+5543999926087" class="clink">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -685,7 +705,7 @@
         </a>
         <a href="curriculo.pdf" download class="clink">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Baixar CV
+          <span data-i18n="contact.cv">Download CV</span>
         </a>
       </div>
     </div>
@@ -701,7 +721,7 @@
   </div>
 </footer>
 
-<button id="back-top" aria-label="Topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+<button id="back-top" aria-label="Top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
