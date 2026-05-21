@@ -18,9 +18,9 @@ const i18n = {
 
     'hero.status': 'AVAILABLE FOR OPPORTUNITIES',
     'hero.years': '5+ years',
-    'hero.desc': `Software engineer drawn to problems where <strong>performance</strong>, <strong>math</strong> and <strong>product</strong> meet.
-        Self-taught at heart, comfortable across stacks — from low-level <strong>C++</strong> to <span class="accent">.NET architecture</span>
-        and full-stack web. Five years building real things; curious about everything from game engines to ML and security.`,
+    'hero.desc': `Software Engineer with over 5 years of experience in software development. Background spans full-stack
+        development with strong focus on web and e-commerce, game development, and programming instruction.
+        Currently pursuing a postgraduate degree in <span class="accent">.NET Systems Architecture</span> at FIAP + Alura.`,
     'hero.cta.projects': 'View projects',
     'hero.cta.contact': 'Get in touch',
     'hero.stat.years': 'YEARS OF EXP.',
@@ -146,9 +146,9 @@ const i18n = {
 
     'hero.status': 'DISPONÍVEL PARA OPORTUNIDADES',
     'hero.years': '5+ anos',
-    'hero.desc': `Engenheiro de software atraído por problemas onde <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong> se cruzam.
-        Autodidata de alma, à vontade entre stacks — de <strong>C++</strong> low-level a <span class="accent">arquitetura .NET</span>
-        e full-stack web. Cinco anos construindo coisas reais; curioso por tudo, de engines de jogo a ML e segurança.`,
+    'hero.desc': `Engenheiro de Software com mais de 5 anos de experiência em desenvolvimento de software. Atuação combinada como
+        desenvolvedor full-stack com forte ênfase em desenvolvimento web e e-commerce, desenvolvedor de jogos e professor de programação.
+        Atualmente cursando pós-graduação em <span class="accent">Arquitetura de Sistemas .NET</span> pela FIAP + Alura.`,
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact': 'Entrar em contato',
     'hero.stat.years': 'ANOS DE EXP.',
