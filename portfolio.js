@@ -16,7 +16,7 @@ const i18n = {
     'nav.contact': 'Contact',
     'nav.downloadCv': 'Download CV',
 
-    'hero.status': 'AVAILABLE FOR OPPORTUNITIES',
+    'hero.status': 'AVAILABLE FOR PROPOSALS AND PROJECTS',
     'hero.years': '5+ years',
     'hero.desc': `Software Engineer with over 5 years of experience in software development. Background spans full-stack
         development with strong focus on web and e-commerce, game development, and programming instruction.
@@ -144,7 +144,7 @@ const i18n = {
     'nav.contact': 'Contato',
     'nav.downloadCv': 'Baixar CV',
 
-    'hero.status': 'DISPONÍVEL PARA OPORTUNIDADES',
+    'hero.status': 'DISPONÍVEL PARA PROPOSTAS E PROJETOS',
     'hero.years': '5+ anos',
     'hero.desc': `Engenheiro de Software com mais de 5 anos de experiência em desenvolvimento de software. Atuação combinada como
         desenvolvedor full-stack com forte ênfase em desenvolvimento web e e-commerce, desenvolvedor de jogos e professor de programação.
