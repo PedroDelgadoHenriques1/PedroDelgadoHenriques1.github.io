@@ -18,10 +18,9 @@ const i18n = {
 
     'hero.status': 'AVAILABLE FOR OPPORTUNITIES',
     'hero.years': '5+ years',
-    'hero.desc': `I build <strong>slot machine games in C++</strong> on a proprietary engine at Firepot Gaming, with a
-        background in <strong>full-stack web</strong> (Magento, PHP, React) and ongoing studies in
-        <span class="accent">.NET Architecture</span> at FIAP. I've also taught Python to beginners
-        and maintained production stores with real traffic.`,
+    'hero.desc': `Software engineer drawn to problems where <strong>performance</strong>, <strong>math</strong> and <strong>product</strong> meet.
+        Self-taught at heart, comfortable across stacks — from low-level <strong>C++</strong> to <span class="accent">.NET architecture</span>
+        and full-stack web. Five years building real things; curious about everything from game engines to ML and security.`,
     'hero.cta.projects': 'View projects',
     'hero.cta.contact': 'Get in touch',
     'hero.stat.years': 'YEARS OF EXP.',
@@ -147,10 +146,9 @@ const i18n = {
 
     'hero.status': 'DISPONÍVEL PARA OPORTUNIDADES',
     'hero.years': '5+ anos',
-    'hero.desc': `Construo <strong>jogos de slot machine em C++</strong> sobre engine proprietária na Firepot Gaming, com
-        background em <strong>full-stack web</strong> (Magento, PHP, React) e formação atual em
-        <span class="accent">Arquitetura .NET</span> pela FIAP. Já ensinei Python pra iniciantes
-        e mantive lojas com tráfego real em produção.`,
+    'hero.desc': `Engenheiro de software atraído por problemas onde <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong> se cruzam.
+        Autodidata de alma, à vontade entre stacks — de <strong>C++</strong> low-level a <span class="accent">arquitetura .NET</span>
+        e full-stack web. Cinco anos construindo coisas reais; curioso por tudo, de engines de jogo a ML e segurança.`,
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact': 'Entrar em contato',
     'hero.stat.years': 'ANOS DE EXP.',
@@ -285,6 +283,13 @@ function applyLanguage(lang) {
 
   document.querySelectorAll('.nav-lang .lang-opt').forEach(opt => {
     opt.classList.toggle('active', opt.dataset.lang === lang);
+  });
+
+  const cvHref = lang === 'pt'
+    ? 'pedro-delgado-henriques-cv-pt.pdf'
+    : 'pedro-delgado-henriques-cv-en.pdf';
+  document.querySelectorAll('[data-cv-link]').forEach(el => {
+    el.setAttribute('href', cvHref);
   });
 
   try { localStorage.setItem('lang', lang); } catch (e) {}
