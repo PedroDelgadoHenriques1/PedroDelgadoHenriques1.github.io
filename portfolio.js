@@ -79,10 +79,11 @@ const i18n = {
     'proj.eyebrow': 'Projects',
     'proj.title': "Things I've <em>built</em>, and what each one means.",
     'proj.p1.status': 'In progress',
-    'proj.p1.name': 'E-commerce platform in <em>microservices</em>',
-    'proj.p1.desc': `Distributed system with 5 independent services, async communication via RabbitMQ and distributed
-            cache with Redis. Each service applies Clean Architecture and DDD, orchestrated via Kubernetes.
-            Capstone project of the postgrad program.`,
+    'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
+    'proj.p1.desc': `Orchestration of a games platform across 5 .NET microservices, with Kong API Gateway (JWT,
+            rate-limit, CORS), serverless Lambda (LocalStack + Terraform), polyglot persistence
+            (SQL Server, MongoDB, Redis) and observability via Prometheus + Grafana. Boots end-to-end
+            with docker-compose or Kubernetes.`,
     'proj.p2.glove': 'Professional Boxing Glove 14oz',
     'proj.p2.cart': 'Add to cart',
     'proj.p2.name': 'World Combat — <em>Magento</em> e-commerce',
@@ -207,10 +208,11 @@ const i18n = {
     'proj.eyebrow': 'Projetos',
     'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
     'proj.p1.status': 'Em construção',
-    'proj.p1.name': 'Plataforma de e-commerce em <em>microsserviços</em>',
-    'proj.p1.desc': `Sistema distribuído com 5 serviços independentes, comunicação assíncrona via RabbitMQ e cache
-            distribuído com Redis. Cada serviço aplica Clean Architecture e DDD, orquestrado via Kubernetes.
-            Projeto integrador da pós-graduação.`,
+    'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
+    'proj.p1.desc': `Orquestração de uma plataforma de jogos em 5 microsserviços .NET, com Kong API Gateway (JWT,
+            rate-limit, CORS), Lambda serverless (LocalStack + Terraform), persistência poliglota
+            (SQL Server, MongoDB, Redis) e observabilidade via Prometheus + Grafana. Sobe inteiro
+            com docker-compose ou Kubernetes.`,
     'proj.p2.glove': 'Luva de Boxe Profissional 14oz',
     'proj.p2.cart': 'Adicionar ao carrinho',
     'proj.p2.name': 'World Combat — e-commerce em <em>Magento</em>',
