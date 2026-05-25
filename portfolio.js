@@ -54,7 +54,7 @@ const i18n = {
 
     'exp.eyebrow': 'Career',
     'exp.title': 'From online stores to <em>slot engines</em>.',
-    'exp.firepot.date': 'Dec/2024 — now',
+    'exp.firepot.date': 'Dec/2024 — May/2026',
     'exp.firepot.role': 'C++ Game Developer — Mid-Level',
     'exp.firepot.b1': 'Slot machine development in <strong>pure C++</strong> on a proprietary engine with 2D assets',
     'exp.firepot.b2': 'Implementation of bonus rounds, free spins and cascading reels integrated with existing systems',
@@ -183,7 +183,7 @@ const i18n = {
 
     'exp.eyebrow': 'Trajetória',
     'exp.title': 'De lojas online a <em>slot engines</em>.',
-    'exp.firepot.date': 'dez/2024 — atual',
+    'exp.firepot.date': 'dez/2024 — mai/2026',
     'exp.firepot.role': 'Desenvolvedor de Jogos C++ — Pleno',
     'exp.firepot.b1': 'Desenvolvimento de slot machines em <strong>C++ puro</strong> sobre engine proprietária com assets 2D',
     'exp.firepot.b2': 'Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas existentes',
