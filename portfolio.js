@@ -114,6 +114,9 @@ const i18n = {
     'skills.messaging': 'Messaging & APIs',
     'skills.db': 'Databases',
     'skills.security': 'Security',
+    'skills.testing': 'Testing',
+    'skills.observability': 'Observability',
+    'skills.methodology': 'Methodology',
 
     'edu.eyebrow': 'Education',
     'edu.title': 'Where I <em>learned</em> what I know.',
@@ -243,6 +246,9 @@ const i18n = {
     'skills.messaging': 'Mensageria & APIs',
     'skills.db': 'Banco de Dados',
     'skills.security': 'Segurança',
+    'skills.testing': 'Testes',
+    'skills.observability': 'Observabilidade',
+    'skills.methodology': 'Metodologia',
 
     'edu.eyebrow': 'Formação',
     'edu.title': 'Onde <em>aprendi</em> o que sei.',
