@@ -5,8 +5,8 @@
    ========================================================= */
 const i18n = {
   en: {
-    'meta.title': "Pedro Delgado Henriques — Software Engineer",
-    'meta.description': "Software Engineer with 5+ years — Game Dev C++, .NET, Full Stack Web. Londrina/PR.",
+    'meta.title': "Pedro Delgado Henriques — C++ Game Developer | iGaming / Slots",
+    'meta.description': "C++ game developer for slot machines / iGaming — RNG, RTP, volatility math and real-time rendering. 5+ years, shipped casino games in pure C++ at Firepot. Londrina/PR.",
 
     'nav.about': 'About',
     'nav.experience': 'Experience',
@@ -18,9 +18,10 @@ const i18n = {
 
     'hero.status': 'AVAILABLE FOR PROPOSALS AND PROJECTS',
     'hero.years': '5+ years',
-    'hero.desc': `Software Engineer with over 5 years of experience in software development. Background spans full-stack
-        development with strong focus on web and e-commerce, game development, and programming instruction.
-        Currently pursuing a postgraduate degree in <span class="accent">.NET Systems Architecture</span> at FIAP + Alura.`,
+    'hero.desc': `C++ game developer specialized in <strong>slot machines</strong> — RNG, RTP and volatility math,
+        engine performance and real-time rendering. 5+ years in software, most recently building casino games in pure C++
+        on a proprietary engine at Firepot. Full-stack web background (PHP/Magento) and a
+        <span class="accent">.NET architecture</span> postgrad in progress.`,
     'hero.cta.projects': 'View projects',
     'hero.cta.contact': 'Get in touch',
     'hero.stat.years': 'YEARS OF EXP.',
@@ -30,17 +31,16 @@ const i18n = {
 
     'about.eyebrow': 'About',
     'about.title': 'Generalist by <em>training</em>, specialist by <em>obsession</em>.',
-    'about.p1': `I'm a <strong>Software Engineer</strong> with a bachelor's from UniSenaiPR. I started on the web —
-          PHP, Magento, real e-commerce with real traffic — and gradually moved to
-          heavier stacks. Today my daily work is <span class="h">pure C++</span> on a
-          proprietary engine, modeling slot-machine math.`,
-    'about.p2': `In parallel, I'm taking a <strong>postgrad in .NET Architecture at FIAP</strong>,
-          where I built a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes.
-          I've also taught <strong>Python</strong> to beginner classes — learning how to explain code
-          changed how I write it.`,
+    'about.p1': `I'm a <strong>Software Engineer</strong> (UniSenaiPR) who most recently worked in <span class="h">pure C++</span>
+          on a proprietary engine, building <strong>slot machines</strong> end to end — RNG, paytables,
+          RTP and volatility tuning, symbol rendering and real-time animation.`,
+    'about.p2': `I got here through the web — three years of PHP, Magento and real e-commerce with real traffic —
+          and I'm now deepening backend with a <strong>postgrad in .NET Architecture at FIAP</strong>
+          (a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes). Along the way I also taught
+          <strong>Python</strong> to beginner classes.`,
     'about.p3': `I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>.
           Advanced English, self-taught profile, comfortable both in the terminal and in a planning meeting.`,
-    'about.fact.today.label': 'Today',
+    'about.fact.today.label': 'Most recent',
     'about.fact.today.val': 'Game Dev <span class="pop">C++</span>',
     'about.fact.studying.label': 'Studying',
     'about.fact.studying.val': '<span class="pop">.NET</span> Architecture',
@@ -54,7 +54,7 @@ const i18n = {
 
     'exp.eyebrow': 'Career',
     'exp.title': 'From online stores to <em>slot engines</em>.',
-    'exp.firepot.date': 'Dec/2024 — Present',
+    'exp.firepot.date': 'Dec/2024 — Jun/2026',
     'exp.firepot.role': 'C++ Game Developer — Mid-Level',
     'exp.firepot.b1': 'Slot machine development in <strong>pure C++</strong> on a proprietary engine with 2D assets',
     'exp.firepot.b2': 'Implementation of bonus rounds, free spins and cascading reels integrated with existing systems',
@@ -78,6 +78,10 @@ const i18n = {
 
     'proj.eyebrow': 'Projects',
     'proj.title': "Things I've <em>built</em>, and what each one means.",
+    'proj.p0.status': 'In production',
+    'proj.p0.name': 'Shipped Slots — <em>live</em> at Firepot',
+    'proj.p0.desc': `Casino slot machines built end to end in pure C++ on a proprietary engine: RNG, paytables,
+            RTP and volatility tuning, symbol rendering and real-time animation. Live and playable in production.`,
     'proj.p1.status': 'In progress',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
     'proj.p1.desc': `Orchestration of a games platform across 5 .NET microservices, with Kong API Gateway (JWT,
@@ -98,12 +102,12 @@ const i18n = {
             all containerized with Docker and ready to deploy.`,
     'proj.p4.plain': 'Hello, world!',
     'proj.p4.pill': 'Security',
-    'proj.p4.desc': `Implementation of AES (Advanced Encryption Standard) — symmetric cryptography built from scratch
-            as a fundamentals exercise.`,
+    'proj.p4.desc': `AES-256 block cipher implemented from scratch in low-level <strong>C++</strong> — S-box substitution,
+            key schedule and CBC mode. Byte-level systems work, the same muscle behind engine code.`,
     'proj.p5.pill': 'Study',
     'proj.p5.name': '2D Platformer in <em>Unity</em>',
     'proj.p5.desc': `2D game in Unity built during a course — first contact with game dev.
-            Today I work professionally with C++ on a proprietary engine.`,
+            I went on to work professionally with C++ on a proprietary engine.`,
     'proj.p6.more': '+ more',
     'proj.p6.name': 'Personal lab',
     'proj.p6.desc': `PyTorch, TensorFlow, automation scripts, postgrad exercises and prototypes.
@@ -137,8 +141,8 @@ const i18n = {
   },
 
   pt: {
-    'meta.title': "Pedro Delgado Henriques — Engenheiro de Software",
-    'meta.description': "Engenheiro de Software com 5+ anos — Game Dev C++, .NET, Full Stack Web. Londrina/PR.",
+    'meta.title': "Pedro Delgado Henriques — Desenvolvedor de Jogos C++ | iGaming / Slots",
+    'meta.description': "Desenvolvedor de jogos C++ para slot machines / iGaming — RNG, RTP, volatilidade e renderização em tempo real. 5+ anos, jogos de cassino em C++ puro na Firepot. Londrina/PR.",
 
     'nav.about': 'Sobre',
     'nav.experience': 'Experiência',
@@ -150,9 +154,10 @@ const i18n = {
 
     'hero.status': 'DISPONÍVEL PARA PROPOSTAS E PROJETOS',
     'hero.years': '5+ anos',
-    'hero.desc': `Engenheiro de Software com mais de 5 anos de experiência em desenvolvimento de software. Atuação combinada como
-        desenvolvedor full-stack com forte ênfase em desenvolvimento web e e-commerce, desenvolvedor de jogos e professor de programação.
-        Atualmente cursando pós-graduação em <span class="accent">Arquitetura de Sistemas .NET</span> pela FIAP + Alura.`,
+    'hero.desc': `Desenvolvedor de jogos C++ especializado em <strong>slot machines</strong> — RNG, matemática de RTP
+        e volatilidade, performance de engine e renderização em tempo real. 5+ anos em software, mais recentemente desenvolvendo
+        jogos de cassino em C++ puro sobre engine proprietária na Firepot. Background full-stack web (PHP/Magento)
+        e pós em <span class="accent">arquitetura .NET</span> em andamento.`,
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact': 'Entrar em contato',
     'hero.stat.years': 'ANOS DE EXP.',
@@ -162,17 +167,16 @@ const i18n = {
 
     'about.eyebrow': 'Sobre',
     'about.title': 'Generalista por <em>formação</em>, especialista por <em>obsessão</em>.',
-    'about.p1': `Sou <strong>Engenheiro de Software</strong> formado pela UniSenaiPR. Comecei na web —
-          PHP, Magento, e-commerce de verdade com tráfego real — e fui migrando pra
-          stacks mais pesados. Hoje meu dia a dia é <span class="h">C++ puro</span> em engine
-          proprietária, modelando matemática de slot machines.`,
-    'about.p2': `Em paralelo, curso a <strong>Pós em Arquitetura .NET pela FIAP</strong>,
-          onde construí um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes.
-          Já ensinei <strong>Python</strong> pra turmas iniciantes — entender como explicar código
-          mudou como eu escrevo código.`,
+    'about.p1': `Sou <strong>Engenheiro de Software</strong> (UniSenaiPR) e mais recentemente trabalhei em <span class="h">C++ puro</span>
+          sobre engine proprietária, construindo <strong>slot machines</strong> de ponta a ponta — RNG, paytables,
+          tuning de RTP e volatilidade, renderização de símbolos e animação em tempo real.`,
+    'about.p2': `Cheguei aqui pela web — três anos de PHP, Magento e e-commerce de verdade com tráfego real —
+          e agora aprofundo backend com a <strong>Pós em Arquitetura .NET pela FIAP</strong>
+          (um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes). No caminho também
+          ensinei <strong>Python</strong> pra turmas iniciantes.`,
     'about.p3': `Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong>.
           Inglês avançado, perfil autodidata, à vontade tanto no terminal quanto numa reunião de planejamento.`,
-    'about.fact.today.label': 'Hoje',
+    'about.fact.today.label': 'Mais recente',
     'about.fact.today.val': 'Game Dev <span class="pop">C++</span>',
     'about.fact.studying.label': 'Estudando',
     'about.fact.studying.val': 'Arquitetura <span class="pop">.NET</span>',
@@ -186,7 +190,7 @@ const i18n = {
 
     'exp.eyebrow': 'Trajetória',
     'exp.title': 'De lojas online a <em>slot engines</em>.',
-    'exp.firepot.date': 'dez/2024 — atual',
+    'exp.firepot.date': 'dez/2024 — jun/2026',
     'exp.firepot.role': 'Desenvolvedor de Jogos C++ — Pleno',
     'exp.firepot.b1': 'Desenvolvimento de slot machines em <strong>C++ puro</strong> sobre engine proprietária com assets 2D',
     'exp.firepot.b2': 'Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas existentes',
@@ -210,6 +214,11 @@ const i18n = {
 
     'proj.eyebrow': 'Projetos',
     'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
+    'proj.p0.status': 'Em produção',
+    'proj.p0.name': 'Slots no Ar — <em>live</em> na Firepot',
+    'proj.p0.desc': `Slot machines de cassino construídas de ponta a ponta em C++ puro sobre engine proprietária:
+            RNG, paytables, tuning de RTP e volatilidade, renderização de símbolos e animação em tempo real.
+            No ar e jogáveis em produção.`,
     'proj.p1.status': 'Em construção',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
     'proj.p1.desc': `Orquestração de uma plataforma de jogos em 5 microsserviços .NET, com Kong API Gateway (JWT,
@@ -230,12 +239,12 @@ const i18n = {
             tudo containerizado com Docker e pronto pra deploy.`,
     'proj.p4.plain': 'Olá, mundo!',
     'proj.p4.pill': 'Segurança',
-    'proj.p4.desc': `Implementação do AES (Advanced Encryption Standard) — criptografia simétrica feita do zero
-            como exercício de fundamentos.`,
+    'proj.p4.desc': `Cifra de bloco AES-256 implementada do zero em <strong>C++</strong> de baixo nível — substituição
+            via S-box, key schedule e modo CBC. Trabalho de sistemas a nível de byte, a mesma base do código de engine.`,
     'proj.p5.pill': 'Estudo',
     'proj.p5.name': 'Plataforma 2D em <em>Unity</em>',
     'proj.p5.desc': `Jogo 2D em Unity feito durante curso — primeiro contato com game dev.
-            Hoje atuo profissionalmente com C++ em engine proprietária.`,
+            Depois passei a atuar profissionalmente com C++ em engine proprietária.`,
     'proj.p6.more': '+ mais',
     'proj.p6.name': 'Lab pessoal',
     'proj.p6.desc': `PyTorch, TensorFlow, scripts de automação, exercícios da pós e protótipos.

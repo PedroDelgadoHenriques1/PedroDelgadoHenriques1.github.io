@@ -17,7 +17,7 @@
 
 ## 🧠 About
 
-Software Engineer (UniSenaiPR). Started in full-stack web — PHP, Magento, e-commerce — and moved toward heavier stacks. Today my daily work is **pure C++** on a proprietary engine, modeling slot machine math at **Firepot Gaming**.
+Software Engineer (UniSenaiPR). Started in full-stack web — PHP, Magento, e-commerce — and moved toward heavier stacks. Most recently my daily work was **pure C++** on a proprietary engine, modeling slot machine math at **Firepot Gaming**.
 
 In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm building a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes. I've also taught **Python** to beginner classes.
 
@@ -25,7 +25,7 @@ In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm buil
 
 ## 🎯 Now
 
-- 🎮 **C++ Game Developer** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots on a proprietary engine, RNG, RTP/volatility modeling
+- 🎮 **Most recently: C++ Game Developer** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots on a proprietary engine, RNG, RTP/volatility modeling (until Jun/2026)
 - 🎓 **.NET Architecture Postgrad** @ FIAP + Alura — microservices, Clean Arch, DDD
 - 💼 Open to opportunities in **Game Dev**, **.NET** or **Full-Stack**
 
@@ -58,7 +58,7 @@ In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm buil
 ## 💼 Experience
 
 ### 🎮 Firepot Gaming — Mid-level C++ Game Developer
-**Dec/2024 — present**
+**Dec/2024 — Jun/2026**
 
 - Slot machine development in **pure C++** on a proprietary engine with 2D assets
 - Bonus rounds, free spins, cascading reels integrated into existing systems
@@ -114,7 +114,7 @@ In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm buil
 
 ## 🧠 Sobre
 
-Engenheiro de Software formado pela **UniSenaiPR**. Comecei no full-stack web — PHP, Magento, e-commerce — e fui migrando pra stacks mais pesados. Hoje meu dia a dia é **C++ puro** em engine proprietária, modelando matemática de slot machines na **Firepot Gaming**.
+Engenheiro de Software formado pela **UniSenaiPR**. Comecei no full-stack web — PHP, Magento, e-commerce — e fui migrando pra stacks mais pesados. Mais recentemente meu dia a dia foi **C++ puro** em engine proprietária, modelando matemática de slot machines na **Firepot Gaming**.
 
 Em paralelo, curso a **Pós em Arquitetura .NET pela FIAP**, onde construo um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes. Já ensinei **Python** pra turmas de alunos.
 
@@ -122,7 +122,7 @@ Em paralelo, curso a **Pós em Arquitetura .NET pela FIAP**, onde construo um si
 
 ## 🎯 Hoje
 
-- 🎮 **Desenvolvedor de Jogos C++** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots em engine proprietária, RNG, modelagem de RTP/volatilidade
+- 🎮 **Mais recentemente: Desenvolvedor de Jogos C++** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots em engine proprietária, RNG, modelagem de RTP/volatilidade (até jun/2026)
 - 🎓 **Pós em Arquitetura .NET** @ FIAP + Alura — microsserviços, Clean Arch, DDD
 - 💼 Aberto a oportunidades em **Game Dev**, **.NET** ou **Full-Stack**
 
@@ -153,7 +153,7 @@ Em paralelo, curso a **Pós em Arquitetura .NET pela FIAP**, onde construo um si
 ## 💼 Experiência
 
 ### 🎮 Firepot Gaming — Desenvolvedor de Jogos C++ Pleno
-**dez/2024 — atual**
+**dez/2024 — jun/2026**
 
 - Desenvolvimento de slot machines em **C++ puro** sobre engine proprietária com assets 2D
 - Bonus rounds, free spins, cascading reels integrados aos sistemas existentes
