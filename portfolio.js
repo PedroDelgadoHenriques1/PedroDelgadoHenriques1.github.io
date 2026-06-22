@@ -103,8 +103,9 @@ const i18n = {
     'proj.p2.glove': 'Professional Boxing Glove 14oz',
     'proj.p2.cart': 'Add to cart',
     'proj.p2.name': 'World Combat — <em>Magento</em> e-commerce',
-    'proj.p2.desc': `Martial arts store (BJJ, Boxing, Muay Thai) with SOAP integration to the client's ERP,
-            technical SEO and optimized performance. Live in production with real traffic.`,
+    'proj.p2.desc': `Martial arts store (BJJ, Boxing, Muay Thai) with SOAP/ERP integration, technical SEO and
+            optimized performance — live with real traffic. One of several Magento stores I shipped at
+            Bis2Bis: also Wilson Atacado, Mirão and Cama in Box.`,
     'proj.p3.month': 'October',
     'proj.p3.d1': 'S', 'proj.p3.d2': 'M', 'proj.p3.d3': 'T', 'proj.p3.d4': 'W',
     'proj.p3.d5': 'T', 'proj.p3.d6': 'F', 'proj.p3.d7': 'S',
@@ -289,8 +290,9 @@ const i18n = {
     'proj.p2.glove': 'Luva de Boxe Profissional 14oz',
     'proj.p2.cart': 'Adicionar ao carrinho',
     'proj.p2.name': 'World Combat — e-commerce em <em>Magento</em>',
-    'proj.p2.desc': `Loja de artes marciais (BJJ, Boxe, Muay Thai) com integração SOAP pro ERP do cliente,
-            SEO técnico e performance otimizada. Em produção com tráfego real.`,
+    'proj.p2.desc': `Loja de artes marciais (BJJ, Boxe, Muay Thai) com integração SOAP/ERP, SEO técnico e
+            performance otimizada — no ar com tráfego real. Uma de várias lojas Magento que entreguei na
+            Bis2Bis: também Wilson Atacado, Mirão e Cama in Box.`,
     'proj.p3.month': 'Outubro',
     'proj.p3.d1': 'D', 'proj.p3.d2': 'S', 'proj.p3.d3': 'T', 'proj.p3.d4': 'Q',
     'proj.p3.d5': 'Q', 'proj.p3.d6': 'S', 'proj.p3.d7': 'S',
