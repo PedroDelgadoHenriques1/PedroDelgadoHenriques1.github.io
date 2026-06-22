@@ -5,8 +5,8 @@
    ========================================================= */
 const i18n = {
   en: {
-    'meta.title': "Pedro Delgado Henriques — C++ Game Developer | iGaming / Slots",
-    'meta.description': "C++ game developer for slot machines / iGaming — RNG, RTP, volatility math and real-time rendering. 5+ years, shipped casino games in pure C++ at Firepot. Londrina/PR.",
+    'meta.title': "Pedro Delgado Henriques — Software Engineer | .NET Systems Architecture",
+    'meta.description': "Software Engineer and .NET Systems Architecture postgrad. 5+ years across full-stack web, game development and teaching. Londrina/PR — open to opportunities.",
 
     'nav.about': 'About',
     'nav.experience': 'Experience',
@@ -18,10 +18,11 @@ const i18n = {
 
     'hero.status': 'AVAILABLE FOR PROPOSALS AND PROJECTS',
     'hero.years': '5+ years',
-    'hero.desc': `C++ game developer specialized in <strong>slot machines</strong> — RNG, RTP and volatility math,
-        engine performance and real-time rendering. 5+ years in software, most recently building casino games in pure C++
-        on a proprietary engine at Firepot. Full-stack web background (PHP/Magento) and a
-        <span class="accent">.NET architecture</span> postgrad in progress.`,
+    'hero.role1': 'Software Engineer',
+    'hero.role2': '.NET Systems Architecture',
+    'hero.desc': `Software Engineer currently taking a postgrad in <span class="accent">.NET Systems Architecture</span>.
+        5+ years across full-stack web (PHP/Magento), game development in C++ and programming instruction.
+        I like problems that mix performance, math and product.`,
     'hero.cta.projects': 'View projects',
     'hero.cta.contact': 'Get in touch',
     'hero.stat.years': 'YEARS OF EXP.',
@@ -31,17 +32,19 @@ const i18n = {
 
     'about.eyebrow': 'About',
     'about.title': 'Generalist by <em>training</em>, specialist by <em>obsession</em>.',
-    'about.p1': `I'm a <strong>Software Engineer</strong> (UniSenaiPR) who most recently worked in <span class="h">pure C++</span>
-          on a proprietary engine, building <strong>slot machines</strong> end to end — RNG, paytables,
-          RTP and volatility tuning, symbol rendering and real-time animation.`,
+    'about.p1': `I'm a <strong>Software Engineer</strong> (UniSenaiPR) now deepening backend with a
+          <strong>postgrad in .NET Systems Architecture</strong> at FIAP. My path runs from the web —
+          PHP, Magento, real e-commerce with traffic — through game development, most recently modeling
+          slot-machine math in <span class="h">C++</span>.`,
     'about.p2': `I got here through the web — three years of PHP, Magento and real e-commerce with real traffic —
           and I'm now deepening backend with a <strong>postgrad in .NET Architecture at FIAP</strong>
           (a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes). Along the way I also taught
           <strong>Python</strong> to beginner classes.`,
     'about.p3': `I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>.
           Advanced English, self-taught profile, comfortable both in the terminal and in a planning meeting.`,
-    'about.fact.today.label': 'Most recent',
-    'about.fact.today.val': 'Game Dev <span class="pop">C++</span>',
+    'about.fact.today.label': 'Now',
+    'about.fact.today.val': 'Software <span class="pop">Engineer</span>',
+    'about.fact.today.sub': 'Open to opportunities',
     'about.fact.studying.label': 'Studying',
     'about.fact.studying.val': '<span class="pop">.NET</span> Architecture',
     'about.fact.studying.sub': 'FIAP Pós-Tech + Alura',
@@ -134,9 +137,9 @@ const i18n = {
     'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
     'proj.schat.desc': `TCP chat in Python with a Diffie-Hellman key exchange negotiating a shared secret, then
             ciphering every message over the socket — keys and payloads logged for inspection.`,
-    'proj.lhash.name': 'Login — <em>password hashing</em>',
-    'proj.lhash.desc': `Authentication demo that never stores plaintext: passwords are hashed before comparison,
-            showing the salt-and-hash flow end to end on the client.`,
+    'proj.lhash.name': 'Login — <em>bcrypt hashing</em>',
+    'proj.lhash.desc': `Node/Express auth that never stores plaintext: passwords are bcrypt-hashed with a per-user
+            salt, with brute-force lockout after repeated failed logins.`,
     'proj.cppds.name': 'Data Structures in <em>C / C++</em>',
     'proj.cppds.desc': `Low-level fundamentals in C and C++: stacks, queues, arrays and matrices, functions and
             pointers, dynamic memory allocation and OOP — the groundwork behind engine code.`,
@@ -186,8 +189,8 @@ const i18n = {
   },
 
   pt: {
-    'meta.title': "Pedro Delgado Henriques — Desenvolvedor de Jogos C++ | iGaming / Slots",
-    'meta.description': "Desenvolvedor de jogos C++ para slot machines / iGaming — RNG, RTP, volatilidade e renderização em tempo real. 5+ anos, jogos de cassino em C++ puro na Firepot. Londrina/PR.",
+    'meta.title': "Pedro Delgado Henriques — Engenheiro de Software | Arquitetura de Sistemas .NET",
+    'meta.description': "Engenheiro de Software e pós-graduando em Arquitetura de Sistemas .NET. 5+ anos em full-stack web, desenvolvimento de jogos e ensino. Londrina/PR — aberto a oportunidades.",
 
     'nav.about': 'Sobre',
     
@@ -200,10 +203,11 @@ const i18n = {
 
     'hero.status': 'DISPONÍVEL PARA PROPOSTAS E PROJETOS',
     'hero.years': '5+ anos',
-    'hero.desc': `Desenvolvedor de jogos C++ especializado em <strong>slot machines</strong> — RNG, matemática de RTP
-        e volatilidade, performance de engine e renderização em tempo real. 5+ anos em software, mais recentemente desenvolvendo
-        jogos de cassino em C++ puro sobre engine proprietária na Firepot. Background full-stack web (PHP/Magento)
-        e pós em <span class="accent">arquitetura .NET</span> em andamento.`,
+    'hero.role1': 'Engenheiro de Software',
+    'hero.role2': 'Arquitetura de Sistemas .NET',
+    'hero.desc': `Engenheiro de Software cursando pós em <span class="accent">Arquitetura de Sistemas .NET</span>.
+        5+ anos em full-stack web (PHP/Magento), desenvolvimento de jogos em C++ e ensino de programação.
+        Gosto de problemas que misturam performance, matemática e produto.`,
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact': 'Entrar em contato',
     'hero.stat.years': 'ANOS DE EXP.',
@@ -213,17 +217,19 @@ const i18n = {
 
     'about.eyebrow': 'Sobre',
     'about.title': 'Generalista por <em>formação</em>, especialista por <em>obsessão</em>.',
-    'about.p1': `Sou <strong>Engenheiro de Software</strong> (UniSenaiPR) e mais recentemente trabalhei em <span class="h">C++ puro</span>
-          sobre engine proprietária, construindo <strong>slot machines</strong> de ponta a ponta — RNG, paytables,
-          tuning de RTP e volatilidade, renderização de símbolos e animação em tempo real.`,
+    'about.p1': `Sou <strong>Engenheiro de Software</strong> (UniSenaiPR) aprofundando backend com a
+          <strong>Pós em Arquitetura de Sistemas .NET</strong> na FIAP. Meu caminho vai da web —
+          PHP, Magento, e-commerce de verdade com tráfego — passando por desenvolvimento de jogos,
+          mais recentemente modelando matemática de slot machines em <span class="h">C++</span>.`,
     'about.p2': `Cheguei aqui pela web — três anos de PHP, Magento e e-commerce de verdade com tráfego real —
           e agora aprofundo backend com a <strong>Pós em Arquitetura .NET pela FIAP</strong>
           (um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes). No caminho também
           ensinei <strong>Python</strong> pra turmas iniciantes.`,
     'about.p3': `Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong>.
           Inglês avançado, perfil autodidata, à vontade tanto no terminal quanto numa reunião de planejamento.`,
-    'about.fact.today.label': 'Mais recente',
-    'about.fact.today.val': 'Game Dev <span class="pop">C++</span>',
+    'about.fact.today.label': 'Agora',
+    'about.fact.today.val': 'Eng. de <span class="pop">Software</span>',
+    'about.fact.today.sub': 'Aberto a oportunidades',
     'about.fact.studying.label': 'Estudando',
     'about.fact.studying.val': 'Arquitetura <span class="pop">.NET</span>',
     'about.fact.studying.sub': 'Pós-Tech FIAP + Alura',
@@ -317,9 +323,9 @@ const i18n = {
     'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
     'proj.schat.desc': `Chat TCP em Python com troca de chave Diffie-Hellman negociando um segredo compartilhado
             e cifrando cada mensagem no socket — chaves e payloads registrados pra inspeção.`,
-    'proj.lhash.name': 'Login — <em>hash de senha</em>',
-    'proj.lhash.desc': `Demo de autenticação que nunca guarda senha em texto puro: a senha é hasheada antes da
-            comparação, mostrando o fluxo de salt-and-hash de ponta a ponta no cliente.`,
+    'proj.lhash.name': 'Login — <em>hash com bcrypt</em>',
+    'proj.lhash.desc': `Auth em Node/Express que nunca guarda senha em texto puro: a senha é hasheada com bcrypt
+            e salt por usuário, com bloqueio anti-brute-force após tentativas falhas.`,
     'proj.cppds.name': 'Estruturas de Dados em <em>C / C++</em>',
     'proj.cppds.desc': `Fundamentos de baixo nível em C e C++: pilhas, filas, arrays e matrizes, funções e
             ponteiros, alocação dinâmica de memória e OOP — a base por trás de código de engine.`,
