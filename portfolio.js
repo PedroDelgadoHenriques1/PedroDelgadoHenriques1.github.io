@@ -80,9 +80,11 @@ const i18n = {
     'proj.title': "Things I've <em>built</em>, and what each one means.",
     'proj.tab.all': 'All',
     'proj.tab.game': 'Game Dev',
+    'proj.tab.techart': 'Technical Art',
     'proj.tab.web': 'Web & E-commerce',
-    'proj.tab.backend': 'Backend & Cloud',
+    'proj.tab.backend': 'Backend & APIs',
     'proj.tab.security': 'Cybersecurity',
+    'proj.tab.systems': 'Algorithms & Systems',
     'proj.tab.ai': 'AI & Lab',
     'proj.p0.status': 'In production',
     'proj.p0.name': 'Shipped Slots — <em>live</em> at Firepot',
@@ -108,8 +110,8 @@ const i18n = {
             all containerized with Docker and ready to deploy.`,
     'proj.p4.plain': 'Hello, world!',
     'proj.p4.pill': 'Security',
-    'proj.p4.desc': `AES-256 block cipher implemented from scratch in low-level <strong>C++</strong> — S-box substitution,
-            key schedule and CBC mode. Byte-level systems work, the same muscle behind engine code.`,
+    'proj.p4.desc': `AES-256 block cipher implemented from scratch in <strong>Python</strong> — S-box substitution,
+            key schedule and CBC mode. Low-level cryptography work, byte by byte.`,
     'proj.p5.pill': 'Study',
     'proj.p5.name': '2D Platformer in <em>Unity</em>',
     'proj.p5.desc': `2D game in Unity built during a course — first contact with game dev.
@@ -118,6 +120,41 @@ const i18n = {
     'proj.p6.name': 'Personal lab',
     'proj.p6.desc': `PyTorch, TensorFlow, automation scripts, postgrad exercises and prototypes.
             A living repository of learning.`,
+    'proj.react.name': 'React — <em>hooks</em> to deploy',
+    'proj.react.desc': `Hands-on React study: JSX componentization, hooks, React Router and Context API for global
+            state, forms and HTTP integration — plus a Node/Express + MongoDB back end and Firebase auth.`,
+    'proj.senai.name': 'Sales System — <em>Django</em> architecture',
+    'proj.senai.desc': `Academic sales platform in Django with layered MVC, design patterns (Factory, Singleton,
+            Observer), inventory and sales flows, and interactive Plotly dashboards over SQLite.`,
+    'proj.viacep.name': 'ViaCEP API — <em>Laravel</em>',
+    'proj.viacep.desc': `Laravel REST API that resolves multiple Brazilian postal codes in a single call via the
+            ViaCEP service, returning normalized address payloads with validation.`,
+    'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
+    'proj.schat.desc': `TCP chat in Python with a Diffie-Hellman key exchange negotiating a shared secret, then
+            ciphering every message over the socket — keys and payloads logged for inspection.`,
+    'proj.lhash.name': 'Login — <em>password hashing</em>',
+    'proj.lhash.desc': `Authentication demo that never stores plaintext: passwords are hashed before comparison,
+            showing the salt-and-hash flow end to end on the client.`,
+    'proj.cppds.name': 'Data Structures in <em>C / C++</em>',
+    'proj.cppds.desc': `Low-level fundamentals in C and C++: stacks, queues, arrays and matrices, functions and
+            pointers, dynamic memory allocation and OOP — the groundwork behind engine code.`,
+    'proj.ctcp.name': 'TCP Chat — <em>Node sockets</em>',
+    'proj.ctcp.desc': `Multi-client chat over raw TCP sockets in Node.js: the server accepts connections and
+            broadcasts each message to every other client, with colorized terminal output.`,
+    'proj.tmap.name': 'Stock <em>TreeMap</em>',
+    'proj.tmap.desc': `Interactive treemap that lays out stocks as area-scaled tiles — green gains, red losses —
+            sizing and shading each rectangle by value for an at-a-glance read of the market.`,
+    'proj.roman.name': 'Roman ⇄ Integer <em>converter</em>',
+    'proj.roman.desc': `Two-way converter between integers (1–3999) and Roman numerals with full input validation,
+            wrapped in a small PHP web UI.`,
+    'proj.shaders.name': 'URP Shader Pack — <em>handwritten HLSL</em>',
+    'proj.shaders.desc': `Four real-time URP shaders written by hand in HLSL — dissolve, hologram, force-field and
+            toon lighting — with all noise (value, fbm, voronoi) coded from scratch. Low-level rendering control
+            from a C++ background, no Shader Graph.`,
+    'proj.texopt.name': 'Texture Optimizer — <em>Editor tool</em>',
+    'proj.texopt.desc': `Custom Unity EditorWindow that scans every texture, estimates runtime memory via the
+            Profiler, flags waste and batch-applies compression/mip fixes — then reports the exact before→after
+            memory saved.`,
 
     'skills.eyebrow': 'Stack',
     'skills.title': 'Tools in <em>daily use</em>.',
@@ -223,9 +260,11 @@ const i18n = {
     'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
     'proj.tab.all': 'Todos',
     'proj.tab.game': 'Game Dev',
+    'proj.tab.techart': 'Technical Art',
     'proj.tab.web': 'Web & E-commerce',
-    'proj.tab.backend': 'Backend & Cloud',
+    'proj.tab.backend': 'Backend & APIs',
     'proj.tab.security': 'Cibersegurança',
+    'proj.tab.systems': 'Algoritmos & Sistemas',
     'proj.tab.ai': 'IA & Lab',
     'proj.p0.status': 'Em produção',
     'proj.p0.name': 'Slots no Ar — <em>live</em> na Firepot',
@@ -252,8 +291,8 @@ const i18n = {
             tudo containerizado com Docker e pronto pra deploy.`,
     'proj.p4.plain': 'Olá, mundo!',
     'proj.p4.pill': 'Segurança',
-    'proj.p4.desc': `Cifra de bloco AES-256 implementada do zero em <strong>C++</strong> de baixo nível — substituição
-            via S-box, key schedule e modo CBC. Trabalho de sistemas a nível de byte, a mesma base do código de engine.`,
+    'proj.p4.desc': `Cifra de bloco AES-256 implementada do zero em <strong>Python</strong> — substituição
+            via S-box, key schedule e modo CBC. Trabalho de criptografia de baixo nível, byte a byte.`,
     'proj.p5.pill': 'Estudo',
     'proj.p5.name': 'Plataforma 2D em <em>Unity</em>',
     'proj.p5.desc': `Jogo 2D em Unity feito durante curso — primeiro contato com game dev.
@@ -262,6 +301,41 @@ const i18n = {
     'proj.p6.name': 'Lab pessoal',
     'proj.p6.desc': `PyTorch, TensorFlow, scripts de automação, exercícios da pós e protótipos.
             Repositório vivo de aprendizado.`,
+    'proj.react.name': 'React — dos <em>hooks</em> ao deploy',
+    'proj.react.desc': `Estudo prático de React: componentização JSX, hooks, React Router e Context API pra estado
+            global, formulários e integração HTTP — além de back-end Node/Express + MongoDB e auth com Firebase.`,
+    'proj.senai.name': 'Sistema de Vendas — arquitetura <em>Django</em>',
+    'proj.senai.desc': `Plataforma de vendas acadêmica em Django com MVC em camadas, design patterns (Factory,
+            Singleton, Observer), fluxos de estoque e vendas e dashboards Plotly interativos sobre SQLite.`,
+    'proj.viacep.name': 'API ViaCEP — <em>Laravel</em>',
+    'proj.viacep.desc': `API REST em Laravel que resolve múltiplos CEPs numa só chamada via serviço ViaCEP,
+            devolvendo endereços normalizados com validação.`,
+    'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
+    'proj.schat.desc': `Chat TCP em Python com troca de chave Diffie-Hellman negociando um segredo compartilhado
+            e cifrando cada mensagem no socket — chaves e payloads registrados pra inspeção.`,
+    'proj.lhash.name': 'Login — <em>hash de senha</em>',
+    'proj.lhash.desc': `Demo de autenticação que nunca guarda senha em texto puro: a senha é hasheada antes da
+            comparação, mostrando o fluxo de salt-and-hash de ponta a ponta no cliente.`,
+    'proj.cppds.name': 'Estruturas de Dados em <em>C / C++</em>',
+    'proj.cppds.desc': `Fundamentos de baixo nível em C e C++: pilhas, filas, arrays e matrizes, funções e
+            ponteiros, alocação dinâmica de memória e OOP — a base por trás de código de engine.`,
+    'proj.ctcp.name': 'Chat TCP — <em>sockets Node</em>',
+    'proj.ctcp.desc': `Chat multi-cliente sobre sockets TCP puros em Node.js: o servidor aceita conexões e faz
+            broadcast de cada mensagem pros demais clientes, com saída colorida no terminal.`,
+    'proj.tmap.name': '<em>TreeMap</em> de Ações',
+    'proj.tmap.desc': `Treemap interativo que dispõe ações como blocos proporcionais à área — ganhos em verde,
+            perdas em vermelho — dimensionando e colorindo cada retângulo pelo valor.`,
+    'proj.roman.name': 'Conversor <em>Romano ⇄ Inteiro</em>',
+    'proj.roman.desc': `Conversor bidirecional entre inteiros (1–3999) e algarismos romanos com validação completa
+            de entrada, numa pequena interface web em PHP.`,
+    'proj.shaders.name': 'URP Shader Pack — <em>HLSL na mão</em>',
+    'proj.shaders.desc': `Quatro shaders URP em tempo real escritos à mão em HLSL — dissolve, hologram, force-field
+            e toon — com todo o noise (value, fbm, voronoi) feito do zero. Controle de rendering de baixo nível
+            vindo do C++, sem Shader Graph.`,
+    'proj.texopt.name': 'Texture Optimizer — <em>ferramenta de Editor</em>',
+    'proj.texopt.desc': `EditorWindow customizada que escaneia cada textura, estima a memória em runtime via
+            Profiler, sinaliza desperdício e aplica compressão/mips em lote — e reporta a economia exata de
+            memória antes→depois.`,
 
     'skills.eyebrow': 'Stack',
     'skills.title': 'Ferramentas em <em>uso diário</em>.',

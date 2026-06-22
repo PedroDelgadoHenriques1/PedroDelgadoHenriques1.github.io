@@ -280,19 +280,25 @@
 
     <div class="proj-tabs reveal delay-1" role="tablist" aria-label="Project categories">
       <button class="proj-tab active" data-cat="all" type="button" role="tab">
-        <span data-i18n="proj.tab.all">All</span><span class="count">7</span>
+        <span data-i18n="proj.tab.all">All</span><span class="count">18</span>
       </button>
       <button class="proj-tab" data-cat="game" type="button" role="tab">
         <span data-i18n="proj.tab.game">Game Dev</span><span class="count">2</span>
       </button>
+      <button class="proj-tab" data-cat="techart" type="button" role="tab">
+        <span data-i18n="proj.tab.techart">Technical Art</span><span class="count">2</span>
+      </button>
       <button class="proj-tab" data-cat="web" type="button" role="tab">
-        <span data-i18n="proj.tab.web">Web & E-commerce</span><span class="count">2</span>
+        <span data-i18n="proj.tab.web">Web & E-commerce</span><span class="count">3</span>
       </button>
       <button class="proj-tab" data-cat="backend" type="button" role="tab">
-        <span data-i18n="proj.tab.backend">Backend & Cloud</span><span class="count">1</span>
+        <span data-i18n="proj.tab.backend">Backend & APIs</span><span class="count">3</span>
       </button>
       <button class="proj-tab" data-cat="security" type="button" role="tab">
-        <span data-i18n="proj.tab.security">Cybersecurity</span><span class="count">1</span>
+        <span data-i18n="proj.tab.security">Cybersecurity</span><span class="count">3</span>
+      </button>
+      <button class="proj-tab" data-cat="systems" type="button" role="tab">
+        <span data-i18n="proj.tab.systems">Algorithms & Systems</span><span class="count">4</span>
       </button>
       <button class="proj-tab" data-cat="ai" type="button" role="tab">
         <span data-i18n="proj.tab.ai">AI & Lab</span><span class="count">1</span>
@@ -545,11 +551,11 @@
           </div>
           <div class="proj-name"><em>CIFRA</em>-AES</div>
           <div class="proj-desc" data-i18n="proj.p4.desc">
-            AES-256 block cipher implemented from scratch in low-level <strong>C++</strong> — S-box substitution,
-            key schedule and CBC mode. Byte-level systems work, the same muscle behind engine code.
+            AES-256 block cipher implemented from scratch in <strong>Python</strong> — S-box substitution,
+            key schedule and CBC mode. Low-level cryptography work, byte by byte.
           </div>
           <div class="proj-tech">
-            <span class="tag">C++</span><span class="tag">AES-256</span><span class="tag">Encryption</span>
+            <span class="tag">Python</span><span class="tag">AES-256</span><span class="tag">Encryption</span>
           </div>
         </div>
       </a>
@@ -605,6 +611,364 @@
           </div>
           <div class="proj-tech">
             <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Sandbox</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. React course -->
+      <a class="proj w-third reveal" data-cat="web" href="https://github.com/PedroDelgadoHenriques1/CURSO_REACT" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">App.jsx</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// global state via Context</span></div>
+              <div class="ln"><span class="kw">const</span> [user, setUser] = <span class="fn">useState</span>(<span class="kw">null</span>);</div>
+              <div class="ln"><span class="kw">useEffect</span>(() =&gt; <span class="fn">fetchApi</span>(), []);</div>
+              <div class="ln"><span class="kw">return</span> &lt;<span class="fn">Router</span>&gt;…&lt;/<span class="fn">Router</span>&gt;;</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn" data-i18n="proj.p5.pill">Study</span>
+            <span>React</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.react.name">React — <em>hooks</em> to deploy</div>
+          <div class="proj-desc" data-i18n="proj.react.desc">
+            Hands-on React study: JSX componentization, hooks, React Router and Context API for global state,
+            forms and HTTP integration — plus a Node/Express + MongoDB back end and Firebase auth.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">React</span><span class="tag">Hooks</span><span class="tag">Context API</span>
+            <span class="tag">Node.js</span><span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Django sales system -->
+      <a class="proj w-third reveal" data-cat="backend" href="https://github.com/PedroDelgadoHenriques1/senai-architecture" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">models.py</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm"># Observer · Factory · Singleton</span></div>
+              <div class="ln"><span class="kw">class</span> <span class="fn">Stock</span>(<span class="fn">Subject</span>):</div>
+              <div class="ln">&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">notify</span>(self): <span class="cm"># on sale</span></div>
+              <div class="ln">&nbsp;&nbsp;&nbsp;&nbsp;update_dashboards()</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill fiap">Backend</span>
+            <span>Django</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.senai.name">Sales System — <em>Django</em> architecture</div>
+          <div class="proj-desc" data-i18n="proj.senai.desc">
+            Academic sales platform in Django with layered MVC, design patterns (Factory, Singleton, Observer),
+            inventory and sales flows, and interactive Plotly dashboards over SQLite.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">Design Patterns</span>
+            <span class="tag">MVC</span><span class="tag">Plotly</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 9. ViaCEP API -->
+      <a class="proj w-third reveal" data-cat="backend" href="https://github.com/PedroDelgadoHenriques1/api-via-cep" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">CepController.php</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// GET /search/local/86010-010</span></div>
+              <div class="ln"><span class="ok">200 OK</span></div>
+              <div class="ln">{ <span class="str">"city"</span>: <span class="str">"Londrina"</span>,</div>
+              <div class="ln">&nbsp;&nbsp;<span class="str">"state"</span>: <span class="str">"PR"</span> }</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill fiap">Backend</span>
+            <span>API</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.viacep.name">ViaCEP API — <em>Laravel</em></div>
+          <div class="proj-desc" data-i18n="proj.viacep.desc">
+            Laravel REST API that resolves multiple Brazilian postal codes in a single call via the ViaCEP
+            service, returning normalized address payloads with validation.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">REST</span>
+            <span class="tag">API Integration</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 10. Secure Chat -->
+      <a class="proj w-third reveal" data-cat="security" href="https://github.com/PedroDelgadoHenriques1/secure_chat" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">diffie_hellman.py</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm"># shared secret over TCP</span></div>
+              <div class="ln">shared = (B ** a) % p</div>
+              <div class="ln"><span class="ro">cipher</span> = <span class="fn">encrypt</span>(msg, shared)</div>
+              <div class="ln"><span class="ok">✓ secure channel</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill sec" data-i18n="proj.p4.pill">Security</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.schat.name">Secure Chat — <em>Diffie-Hellman</em></div>
+          <div class="proj-desc" data-i18n="proj.schat.desc">
+            TCP chat in Python with a Diffie-Hellman key exchange negotiating a shared secret, then ciphering
+            every message over the socket — keys and payloads logged for inspection.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Python</span><span class="tag">Diffie-Hellman</span><span class="tag">Sockets</span>
+            <span class="tag">Cryptography</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 11. Login hash -->
+      <a class="proj w-third reveal" data-cat="security" href="https://github.com/PedroDelgadoHenriques1/login-hash" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">auth.js</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// never store plaintext</span></div>
+              <div class="ln">pass = <span class="str">"••••••••"</span></div>
+              <div class="ln">hash = <span class="fn">sha256</span>(pass + salt)</div>
+              <div class="ln"><span class="ok">→ 9f2a1c…</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill sec" data-i18n="proj.p4.pill">Security</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.lhash.name">Login — <em>password hashing</em></div>
+          <div class="proj-desc" data-i18n="proj.lhash.desc">
+            Authentication demo that never stores plaintext: passwords are hashed before comparison,
+            showing the salt-and-hash flow end to end on the client.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">JavaScript</span><span class="tag">Hashing</span><span class="tag">Auth</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 12. C/C++ data structures -->
+      <a class="proj w-third reveal" data-cat="systems" href="https://github.com/PedroDelgadoHenriques1/Course-C-Cpp-data-structure-object-oriented-programming" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">stack.cpp</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// linked stack</span></div>
+              <div class="ln"><span class="kw">struct</span> <span class="fn">Node</span> { <span class="kw">int</span> v; Node* next; };</div>
+              <div class="ln">top = <span class="kw">new</span> <span class="fn">Node</span>{ <span class="num">7</span>, top };</div>
+              <div class="ln"><span class="kw">delete</span> popped; <span class="cm">// free</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn" data-i18n="proj.p5.pill">Study</span>
+            <span>C / C++</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.cppds.name">Data Structures in <em>C / C++</em></div>
+          <div class="proj-desc" data-i18n="proj.cppds.desc">
+            Low-level fundamentals in C and C++: stacks, queues, arrays and matrices, functions and pointers,
+            dynamic memory allocation and OOP — the groundwork behind engine code.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">C++</span><span class="tag">C</span><span class="tag">Data Structures</span>
+            <span class="tag">Pointers</span><span class="tag">OOP</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 13. TCP chat (Node) -->
+      <a class="proj w-third reveal" data-cat="systems" href="https://github.com/PedroDelgadoHenriques1/chat-tcp" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">server.mjs</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// broadcast to all clients</span></div>
+              <div class="ln">net.<span class="fn">createServer</span>(sock =&gt; {</div>
+              <div class="ln">&nbsp;&nbsp;<span class="fn">broadcast</span>(sock, msg);</div>
+              <div class="ln">}).<span class="fn">listen</span>(<span class="num">3000</span>);</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn">Networking</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.ctcp.name">TCP Chat — <em>Node sockets</em></div>
+          <div class="proj-desc" data-i18n="proj.ctcp.desc">
+            Multi-client chat over raw TCP sockets in Node.js: the server accepts connections and broadcasts
+            each message to every other client, with colorized terminal output.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Node.js</span><span class="tag">TCP</span><span class="tag">Sockets</span>
+            <span class="tag">Broadcast</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 14. TreeMap -->
+      <a class="proj w-third reveal" data-cat="systems" href="https://github.com/PedroDelgadoHenriques1/TreeMap" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">index.php</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// area ∝ |value|</span></div>
+              <div class="ln"><span class="ok">▰ PETR4　+4.2%</span></div>
+              <div class="ln"><span class="ro">▰ VALE3　−2.1%</span></div>
+              <div class="ln"><span class="ok">▰ ITUB4　+1.8%</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn">Data viz</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.tmap.name">Stock <em>TreeMap</em></div>
+          <div class="proj-desc" data-i18n="proj.tmap.desc">
+            Interactive treemap that lays out stocks as area-scaled tiles — green gains, red losses —
+            sizing and shading each rectangle by value for an at-a-glance read of the market.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">PHP</span><span class="tag">Data Viz</span><span class="tag">Algorithm</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 15. Roman converter -->
+      <a class="proj w-third reveal" data-cat="systems" href="https://github.com/PedroDelgadoHenriques1/RomanConverter" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">roman.php</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// two-way, 1–3999</span></div>
+              <div class="ln"><span class="fn">toRoman</span>(<span class="num">2026</span>) → <span class="str">MMXXVI</span></div>
+              <div class="ln"><span class="fn">toInt</span>(<span class="str">"XIV"</span>) → <span class="num">14</span></div>
+              <div class="ln"><span class="ok">✓ validated</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill learn" data-i18n="proj.p5.pill">Study</span>
+            <span>Algorithm</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.roman.name">Roman ⇄ Integer <em>converter</em></div>
+          <div class="proj-desc" data-i18n="proj.roman.desc">
+            Two-way converter between integers (1–3999) and Roman numerals with full input validation,
+            wrapped in a small PHP web UI.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">PHP</span><span class="tag">Algorithm</span><span class="tag">Validation</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 16. URP Shader Pack (Technical Art) -->
+      <a class="proj w-third reveal" data-cat="techart" href="https://github.com/PedroDelgadoHenriques1/urp-stylized-shaders" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">Dissolve.shader</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// procedural fbm dissolve</span></div>
+              <div class="ln">half n = <span class="fn">fbm</span>(uv * <span class="num">8.0</span>);</div>
+              <div class="ln"><span class="kw">clip</span>(n - threshold);</div>
+              <div class="ln">emission = burn * <span class="str">edgeGlow</span>;</div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill ta">Tech Art</span>
+            <span>HLSL</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.shaders.name">URP Shader Pack — <em>handwritten HLSL</em></div>
+          <div class="proj-desc" data-i18n="proj.shaders.desc">
+            Four real-time URP shaders written by hand in HLSL — dissolve, hologram, force-field and toon
+            lighting — with all noise (value, fbm, voronoi) coded from scratch. Low-level rendering control
+            from a C++ background, no Shader Graph.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Unity</span><span class="tag">URP</span><span class="tag">HLSL</span>
+            <span class="tag">Shaders</span><span class="tag">Rendering</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 17. Texture Optimizer (Technical Art) -->
+      <a class="proj w-third reveal" data-cat="techart" href="https://github.com/PedroDelgadoHenriques1/unity-texture-optimizer" target="_blank" rel="noopener">
+        <div class="proj-visual">
+          <div class="viz-code">
+            <div class="vc-head"><span class="vc-dots"><i></i><i></i><i></i></span><span class="vc-file">TextureOptimizer.cs</span></div>
+            <div class="vc-body">
+              <div class="ln"><span class="cm">// scan → flag → batch apply</span></div>
+              <div class="ln">scanned: <span class="num">248</span> textures</div>
+              <div class="ln">memory: <span class="ro">512 MB</span> → <span class="ok">318 MB</span></div>
+              <div class="ln"><span class="ok">✓ saved 38%</span></div>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="pill ta">Tech Art</span>
+            <span>Tools</span>
+          </div>
+          <div class="proj-name" data-i18n="proj.texopt.name">Texture Optimizer — <em>Editor tool</em></div>
+          <div class="proj-desc" data-i18n="proj.texopt.desc">
+            Custom Unity EditorWindow that scans every texture, estimates runtime memory via the Profiler,
+            flags waste and batch-applies compression/mip fixes — then reports the exact before→after
+            memory saved.
+          </div>
+          <div class="proj-tech">
+            <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Editor Tooling</span>
+            <span class="tag">Optimization</span><span class="tag">Profiler</span>
           </div>
         </div>
       </a>

@@ -447,6 +447,7 @@ section { padding: clamp(4rem, 9vw, 7rem) var(--pad-x); position: relative; }
 .pill.sec  { background: rgba(224,122,120,0.1); color: var(--rose); border: 1px solid rgba(224,122,120,0.3); }
 .pill.work { background: rgba(255,122,60,0.1); color: var(--accent); border: 1px solid rgba(255,122,60,0.3); }
 .pill.learn { background: rgba(177,140,240,0.1); color: var(--plum); border: 1px solid rgba(177,140,240,0.3); }
+.pill.ta   { background: rgba(212,168,87,0.1); color: var(--gold); border: 1px solid rgba(212,168,87,0.3); }
 
 .proj-name {
   font-size: 1.2rem; font-weight: 600; letter-spacing: -0.018em; line-height: 1.25;
@@ -516,6 +517,36 @@ section { padding: clamp(4rem, 9vw, 7rem) var(--pad-x); position: relative; }
 .projects-grid.filtered .proj .proj-visual { aspect-ratio: 16/9; }
 .projects-grid.filtered.single { grid-template-columns: 1fr; }
 .projects-grid.filtered.single .proj .proj-visual { aspect-ratio: 21/9; }
+
+/* ===== Reusable code-window visual (GitHub repo cards) ===== */
+.viz-code {
+  width: 100%; height: 100%;
+  background: linear-gradient(160deg, var(--bg2) 0%, var(--bg-warm) 100%);
+  display: flex; flex-direction: column;
+  font-family: var(--mono); overflow: hidden;
+}
+.viz-code .vc-head {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--border);
+  font-size: 0.66rem; color: var(--muted); flex: 0 0 auto;
+}
+.viz-code .vc-dots { display: flex; gap: 0.32rem; }
+.viz-code .vc-dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--border2); display: inline-block; }
+.viz-code .vc-file { margin-left: auto; letter-spacing: 0.04em; }
+.viz-code .vc-body {
+  padding: 0.95rem 1.05rem; flex: 1;
+  font-size: 0.72rem; line-height: 1.75; color: var(--text-dim);
+  display: flex; flex-direction: column; justify-content: center;
+  overflow: hidden;
+}
+.viz-code .vc-body .ln { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.viz-code .cm  { color: var(--muted); font-style: italic; }
+.viz-code .kw  { color: var(--accent); }
+.viz-code .str { color: var(--gold); }
+.viz-code .num { color: var(--plum); }
+.viz-code .fn  { color: var(--blue); }
+.viz-code .ok  { color: var(--green); }
+.viz-code .ro  { color: var(--rose); }
 
 /* ===== Visual 0: Firepot slot machine ===== */
 .viz-slots {
