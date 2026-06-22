@@ -470,13 +470,52 @@ section { padding: clamp(4rem, 9vw, 7rem) var(--pad-x); position: relative; }
   transform: rotate(-45deg);
 }
 
-/* Grid placement (asymmetric) */
+/* ===== Category tabs / filter ===== */
+.proj-tabs {
+  display: flex; flex-wrap: wrap; gap: 0.55rem;
+  margin: 0 0 2rem;
+}
+.proj-tab {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--mono); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 0.95rem;
+  border-radius: 99px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.proj-tab:hover { color: var(--text); border-color: var(--border2); transform: translateY(-1px); }
+.proj-tab .count {
+  font-size: 0.68rem; font-weight: 600;
+  min-width: 1.1rem; padding: 0.05rem 0.3rem;
+  border-radius: 99px; text-align: center;
+  background: var(--bg-warm); color: var(--muted);
+  border: 1px solid var(--border);
+}
+.proj-tab.active {
+  background: var(--accent); color: #1a0f08; border-color: var(--accent);
+}
+.proj-tab.active .count { background: rgba(26,15,8,0.18); color: #1a0f08; border-color: transparent; }
+
+.proj.hide { display: none !important; }
+
+/* Grid placement (asymmetric) — default "All" view */
 .proj.feat   { grid-column: span 6; }
 .proj.feat .proj-visual { aspect-ratio: 16/6; }
 .proj.w-half { grid-column: span 3; }
 .proj.w-half .proj-visual { aspect-ratio: 16/9; }
 .proj.w-third { grid-column: span 2; }
 .proj.w-third .proj-visual { aspect-ratio: 4/3; }
+
+/* Filtered view — uniform, image-forward layout */
+.projects-grid.filtered { grid-template-columns: repeat(2, 1fr); }
+.projects-grid.filtered .proj { grid-column: auto !important; }
+.projects-grid.filtered .proj .proj-visual { aspect-ratio: 16/9; }
+.projects-grid.filtered.single { grid-template-columns: 1fr; }
+.projects-grid.filtered.single .proj .proj-visual { aspect-ratio: 21/9; }
 
 /* ===== Visual 0: Firepot slot machine ===== */
 .viz-slots {
@@ -864,6 +903,7 @@ footer a:hover { color: var(--accent); }
   .proj.feat { grid-column: span 2; }
   .proj.w-half { grid-column: span 2; }
   .proj.w-third { grid-column: span 1; }
+  .projects-grid.filtered { grid-template-columns: repeat(2, 1fr); }
   .edu-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
@@ -893,6 +933,10 @@ footer a:hover { color: var(--accent); }
   .mobile-menu a:last-child { border: none; }
   .projects-grid { grid-template-columns: 1fr; }
   .proj.feat, .proj.w-half, .proj.w-third { grid-column: span 1; }
+  .projects-grid.filtered,
+  .projects-grid.filtered.single { grid-template-columns: 1fr; }
+  .projects-grid.filtered .proj .proj-visual,
+  .projects-grid.filtered.single .proj .proj-visual { aspect-ratio: 16/9; }
   .about-facts { grid-template-columns: 1fr; }
   footer { flex-direction: column; align-items: flex-start; }
 }

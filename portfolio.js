@@ -78,6 +78,12 @@ const i18n = {
 
     'proj.eyebrow': 'Projects',
     'proj.title': "Things I've <em>built</em>, and what each one means.",
+    'proj.tab.all': 'All',
+    'proj.tab.game': 'Game Dev',
+    'proj.tab.web': 'Web & E-commerce',
+    'proj.tab.backend': 'Backend & Cloud',
+    'proj.tab.security': 'Cybersecurity',
+    'proj.tab.ai': 'AI & Lab',
     'proj.p0.status': 'In production',
     'proj.p0.name': 'Shipped Slots — <em>live</em> at Firepot',
     'proj.p0.desc': `Casino slot machines built end to end in pure C++ on a proprietary engine: RNG, paytables,
@@ -145,6 +151,7 @@ const i18n = {
     'meta.description': "Desenvolvedor de jogos C++ para slot machines / iGaming — RNG, RTP, volatilidade e renderização em tempo real. 5+ anos, jogos de cassino em C++ puro na Firepot. Londrina/PR.",
 
     'nav.about': 'Sobre',
+    
     'nav.experience': 'Experiência',
     'nav.projects': 'Projetos',
     'nav.skills': 'Stack',
@@ -214,6 +221,12 @@ const i18n = {
 
     'proj.eyebrow': 'Projetos',
     'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
+    'proj.tab.all': 'Todos',
+    'proj.tab.game': 'Game Dev',
+    'proj.tab.web': 'Web & E-commerce',
+    'proj.tab.backend': 'Backend & Cloud',
+    'proj.tab.security': 'Cibersegurança',
+    'proj.tab.ai': 'IA & Lab',
     'proj.p0.status': 'Em produção',
     'proj.p0.name': 'Slots no Ar — <em>live</em> na Firepot',
     'proj.p0.desc': `Slot machines de cassino construídas de ponta a ponta em C++ puro sobre engine proprietária:
@@ -361,6 +374,27 @@ window.closeMobile = function() {
   ham.classList.remove('open');
   mob.classList.remove('open');
 };
+
+/* Project category tabs */
+(function initProjectTabs() {
+  const grid = document.querySelector('.projects-grid');
+  const tabs = document.querySelectorAll('.proj-tab');
+  if (!grid || !tabs.length) return;
+
+  function filter(cat) {
+    let visible = 0;
+    grid.querySelectorAll('.proj').forEach(card => {
+      const match = cat === 'all' || card.dataset.cat === cat;
+      card.classList.toggle('hide', !match);
+      if (match) { visible++; card.classList.add('visible'); }
+    });
+    grid.classList.toggle('filtered', cat !== 'all');
+    grid.classList.toggle('single', cat !== 'all' && visible === 1);
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
+  }
+
+  tabs.forEach(tab => tab.addEventListener('click', () => filter(tab.dataset.cat)));
+})();
 
 /* Active nav link */
 const sections = document.querySelectorAll('section[id]');
