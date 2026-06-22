@@ -75,6 +75,7 @@ const i18n = {
     'exp.bis.b3': 'Integration with SOAP APIs and XML handling for connection to external ERPs',
     'exp.bis.b4': 'Technical SEO, performance optimization and full cycle from concept to deploy',
     'exp.bis.b5': 'Delivery of online stores with custom integrations live in production',
+    'exp.bis.stores': 'Stores live:',
 
     'proj.eyebrow': 'Projects',
     'proj.title': "Things I've <em>built</em>, and what each one means.",
@@ -110,8 +111,9 @@ const i18n = {
             all containerized with Docker and ready to deploy.`,
     'proj.p4.plain': 'Hello, world!',
     'proj.p4.pill': 'Security',
-    'proj.p4.desc': `AES-256 block cipher implemented from scratch in <strong>Python</strong> — S-box substitution,
-            key schedule and CBC mode. Low-level cryptography work, byte by byte.`,
+    'proj.p4.desc': `AES-128 block cipher built from scratch in <strong>Python</strong> — S-box substitution,
+            key expansion and the round transforms (SubBytes, ShiftRows, MixColumns over GF(2⁸), AddRoundKey).
+            Low-level cryptography, byte by byte.`,
     'proj.p5.pill': 'Study',
     'proj.p5.name': '2D Platformer in <em>Unity</em>',
     'proj.p5.desc': `2D game in Unity built during a course — first contact with game dev.
@@ -255,6 +257,7 @@ const i18n = {
     'exp.bis.b3': 'Integração com APIs SOAP e manipulação de XML pra conexão com ERPs externos',
     'exp.bis.b4': 'SEO técnico, otimização de performance e ciclo completo da concepção ao deploy',
     'exp.bis.b5': 'Entrega de lojas virtuais com integrações customizadas em produção',
+    'exp.bis.stores': 'Lojas no ar:',
 
     'proj.eyebrow': 'Projetos',
     'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
@@ -291,8 +294,9 @@ const i18n = {
             tudo containerizado com Docker e pronto pra deploy.`,
     'proj.p4.plain': 'Olá, mundo!',
     'proj.p4.pill': 'Segurança',
-    'proj.p4.desc': `Cifra de bloco AES-256 implementada do zero em <strong>Python</strong> — substituição
-            via S-box, key schedule e modo CBC. Trabalho de criptografia de baixo nível, byte a byte.`,
+    'proj.p4.desc': `Cifra de bloco AES-128 construída do zero em <strong>Python</strong> — substituição via S-box,
+            expansão de chave e as transformações de rodada (SubBytes, ShiftRows, MixColumns em GF(2⁸), AddRoundKey).
+            Criptografia de baixo nível, byte a byte.`,
     'proj.p5.pill': 'Estudo',
     'proj.p5.name': 'Plataforma 2D em <em>Unity</em>',
     'proj.p5.desc': `Jogo 2D em Unity feito durante curso — primeiro contato com game dev.
