@@ -2,8 +2,8 @@
 
 # Pedro Delgado Henriques
 
-**Software Engineer** · C++ Game Dev · .NET · Full-Stack Web
-📍 Londrina, BR · 5+ yrs · English B2
+**Software Engineer** · C# / .NET · C++ · Full-Stack Web
+📍 Londrina, BR (remote-ready) · 5+ yrs · English B2
 
 ### [▶ &nbsp;View full portfolio →](https://pedrodelgadohenriques1.github.io)
 
@@ -17,39 +17,42 @@
 
 ## 🧠 About
 
-Software Engineer (UniSenaiPR). Started in full-stack web — PHP, Magento, e-commerce — and moved toward heavier stacks. Most recently my daily work was **pure C++** on a proprietary engine, modeling slot machine math at **Firepot Gaming**.
+Software Engineer (B.Sc., UniSenaiPR) with 5+ years shipping software to production. Three years of **full-stack web and e-commerce** at Bis2Bis (PHP, Magento, SOAP/XML integrations with ERPs), then **C++ game development** at Firepot Gaming — casino slots on a proprietary engine: RNG, paytables, RTP and volatility math.
 
-In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm building a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes. I've also taught **Python** to beginner classes.
+Today my focus is **backend and systems architecture in .NET**: ASP.NET Core microservices, RabbitMQ, Redis, Docker and Kubernetes (FIAP postgrad). I like problems that mix performance, math and product — measured, tested and documented.
 
 ---
 
 ## 🎯 Now
 
-- 🎮 **Most recently: C++ Game Developer** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots on a proprietary engine, RNG, RTP/volatility modeling (until Jun/2026)
-- 🎓 **.NET Architecture Postgrad** @ FIAP + Alura — microservices, Clean Arch, DDD
-- 💼 Open to opportunities in **Game Dev**, **.NET** or **Full-Stack**
+- 🎓 **.NET Systems Architecture postgrad** @ FIAP + Alura — microservices, Clean Architecture, DDD (Oct/2025 → Oct/2026)
+- 🎰 **SlotForge** — .NET 8 slot engine + Monte-Carlo RTP simulator, tested and CI'd
+- 💼 Open to **.NET / backend**, **C++ / game dev** and **full-stack** roles — remote or hybrid
 
 ---
 
 ## 🧰 Stack
 
-**Languages** &nbsp; `C++` &nbsp; `C#` &nbsp; `PHP` &nbsp; `Python` &nbsp; `JavaScript`
-**Game Dev** &nbsp; `Custom Engine` &nbsp; `Unity` &nbsp; `RNG` &nbsp; `Math Models` &nbsp; `GDD`
-**Backend** &nbsp; `.NET 8` &nbsp; `ASP.NET Core` &nbsp; `EF Core` &nbsp; `Laravel` &nbsp; `Magento` &nbsp; `Django`
-**Infra** &nbsp; `Docker` &nbsp; `Kubernetes` &nbsp; `RabbitMQ` &nbsp; `Redis` &nbsp; `CI/CD` &nbsp; `GitHub Actions`
-**Database** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `SQLite`
+**Languages** &nbsp; `C#` &nbsp; `C++` &nbsp; `PHP` &nbsp; `Python` &nbsp; `JavaScript` &nbsp; `SQL` &nbsp; `HLSL`
+**Backend / .NET** &nbsp; `.NET 8` &nbsp; `ASP.NET Core` &nbsp; `Minimal APIs` &nbsp; `EF Core` &nbsp; `xUnit` &nbsp; `Laravel` &nbsp; `Django`
+**Messaging & Infra** &nbsp; `RabbitMQ` &nbsp; `MassTransit` &nbsp; `Redis` &nbsp; `Kong` &nbsp; `Docker` &nbsp; `Kubernetes` &nbsp; `Terraform` &nbsp; `GitHub Actions`
+**Game Dev** &nbsp; `Custom C++ Engine` &nbsp; `RNG / RTP / Volatility` &nbsp; `Monte Carlo` &nbsp; `GDD` &nbsp; `Unity` &nbsp; `URP / HLSL`
+**Web & E-commerce** &nbsp; `Magento` &nbsp; `React` &nbsp; `SOAP / XML` &nbsp; `ERP Integration` &nbsp; `Technical SEO`
+**Databases** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Redis` &nbsp; `SQLite`
 
 ---
 
-## 📌 Featured projects
+## 📌 Selected projects
 
 | Project | Stack |
 |---|---|
-| 🏗️ **[FIAP Cloud Games — OrchestrationApi](https://github.com/FIAP-PosTech-2025)** — 5 .NET 8 microservices with Kong, RabbitMQ, Redis, K8s · FIAP postgrad capstone | `.NET 8` `Kong` `RabbitMQ` `Redis` `K8s` |
-| 📅 **[Laravel + React + Docker scheduler](https://github.com/PedroDelgadoHenriques1/laravel-react-docker-agenda)** — containerized full-stack app, REST API + SPA | `Laravel` `React` `Docker` |
-| 🔐 **[CIFRA-AES](https://github.com/PedroDelgadoHenriques1/CIFRA-AES)** — AES-256 from scratch, symmetric cryptography fundamentals exercise | `Python` `Encryption` |
-| 🎮 **[2D Platformer Game](https://github.com/PedroDelgadoHenriques1/Jogo-de-Plataforma-2D-Udemy)** — Unity / C#, first hands-on with game dev | `Unity` `C#` |
-| 🥊 **[World Combat](https://www.worldcombat.com.br/)** — Magento e-commerce live in production with SOAP/ERP integration (built at Bis2Bis) | `Magento` `PHP` `SOAP` |
+| 🎰 **[SlotForge](https://github.com/PedroDelgadoHenriques1/SlotForge)** — server-side slot engine with crypto/seeded RNG, integer money math, win evaluator and a Monte-Carlo simulator (5M rounds, ~228k spins/s, RTP tuned 157% → 97.65%). Minimal API, 30 xUnit tests, Docker, CI | `.NET 8` `C#` `ASP.NET Core` `xUnit` `Docker` |
+| 🏗️ **[FIAP Cloud Games — OrchestrationApi](https://github.com/FIAP-PosTech-2025/OrchestrationApi)** — 5 .NET 8 microservices behind Kong (JWT, rate-limit), RabbitMQ, Redis, SQL Server, MongoDB, Lambda (LocalStack + Terraform), Prometheus + Grafana; docker-compose or K8s | `.NET 8` `Kong` `RabbitMQ` `Redis` `K8s` |
+| 🎮 **[Shipped slots @ Firepot Gaming](https://www.firepotgaming.com/slots)** — casino slot machines in pure C++ on a proprietary engine, live in production | `C++` `RNG` `RTP` `Game Engine` |
+| 🥊 **[World Combat](https://www.worldcombat.com.br/)** — Magento e-commerce live in production with SOAP/ERP integration and technical SEO (one of several stores shipped at Bis2Bis) | `Magento` `PHP` `SOAP` |
+| 🎨 **[URP Stylized Shaders](https://github.com/PedroDelgadoHenriques1/urp-stylized-shaders)** — dissolve, hologram, force-field and toon shaders handwritten in HLSL, procedural noise from scratch | `Unity` `URP` `HLSL` |
+| 🧰 **[Unity Texture Optimizer](https://github.com/PedroDelgadoHenriques1/unity-texture-optimizer)** — EditorWindow that scans textures, estimates runtime memory and batch-applies fixes, reporting exact memory saved | `Unity` `C#` `Editor Tooling` |
+| 🔐 **[CIFRA-AES](https://github.com/PedroDelgadoHenriques1/CIFRA-AES)** — AES-128 block cipher from scratch: S-box, key expansion, SubBytes/ShiftRows/MixColumns over GF(2⁸) | `Python` `Cryptography` |
 
 > 🔗 **Full site with everything:** [pedrodelgadohenriques1.github.io](https://pedrodelgadohenriques1.github.io)
 
@@ -57,43 +60,41 @@ In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm buil
 
 ## 💼 Experience
 
-### 🎮 Firepot Gaming — Mid-level C++ Game Developer
+### 🎮 Firepot Gaming — C++ Game Developer (Mid-Level)
 **Dec/2024 — Jun/2026**
 
-- Slot machine development in **pure C++** on a proprietary engine with 2D assets
-- Bonus rounds, free spins, cascading reels integrated into existing systems
-- Refactoring of critical modules: symbol rendering, RNG, animation system
-- Mathematical modeling of volatility and RTP tuning — from high to low variance
-- Authoring Game Design Documents (mechanics, paytable, flow, bonus rules)
-- Migration of legacy games between engine versions keeping production stability
+- Shipped casino slot machine games in **pure C++** on a proprietary engine — live in production
+- Bonus rounds, free spins and cascading reels integrated with existing game systems
+- Slot math models for multiple volatility profiles; RTP tuned to specification
+- Refactored critical modules (symbol rendering, RNG, animation) and removed performance bottlenecks
+- Migrated legacy titles across engine versions; complete Game Design Documents; Git + CI/CD
 
-`C++` `Game Engine` `RNG` `Math Models` `GDD` `CI/CD`
+`C++` `Game Engine` `RNG` `RTP / Volatility` `GDD` `CI/CD`
 
-### 👨‍🏫 Ensina Mais — Programming Instructor
+### 👨‍🏫 Ensina Mais — Programming Instructor (Python)
 **Jun/2024 — Dec/2024**
 
-- **Python** classes for beginners: logic, data structures, best practices
-- Course materials, exercises and 1:1 follow-up with each student
+- Python classes for beginners: logic, data structures, best practices
+- Course materials, exercises and individual follow-up with each student
 
 `Python` `Teaching` `Mentorship`
 
-### 🛒 Bis2Bis E-commerce — Full-Stack Dev (Junior → Mid-Level)
+### 🛒 Bis2Bis E-commerce — Full-Stack Developer (Junior → Mid-Level)
 **Nov/2021 — Jun/2024**
 
 - Promoted from Junior to Mid-Level
-- Full-stack with **PHP, JavaScript and Magento** for e-commerce stores
-- SOAP API integration and XML handling for ERP connections
-- Technical SEO, performance optimization, full cycle to deploy
+- Magento stores for multiple clients with **PHP and JavaScript**, from concept to deploy — live: World Combat, Wilson Atacado, Mirão, Cama in Box
+- SOAP API / XML integrations with external ERPs
+- Technical SEO and performance optimization on stores with real traffic
 
-`PHP` `Magento` `JavaScript` `SOAP` `MySQL` `SEO`
+`PHP` `Magento` `JavaScript` `SOAP` `ERP` `SEO` `MySQL`
 
 ---
 
 ## 📚 Education
 
-- 🎓 **Postgrad in .NET Systems Architecture** · FIAP + Alura · *Oct/2025 — Jul/2026*
+- 🎓 **Postgrad in .NET Systems Architecture** · FIAP + Alura · *Oct/2025 — Oct/2026*
 - 🎓 **Bachelor's in Software Engineering** · UniSenaiPR · *Jul/2021 — Jun/2025*
-- 📖 Chemical Engineering (incomplete) · UTFPR
 
 ---
 
@@ -114,61 +115,63 @@ In parallel, I'm taking a **.NET Architecture postgrad at FIAP**, where I'm buil
 
 ## 🧠 Sobre
 
-Engenheiro de Software formado pela **UniSenaiPR**. Comecei no full-stack web — PHP, Magento, e-commerce — e fui migrando pra stacks mais pesados. Mais recentemente meu dia a dia foi **C++ puro** em engine proprietária, modelando matemática de slot machines na **Firepot Gaming**.
+Engenheiro de Software (bacharel pela **UniSenaiPR**) com 5+ anos colocando software em produção. Três anos de **full-stack web e e-commerce** na Bis2Bis (PHP, Magento, integrações SOAP/XML com ERPs) e depois **desenvolvimento de jogos em C++** na Firepot Gaming — slots de cassino em engine proprietária: RNG, paytables, matemática de RTP e volatilidade.
 
-Em paralelo, curso a **Pós em Arquitetura .NET pela FIAP**, onde construo um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes. Já ensinei **Python** pra turmas de alunos.
+Hoje meu foco é **backend e arquitetura de sistemas em .NET**: microsserviços ASP.NET Core, RabbitMQ, Redis, Docker e Kubernetes (pós FIAP). Gosto de problemas que misturam performance, matemática e produto — medidos, testados e documentados.
 
 ---
 
 ## 🎯 Hoje
 
-- 🎮 **Mais recentemente: Desenvolvedor de Jogos C++** @ [Firepot Gaming](https://www.firepotgaming.com/slots) — slots em engine proprietária, RNG, modelagem de RTP/volatilidade (até jun/2026)
-- 🎓 **Pós em Arquitetura .NET** @ FIAP + Alura — microsserviços, Clean Arch, DDD
-- 💼 Aberto a oportunidades em **Game Dev**, **.NET** ou **Full-Stack**
+- 🎓 **Pós em Arquitetura de Sistemas .NET** @ FIAP + Alura — microsserviços, Clean Architecture, DDD (out/2025 → out/2026)
+- 🎰 **SlotForge** — motor de slot em .NET 8 + simulador de RTP Monte Carlo, com testes e CI
+- 💼 Aberto a vagas **.NET / backend**, **C++ / game dev** e **full-stack** — remoto ou híbrido
 
 ---
 
 ## 🧰 Stack
 
-**Linguagens** &nbsp; `C++` &nbsp; `C#` &nbsp; `PHP` &nbsp; `Python` &nbsp; `JavaScript`
-**Game Dev** &nbsp; `Engine Própria` &nbsp; `Unity` &nbsp; `RNG` &nbsp; `Math Models` &nbsp; `GDD`
-**Backend** &nbsp; `.NET 8` &nbsp; `ASP.NET Core` &nbsp; `EF Core` &nbsp; `Laravel` &nbsp; `Magento` &nbsp; `Django`
-**Infra** &nbsp; `Docker` &nbsp; `Kubernetes` &nbsp; `RabbitMQ` &nbsp; `Redis` &nbsp; `CI/CD` &nbsp; `GitHub Actions`
-**Banco** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `SQLite`
+**Linguagens** &nbsp; `C#` &nbsp; `C++` &nbsp; `PHP` &nbsp; `Python` &nbsp; `JavaScript` &nbsp; `SQL` &nbsp; `HLSL`
+**Backend / .NET** &nbsp; `.NET 8` &nbsp; `ASP.NET Core` &nbsp; `Minimal APIs` &nbsp; `EF Core` &nbsp; `xUnit` &nbsp; `Laravel` &nbsp; `Django`
+**Mensageria & Infra** &nbsp; `RabbitMQ` &nbsp; `MassTransit` &nbsp; `Redis` &nbsp; `Kong` &nbsp; `Docker` &nbsp; `Kubernetes` &nbsp; `Terraform` &nbsp; `GitHub Actions`
+**Game Dev** &nbsp; `Engine C++ própria` &nbsp; `RNG / RTP / Volatilidade` &nbsp; `Monte Carlo` &nbsp; `GDD` &nbsp; `Unity` &nbsp; `URP / HLSL`
+**Web & E-commerce** &nbsp; `Magento` &nbsp; `React` &nbsp; `SOAP / XML` &nbsp; `Integração ERP` &nbsp; `SEO técnico`
+**Banco** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Redis` &nbsp; `SQLite`
 
 ---
 
-## 📌 Projetos em destaque
+## 📌 Projetos selecionados
 
 | Projeto | Stack |
 |---|---|
-| 🏗️ **[FIAP Cloud Games — OrchestrationApi](https://github.com/FIAP-PosTech-2025)** — 5 microsserviços .NET 8 com Kong, RabbitMQ, Redis, K8s · projeto integrador da pós FIAP | `.NET 8` `Kong` `RabbitMQ` `Redis` `K8s` |
-| 📅 **[Agenda Laravel + React + Docker](https://github.com/PedroDelgadoHenriques1/laravel-react-docker-agenda)** — app full-stack containerizado, REST API + SPA | `Laravel` `React` `Docker` |
-| 🔐 **[CIFRA-AES](https://github.com/PedroDelgadoHenriques1/CIFRA-AES)** — AES-256 do zero, exercício de fundamentos de criptografia simétrica | `Python` `Encryption` |
-| 🎮 **[Jogo de Plataforma 2D](https://github.com/PedroDelgadoHenriques1/Jogo-de-Plataforma-2D-Udemy)** — Unity / C#, primeiro contato com game dev | `Unity` `C#` |
-| 🥊 **[World Combat](https://www.worldcombat.com.br/)** — e-commerce Magento em produção com integração SOAP/ERP (feito na Bis2Bis) | `Magento` `PHP` `SOAP` |
+| 🎰 **[SlotForge](https://github.com/PedroDelgadoHenriques1/SlotForge)** — motor de slot server-side com RNG criptográfico/seeded, dinheiro em inteiros, avaliador de prêmios e simulador Monte Carlo (5M rodadas, ~228k spins/s, RTP ajustado de 157% → 97,65%). Minimal API, 30 testes xUnit, Docker, CI | `.NET 8` `C#` `ASP.NET Core` `xUnit` `Docker` |
+| 🏗️ **[FIAP Cloud Games — OrchestrationApi](https://github.com/FIAP-PosTech-2025/OrchestrationApi)** — 5 microsserviços .NET 8 atrás do Kong (JWT, rate-limit), RabbitMQ, Redis, SQL Server, MongoDB, Lambda (LocalStack + Terraform), Prometheus + Grafana; docker-compose ou K8s | `.NET 8` `Kong` `RabbitMQ` `Redis` `K8s` |
+| 🎮 **[Slots no ar @ Firepot Gaming](https://www.firepotgaming.com/slots)** — slot machines de cassino em C++ puro sobre engine proprietária, em produção | `C++` `RNG` `RTP` `Game Engine` |
+| 🥊 **[World Combat](https://www.worldcombat.com.br/)** — e-commerce Magento em produção com integração SOAP/ERP e SEO técnico (uma de várias lojas entregues na Bis2Bis) | `Magento` `PHP` `SOAP` |
+| 🎨 **[URP Stylized Shaders](https://github.com/PedroDelgadoHenriques1/urp-stylized-shaders)** — shaders dissolve, hologram, force-field e toon escritos à mão em HLSL, noise procedural do zero | `Unity` `URP` `HLSL` |
+| 🧰 **[Unity Texture Optimizer](https://github.com/PedroDelgadoHenriques1/unity-texture-optimizer)** — EditorWindow que escaneia texturas, estima memória em runtime e aplica correções em lote, reportando a economia exata | `Unity` `C#` `Editor Tooling` |
+| 🔐 **[CIFRA-AES](https://github.com/PedroDelgadoHenriques1/CIFRA-AES)** — cifra de bloco AES-128 do zero: S-box, expansão de chave, SubBytes/ShiftRows/MixColumns em GF(2⁸) | `Python` `Criptografia` |
 
 ---
 
 ## 💼 Experiência
 
-### 🎮 Firepot Gaming — Desenvolvedor de Jogos C++ Pleno
+### 🎮 Firepot Gaming — Desenvolvedor de Jogos C++ (Pleno)
 **dez/2024 — jun/2026**
 
-- Desenvolvimento de slot machines em **C++ puro** sobre engine proprietária com assets 2D
-- Bonus rounds, free spins, cascading reels integrados aos sistemas existentes
-- Refatoração de módulos críticos: renderização de símbolos, RNG, sistema de animação
-- Modelagem matemática de volatilidade e tuning de RTP — de alta a baixa variância
-- Elaboração de Game Design Documents (mecânicas, paytable, fluxo, regras de bônus)
-- Migração de jogos legados entre versões da engine mantendo estabilidade
+- Slot machines de cassino em **C++ puro** sobre engine proprietária — no ar em produção
+- Bonus rounds, free spins e cascading reels integrados aos sistemas existentes
+- Modelos matemáticos de slot para diferentes perfis de volatilidade; RTP ajustado conforme especificação
+- Refatoração de módulos críticos (renderização de símbolos, RNG, animação) e remoção de gargalos de performance
+- Migração de jogos legados entre versões da engine; Game Design Documents completos; Git + CI/CD
 
-`C++` `Game Engine` `RNG` `Math Models` `GDD` `CI/CD`
+`C++` `Game Engine` `RNG` `RTP / Volatilidade` `GDD` `CI/CD`
 
-### 👨‍🏫 Ensina Mais — Professor de Programação
+### 👨‍🏫 Ensina Mais — Professor de Programação (Python)
 **jun/2024 — dez/2024**
 
-- Aulas de **Python** pra iniciantes: lógica, estruturas de dados, boas práticas
-- Material didático próprio, exercícios e acompanhamento individual
+- Aulas de Python pra iniciantes: lógica, estruturas de dados, boas práticas
+- Material didático, exercícios e acompanhamento individual de cada aluno
 
 `Python` `Didática` `Mentoria`
 
@@ -176,19 +179,18 @@ Em paralelo, curso a **Pós em Arquitetura .NET pela FIAP**, onde construo um si
 **nov/2021 — jun/2024**
 
 - Promovido de Júnior a Pleno
-- Full-stack com **PHP, JavaScript e Magento** em lojas e-commerce
-- Integração com APIs SOAP e manipulação de XML pra ERPs externos
-- SEO técnico, otimização de performance, ciclo completo até deploy
+- Lojas Magento pra múltiplos clientes com **PHP e JavaScript**, da concepção ao deploy — no ar: World Combat, Wilson Atacado, Mirão, Cama in Box
+- Integrações SOAP / XML com ERPs externos
+- SEO técnico e otimização de performance em lojas com tráfego real
 
-`PHP` `Magento` `JavaScript` `SOAP` `MySQL` `SEO`
+`PHP` `Magento` `JavaScript` `SOAP` `ERP` `SEO` `MySQL`
 
 ---
 
 ## 📚 Formação
 
-- 🎓 **Pós-Tech em Arquitetura .NET** · FIAP + Alura · *out/2025 — jul/2026*
+- 🎓 **Pós-Tech em Arquitetura de Sistemas .NET** · FIAP + Alura · *out/2025 — out/2026*
 - 🎓 **Bacharel em Engenharia de Software** · UniSenaiPR · *jul/2021 — jun/2025*
-- 📖 Engenharia Química (incompleto) · UTFPR
 
 ---
 

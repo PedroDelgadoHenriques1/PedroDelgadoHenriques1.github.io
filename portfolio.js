@@ -5,8 +5,8 @@
    ========================================================= */
 const i18n = {
   en: {
-    'meta.title': "Pedro Delgado Henriques — Software Engineer | .NET Systems Architecture",
-    'meta.description': "Software Engineer and .NET Systems Architecture postgrad. 5+ years across full-stack web, game development and teaching. Londrina/PR — open to opportunities.",
+    'meta.title': "Pedro Delgado Henriques — Software Engineer | C# / .NET · C++ · Full-Stack",
+    'meta.description': "Software Engineer with 5+ years in C#/.NET backend, C++ game development and full-stack web. Shipped casino slot games and Magento e-commerce stores to production. Microservices, RabbitMQ, Docker, Kubernetes. Londrina/PR, Brazil — open to opportunities.",
 
     'nav.about': 'About',
     'nav.experience': 'Experience',
@@ -16,13 +16,14 @@ const i18n = {
     'nav.contact': 'Contact',
     'nav.downloadCv': 'Download CV',
 
-    'hero.status': 'AVAILABLE FOR PROPOSALS AND PROJECTS',
+    'hero.status': 'OPEN TO FULL-TIME AND CONTRACT ROLES',
     'hero.years': '5+ years',
     'hero.role1': 'Software Engineer',
-    'hero.role2': '.NET Systems Architecture',
-    'hero.desc': `Software Engineer currently taking a postgrad in <span class="accent">.NET Systems Architecture</span>.
-        5+ years across full-stack web (PHP/Magento), game development in C++ and programming instruction.
-        I like problems that mix performance, math and product.`,
+    'hero.role2': 'C# / .NET · C++',
+    'hero.desc': `Software Engineer with 5+ years across <span class="accent">C#/.NET backend</span>, C++ game
+        development and full-stack web (PHP/Magento). I shipped casino slot games and e-commerce stores with ERP
+        integrations to production; now specializing in .NET systems architecture — microservices, messaging,
+        Docker and Kubernetes.`,
     'hero.cta.projects': 'View projects',
     'hero.cta.contact': 'Get in touch',
     'hero.stat.years': 'YEARS OF EXP.',
@@ -32,16 +33,17 @@ const i18n = {
 
     'about.eyebrow': 'About',
     'about.title': 'Generalist by <em>training</em>, specialist by <em>obsession</em>.',
-    'about.p1': `I'm a <strong>Software Engineer</strong> (UniSenaiPR) now deepening backend with a
-          <strong>postgrad in .NET Systems Architecture</strong> at FIAP. My path runs from the web —
-          PHP, Magento, real e-commerce with traffic — through game development, most recently modeling
-          slot-machine math in <span class="h">C++</span>.`,
-    'about.p2': `I got here through the web — three years of PHP, Magento and real e-commerce with real traffic —
-          and I'm now deepening backend with a <strong>postgrad in .NET Architecture at FIAP</strong>
-          (a 5-microservice system with RabbitMQ, Redis, Docker and Kubernetes). Along the way I also taught
-          <strong>Python</strong> to beginner classes.`,
-    'about.p3': `I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>.
-          Advanced English, self-taught profile, comfortable both in the terminal and in a planning meeting.`,
+    'about.p1': `I'm a <strong>Software Engineer</strong> (B.Sc., UniSenaiPR) with 5+ years shipping software to
+          production: three years of <strong>full-stack web and e-commerce</strong> at Bis2Bis — PHP, Magento,
+          SOAP/XML integrations with ERPs — then <strong>C++ game development</strong> at Firepot Gaming, building
+          casino slots on a proprietary engine: RNG, paytables, RTP and volatility math in <span class="h">C++</span>.`,
+    'about.p2': `Today my focus is <strong>backend and systems architecture in .NET</strong>. In the FIAP postgrad
+          I built a 5-microservice platform with Kong, RabbitMQ, Redis, Docker and Kubernetes; on my own I built
+          SlotForge, a .NET 8 slot engine with a Monte-Carlo RTP simulator, xUnit tests and CI. I've also taught
+          <strong>Python</strong> to beginner classes — explaining code changed how I write it.`,
+    'about.p3': `I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>
+          — measured, tested and documented. Advanced English, remote-ready, comfortable both in the terminal and
+          in a planning meeting.`,
     'about.fact.today.label': 'Now',
     'about.fact.today.val': 'Software <span class="pop">Engineer</span>',
     'about.fact.today.sub': 'Open to opportunities',
@@ -49,8 +51,8 @@ const i18n = {
     'about.fact.studying.val': '<span class="pop">.NET</span> Architecture',
     'about.fact.studying.sub': 'FIAP Pós-Tech + Alura',
     'about.fact.bg.label': 'Background',
-    'about.fact.bg.val': 'Full-Stack <span class="pop">Web</span>',
-    'about.fact.bg.sub': 'PHP · Magento · React · 3 years',
+    'about.fact.bg.val': 'Games + <span class="pop">Web</span>',
+    'about.fact.bg.sub': 'C++ slots · PHP/Magento · 4.5 years',
     'about.fact.lang.label': 'Languages',
     'about.fact.lang.val': 'PT-BR · <span class="pop">EN</span>',
     'about.fact.lang.sub': 'Native Portuguese · B2 English',
@@ -59,12 +61,12 @@ const i18n = {
     'exp.title': 'From online stores to <em>slot engines</em>.',
     'exp.firepot.date': 'Dec/2024 — Jun/2026',
     'exp.firepot.role': 'C++ Game Developer — Mid-Level',
-    'exp.firepot.b1': 'Slot machine development in <strong>pure C++</strong> on a proprietary engine with 2D assets',
-    'exp.firepot.b2': 'Implementation of bonus rounds, free spins and cascading reels integrated with existing systems',
-    'exp.firepot.b3': 'Refactoring of critical modules: symbol rendering, RNG and animation system',
-    'exp.firepot.b4': 'Mathematical modeling of volatility and RTP tuning — from high to low variance',
-    'exp.firepot.b5': 'Full Game Design Documents (mechanics, paytable, flow, bonus rules)',
-    'exp.firepot.b6': 'Migration of legacy games between engine versions while keeping production stability',
+    'exp.firepot.b1': 'Shipped casino slot machine games in <strong>pure C++</strong> on a proprietary engine — live in production',
+    'exp.firepot.b2': 'Built bonus rounds, free spins and cascading reels integrated with existing game systems',
+    'exp.firepot.b3': 'Refactored critical modules (symbol rendering, RNG, animation) and removed performance bottlenecks: lower memory, higher FPS, faster loads',
+    'exp.firepot.b4': 'Designed slot math models for multiple volatility profiles and tuned RTP to specification',
+    'exp.firepot.b5': 'Authored complete Game Design Documents (mechanics, paytable, screen flow, bonus rules)',
+    'exp.firepot.b6': 'Migrated legacy titles across engine versions while keeping production stability; Git branching in a CI/CD pipeline',
     'exp.ensina.date': 'Jun/2024 — Dec/2024',
     'exp.ensina.role': 'Programming Teacher — Python',
     'exp.ensina.b1': 'Python classes for beginners — programming logic, data structures and best practices',
@@ -74,26 +76,32 @@ const i18n = {
     'exp.bis.date': 'Nov/2021 — Jun/2024',
     'exp.bis.role': 'Full-Stack Developer — Jr → Mid-Level',
     'exp.bis.b1': 'Promoted from Junior to Mid-Level by taking on more complex projects and technical ownership',
-    'exp.bis.b2': 'Full-stack work with <strong>PHP, JavaScript and Magento</strong> — online stores for multiple clients',
-    'exp.bis.b3': 'Integration with SOAP APIs and XML handling for connection to external ERPs',
-    'exp.bis.b4': 'Technical SEO, performance optimization and full cycle from concept to deploy',
-    'exp.bis.b5': 'Delivery of online stores with custom integrations live in production',
+    'exp.bis.b2': 'Full-stack development with <strong>PHP, JavaScript and Magento</strong> — online stores for multiple clients, from concept to deploy',
+    'exp.bis.b3': 'Integrated SOAP APIs and XML payloads to connect stores with external ERPs',
+    'exp.bis.b4': 'Technical SEO and performance optimization on stores with real traffic',
+    'exp.bis.b5': 'Delivered complete e-commerce projects with custom integrations, live in production',
     'exp.bis.stores': 'Stores live:',
 
     'proj.eyebrow': 'Projects',
-    'proj.title': "Things I've <em>built</em>, and what each one means.",
+    'proj.title': 'Selected work — <em>depth</em> over volume.',
     'proj.tab.all': 'All',
-    'proj.tab.game': 'Game Dev',
+    'proj.tab.game': 'Game Dev & iGaming',
     'proj.tab.techart': 'Technical Art',
     'proj.tab.web': 'Web & E-commerce',
-    'proj.tab.backend': 'Backend & APIs',
-    'proj.tab.security': 'Cybersecurity',
-    'proj.tab.systems': 'Algorithms & Systems',
-    'proj.tab.ai': 'AI & Lab',
+    'proj.tab.backend': 'Backend & .NET',
+    'proj.tab.security': 'Security',
+    'proj.more': 'Smaller studies, exercises and experiments live on',
     'proj.p0.status': 'In production',
     'proj.p0.name': 'Shipped Slots — <em>live</em> at Firepot',
     'proj.p0.desc': `Casino slot machines built end to end in pure C++ on a proprietary engine: RNG, paytables,
             RTP and volatility tuning, symbol rendering and real-time animation. Live and playable in production.`,
+    'proj.forge.pill': 'Personal',
+    'proj.forge.meta': '2026 · MIT · CI passing',
+    'proj.forge.name': 'SlotForge — <em>.NET 8</em> slot engine & RTP simulator',
+    'proj.forge.desc': `Server-side slot engine (RGS-style) in C#: cryptographic and seeded RNG free of modulo bias,
+            integer-only money math, payline/wild/scatter evaluator and free spins. A Monte-Carlo simulator proves the
+            RTP — 5M rounds at ~228k spins/s tuned Gem Rush from 157% to 97.65%. ASP.NET Core Minimal API, 30 xUnit
+            unit + integration tests, Docker and GitHub Actions CI.`,
     'proj.p1.status': 'In progress',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
     'proj.p1.desc': `Orchestration of a games platform across 5 .NET microservices, with Kong API Gateway (JWT,
@@ -111,48 +119,13 @@ const i18n = {
     'proj.p3.d5': 'T', 'proj.p3.d6': 'F', 'proj.p3.d7': 'S',
     'proj.p3.opensource': 'Open source',
     'proj.p3.name': 'Agenda — Laravel + <em>React</em> + Docker',
-    'proj.p3.desc': `Full-stack scheduling app. REST API in Laravel consumed by a React SPA,
-            all containerized with Docker and ready to deploy.`,
+    'proj.p3.desc': `Full-stack scheduling app: REST API in Laravel consumed by a React SPA, MySQL, all containerized
+            with Docker Compose and ready to deploy.`,
     'proj.p4.plain': 'Hello, world!',
     'proj.p4.pill': 'Security',
     'proj.p4.desc': `AES-128 block cipher built from scratch in <strong>Python</strong> — S-box substitution,
             key expansion and the round transforms (SubBytes, ShiftRows, MixColumns over GF(2⁸), AddRoundKey).
             Low-level cryptography, byte by byte.`,
-    'proj.p5.pill': 'Study',
-    'proj.p5.name': '2D Platformer in <em>Unity</em>',
-    'proj.p5.desc': `2D game in Unity built during a course — first contact with game dev.
-            I went on to work professionally with C++ on a proprietary engine.`,
-    'proj.p6.more': '+ more',
-    'proj.p6.name': 'Personal lab',
-    'proj.p6.desc': `PyTorch, TensorFlow, automation scripts, postgrad exercises and prototypes.
-            A living repository of learning.`,
-    'proj.react.name': 'React — <em>hooks</em> to deploy',
-    'proj.react.desc': `Hands-on React study: JSX componentization, hooks, React Router and Context API for global
-            state, forms and HTTP integration — plus a Node/Express + MongoDB back end and Firebase auth.`,
-    'proj.senai.name': 'Sales System — <em>Django</em> architecture',
-    'proj.senai.desc': `Academic sales platform in Django with layered MVC, design patterns (Factory, Singleton,
-            Observer), inventory and sales flows, and interactive Plotly dashboards over SQLite.`,
-    'proj.viacep.name': 'ViaCEP API — <em>Laravel</em>',
-    'proj.viacep.desc': `Laravel REST API that resolves multiple Brazilian postal codes in a single call via the
-            ViaCEP service, returning normalized address payloads with validation.`,
-    'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
-    'proj.schat.desc': `TCP chat in Python with a Diffie-Hellman key exchange negotiating a shared secret, then
-            ciphering every message over the socket — keys and payloads logged for inspection.`,
-    'proj.lhash.name': 'Login — <em>bcrypt hashing</em>',
-    'proj.lhash.desc': `Node/Express auth that never stores plaintext: passwords are bcrypt-hashed with a per-user
-            salt, with brute-force lockout after repeated failed logins.`,
-    'proj.cppds.name': 'Data Structures in <em>C / C++</em>',
-    'proj.cppds.desc': `Low-level fundamentals in C and C++: stacks, queues, arrays and matrices, functions and
-            pointers, dynamic memory allocation and OOP — the groundwork behind engine code.`,
-    'proj.ctcp.name': 'TCP Chat — <em>Node sockets</em>',
-    'proj.ctcp.desc': `Multi-client chat over raw TCP sockets in Node.js: the server accepts connections and
-            broadcasts each message to every other client, with colorized terminal output.`,
-    'proj.tmap.name': 'Stock <em>TreeMap</em>',
-    'proj.tmap.desc': `Interactive treemap that lays out stocks as area-scaled tiles — green gains, red losses —
-            sizing and shading each rectangle by value for an at-a-glance read of the market.`,
-    'proj.roman.name': 'Roman ⇄ Integer <em>converter</em>',
-    'proj.roman.desc': `Two-way converter between integers (1–3999) and Roman numerals with full input validation,
-            wrapped in a small PHP web UI.`,
     'proj.shaders.name': 'URP Shader Pack — <em>handwritten HLSL</em>',
     'proj.shaders.desc': `Four real-time URP shaders written by hand in HLSL — dissolve, hologram, force-field and
             toon lighting — with all noise (value, fbm, voronoi) coded from scratch. Low-level rendering control
@@ -167,7 +140,7 @@ const i18n = {
     'skills.messaging': 'Messaging & APIs',
     'skills.db': 'Databases',
     'skills.security': 'Security',
-    'skills.testing': 'Testing',
+    'skills.arch': 'Architecture & Testing',
     'skills.observability': 'Observability',
     'skills.methodology': 'Methodology',
 
@@ -183,18 +156,17 @@ const i18n = {
 
     'contact.eyebrow': 'Contact',
     'contact.title': "Let's <em>talk</em>?",
-    'contact.desc': `Open to full-time positions, freelance work and collaborations.
+    'contact.desc': `Open to full-time positions, contract work and collaborations — remote or hybrid.
         Reach out on your preferred channel — I respond fast.`,
     'contact.email': 'Email',
     'contact.cv': 'Download CV',
   },
 
   pt: {
-    'meta.title': "Pedro Delgado Henriques — Engenheiro de Software | Arquitetura de Sistemas .NET",
-    'meta.description': "Engenheiro de Software e pós-graduando em Arquitetura de Sistemas .NET. 5+ anos em full-stack web, desenvolvimento de jogos e ensino. Londrina/PR — aberto a oportunidades.",
+    'meta.title': "Pedro Delgado Henriques — Engenheiro de Software | C# / .NET · C++ · Full-Stack",
+    'meta.description': "Engenheiro de Software com 5+ anos em backend C#/.NET, desenvolvimento de jogos em C++ e full-stack web. Slot machines e lojas Magento em produção. Microsserviços, RabbitMQ, Docker, Kubernetes. Londrina/PR — aberto a oportunidades.",
 
     'nav.about': 'Sobre',
-    
     'nav.experience': 'Experiência',
     'nav.projects': 'Projetos',
     'nav.skills': 'Stack',
@@ -202,13 +174,14 @@ const i18n = {
     'nav.contact': 'Contato',
     'nav.downloadCv': 'Baixar CV',
 
-    'hero.status': 'DISPONÍVEL PARA PROPOSTAS E PROJETOS',
+    'hero.status': 'ABERTO A VAGAS FULL-TIME E CONTRATOS',
     'hero.years': '5+ anos',
     'hero.role1': 'Engenheiro de Software',
-    'hero.role2': 'Arquitetura de Sistemas .NET',
-    'hero.desc': `Engenheiro de Software cursando pós em <span class="accent">Arquitetura de Sistemas .NET</span>.
-        5+ anos em full-stack web (PHP/Magento), desenvolvimento de jogos em C++ e ensino de programação.
-        Gosto de problemas que misturam performance, matemática e produto.`,
+    'hero.role2': 'C# / .NET · C++',
+    'hero.desc': `Engenheiro de Software com 5+ anos em <span class="accent">backend C#/.NET</span>, desenvolvimento
+        de jogos em C++ e full-stack web (PHP/Magento). Coloquei slot machines de cassino e lojas virtuais com
+        integração a ERP em produção; hoje me especializo em arquitetura de sistemas .NET — microsserviços,
+        mensageria, Docker e Kubernetes.`,
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact': 'Entrar em contato',
     'hero.stat.years': 'ANOS DE EXP.',
@@ -218,16 +191,18 @@ const i18n = {
 
     'about.eyebrow': 'Sobre',
     'about.title': 'Generalista por <em>formação</em>, especialista por <em>obsessão</em>.',
-    'about.p1': `Sou <strong>Engenheiro de Software</strong> (UniSenaiPR) aprofundando backend com a
-          <strong>Pós em Arquitetura de Sistemas .NET</strong> na FIAP. Meu caminho vai da web —
-          PHP, Magento, e-commerce de verdade com tráfego — passando por desenvolvimento de jogos,
-          mais recentemente modelando matemática de slot machines em <span class="h">C++</span>.`,
-    'about.p2': `Cheguei aqui pela web — três anos de PHP, Magento e e-commerce de verdade com tráfego real —
-          e agora aprofundo backend com a <strong>Pós em Arquitetura .NET pela FIAP</strong>
-          (um sistema de 5 microsserviços com RabbitMQ, Redis, Docker e Kubernetes). No caminho também
-          ensinei <strong>Python</strong> pra turmas iniciantes.`,
-    'about.p3': `Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e <strong>produto</strong>.
-          Inglês avançado, perfil autodidata, à vontade tanto no terminal quanto numa reunião de planejamento.`,
+    'about.p1': `Sou <strong>Engenheiro de Software</strong> (bacharel pela UniSenaiPR) com 5+ anos colocando software
+          em produção: três anos de <strong>full-stack web e e-commerce</strong> na Bis2Bis — PHP, Magento,
+          integrações SOAP/XML com ERPs — e depois <strong>desenvolvimento de jogos em C++</strong> na Firepot Gaming,
+          construindo slots de cassino em engine proprietária: RNG, paytables, matemática de RTP e volatilidade em
+          <span class="h">C++</span>.`,
+    'about.p2': `Hoje meu foco é <strong>backend e arquitetura de sistemas em .NET</strong>. Na pós da FIAP construí
+          uma plataforma de 5 microsserviços com Kong, RabbitMQ, Redis, Docker e Kubernetes; por conta própria
+          construí o SlotForge, um motor de slot em .NET 8 com simulador de RTP Monte Carlo, testes xUnit e CI.
+          Também ensinei <strong>Python</strong> pra turmas iniciantes — explicar código mudou como eu escrevo.`,
+    'about.p3': `Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e
+          <strong>produto</strong> — medidos, testados e documentados. Inglês avançado, pronto pra remoto, à vontade
+          tanto no terminal quanto numa reunião de planejamento.`,
     'about.fact.today.label': 'Agora',
     'about.fact.today.val': 'Eng. de <span class="pop">Software</span>',
     'about.fact.today.sub': 'Aberto a oportunidades',
@@ -235,8 +210,8 @@ const i18n = {
     'about.fact.studying.val': 'Arquitetura <span class="pop">.NET</span>',
     'about.fact.studying.sub': 'Pós-Tech FIAP + Alura',
     'about.fact.bg.label': 'Background',
-    'about.fact.bg.val': 'Full-Stack <span class="pop">Web</span>',
-    'about.fact.bg.sub': 'PHP · Magento · React · 3 anos',
+    'about.fact.bg.val': 'Games + <span class="pop">Web</span>',
+    'about.fact.bg.sub': 'Slots em C++ · PHP/Magento · 4,5 anos',
     'about.fact.lang.label': 'Idiomas',
     'about.fact.lang.val': 'PT-BR · <span class="pop">EN</span>',
     'about.fact.lang.sub': 'Português nativo · Inglês B2',
@@ -245,12 +220,12 @@ const i18n = {
     'exp.title': 'De lojas online a <em>slot engines</em>.',
     'exp.firepot.date': 'dez/2024 — jun/2026',
     'exp.firepot.role': 'Desenvolvedor de Jogos C++ — Pleno',
-    'exp.firepot.b1': 'Desenvolvimento de slot machines em <strong>C++ puro</strong> sobre engine proprietária com assets 2D',
-    'exp.firepot.b2': 'Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas existentes',
-    'exp.firepot.b3': 'Refatoração de módulos críticos: renderização de símbolos, RNG e sistema de animação',
-    'exp.firepot.b4': 'Modelagem matemática de volatilidade e tuning de RTP — de alta a baixa variância',
-    'exp.firepot.b5': 'Elaboração de Game Design Documents completos (mecânicas, paytable, fluxo, regras de bônus)',
-    'exp.firepot.b6': 'Migração de jogos legados entre versões da engine mantendo estabilidade em produção',
+    'exp.firepot.b1': 'Slot machines de cassino em <strong>C++ puro</strong> sobre engine proprietária — no ar em produção',
+    'exp.firepot.b2': 'Implementação de bonus rounds, free spins e cascading reels integrados aos sistemas de jogo existentes',
+    'exp.firepot.b3': 'Refatoração de módulos críticos (renderização de símbolos, RNG, animação) e remoção de gargalos: menos memória, mais FPS, carregamento mais rápido',
+    'exp.firepot.b4': 'Modelagem matemática de slots para diferentes perfis de volatilidade, com tuning de RTP conforme especificação',
+    'exp.firepot.b5': 'Elaboração completa de Game Design Documents (mecânicas, paytable, fluxo de telas, regras de bônus)',
+    'exp.firepot.b6': 'Migração de jogos legados entre versões da engine mantendo estabilidade em produção; branches Git em pipeline de CI/CD',
     'exp.ensina.date': 'jun/2024 — dez/2024',
     'exp.ensina.role': 'Professor de Programação — Python',
     'exp.ensina.b1': 'Aulas de Python pra iniciantes — lógica de programação, estruturas de dados e boas práticas',
@@ -260,27 +235,33 @@ const i18n = {
     'exp.bis.date': 'nov/2021 — jun/2024',
     'exp.bis.role': 'Desenvolvedor Full-Stack — Júnior → Pleno',
     'exp.bis.b1': 'Promovido de Júnior a Pleno assumindo projetos de maior complexidade e ownership técnico',
-    'exp.bis.b2': 'Full-stack com <strong>PHP, JavaScript e Magento</strong> — lojas virtuais pra múltiplos clientes',
-    'exp.bis.b3': 'Integração com APIs SOAP e manipulação de XML pra conexão com ERPs externos',
-    'exp.bis.b4': 'SEO técnico, otimização de performance e ciclo completo da concepção ao deploy',
-    'exp.bis.b5': 'Entrega de lojas virtuais com integrações customizadas em produção',
+    'exp.bis.b2': 'Desenvolvimento full-stack com <strong>PHP, JavaScript e Magento</strong> — lojas virtuais pra múltiplos clientes, da concepção ao deploy',
+    'exp.bis.b3': 'Integração com APIs SOAP e payloads XML pra conectar as lojas a ERPs externos',
+    'exp.bis.b4': 'SEO técnico e otimização de performance em lojas com tráfego real',
+    'exp.bis.b5': 'Entrega de projetos de e-commerce completos com integrações customizadas, em produção',
     'exp.bis.stores': 'Lojas no ar:',
 
     'proj.eyebrow': 'Projetos',
-    'proj.title': 'Coisas que <em>construí</em>, e o que cada uma quer dizer.',
+    'proj.title': 'Trabalhos selecionados — <em>profundidade</em>, não volume.',
     'proj.tab.all': 'Todos',
-    'proj.tab.game': 'Game Dev',
+    'proj.tab.game': 'Game Dev & iGaming',
     'proj.tab.techart': 'Technical Art',
     'proj.tab.web': 'Web & E-commerce',
-    'proj.tab.backend': 'Backend & APIs',
-    'proj.tab.security': 'Cibersegurança',
-    'proj.tab.systems': 'Algoritmos & Sistemas',
-    'proj.tab.ai': 'IA & Lab',
+    'proj.tab.backend': 'Backend & .NET',
+    'proj.tab.security': 'Segurança',
+    'proj.more': 'Estudos menores, exercícios e experimentos ficam no',
     'proj.p0.status': 'Em produção',
     'proj.p0.name': 'Slots no Ar — <em>live</em> na Firepot',
     'proj.p0.desc': `Slot machines de cassino construídas de ponta a ponta em C++ puro sobre engine proprietária:
             RNG, paytables, tuning de RTP e volatilidade, renderização de símbolos e animação em tempo real.
             No ar e jogáveis em produção.`,
+    'proj.forge.pill': 'Pessoal',
+    'proj.forge.meta': '2026 · MIT · CI passando',
+    'proj.forge.name': 'SlotForge — motor de slot em <em>.NET 8</em> + simulador de RTP',
+    'proj.forge.desc': `Motor de slot server-side (estilo RGS) em C#: RNG criptográfico e seeded sem viés de módulo,
+            dinheiro só em inteiros, avaliador de paylines/wilds/scatters e free spins. Um simulador Monte Carlo prova
+            o RTP — 5M rodadas a ~228k spins/s ajustaram o Gem Rush de 157% pra 97,65%. ASP.NET Core Minimal API,
+            30 testes xUnit (unitários + integração), Docker e CI no GitHub Actions.`,
     'proj.p1.status': 'Em construção',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
     'proj.p1.desc': `Orquestração de uma plataforma de jogos em 5 microsserviços .NET, com Kong API Gateway (JWT,
@@ -298,48 +279,13 @@ const i18n = {
     'proj.p3.d5': 'Q', 'proj.p3.d6': 'S', 'proj.p3.d7': 'S',
     'proj.p3.opensource': 'Open source',
     'proj.p3.name': 'Agenda — Laravel + <em>React</em> + Docker',
-    'proj.p3.desc': `App full-stack de agendamentos. API REST em Laravel consumida por SPA em React,
-            tudo containerizado com Docker e pronto pra deploy.`,
+    'proj.p3.desc': `App full-stack de agendamentos: API REST em Laravel consumida por SPA em React, MySQL, tudo
+            containerizado com Docker Compose e pronto pra deploy.`,
     'proj.p4.plain': 'Olá, mundo!',
     'proj.p4.pill': 'Segurança',
     'proj.p4.desc': `Cifra de bloco AES-128 construída do zero em <strong>Python</strong> — substituição via S-box,
             expansão de chave e as transformações de rodada (SubBytes, ShiftRows, MixColumns em GF(2⁸), AddRoundKey).
             Criptografia de baixo nível, byte a byte.`,
-    'proj.p5.pill': 'Estudo',
-    'proj.p5.name': 'Plataforma 2D em <em>Unity</em>',
-    'proj.p5.desc': `Jogo 2D em Unity feito durante curso — primeiro contato com game dev.
-            Depois passei a atuar profissionalmente com C++ em engine proprietária.`,
-    'proj.p6.more': '+ mais',
-    'proj.p6.name': 'Lab pessoal',
-    'proj.p6.desc': `PyTorch, TensorFlow, scripts de automação, exercícios da pós e protótipos.
-            Repositório vivo de aprendizado.`,
-    'proj.react.name': 'React — dos <em>hooks</em> ao deploy',
-    'proj.react.desc': `Estudo prático de React: componentização JSX, hooks, React Router e Context API pra estado
-            global, formulários e integração HTTP — além de back-end Node/Express + MongoDB e auth com Firebase.`,
-    'proj.senai.name': 'Sistema de Vendas — arquitetura <em>Django</em>',
-    'proj.senai.desc': `Plataforma de vendas acadêmica em Django com MVC em camadas, design patterns (Factory,
-            Singleton, Observer), fluxos de estoque e vendas e dashboards Plotly interativos sobre SQLite.`,
-    'proj.viacep.name': 'API ViaCEP — <em>Laravel</em>',
-    'proj.viacep.desc': `API REST em Laravel que resolve múltiplos CEPs numa só chamada via serviço ViaCEP,
-            devolvendo endereços normalizados com validação.`,
-    'proj.schat.name': 'Secure Chat — <em>Diffie-Hellman</em>',
-    'proj.schat.desc': `Chat TCP em Python com troca de chave Diffie-Hellman negociando um segredo compartilhado
-            e cifrando cada mensagem no socket — chaves e payloads registrados pra inspeção.`,
-    'proj.lhash.name': 'Login — <em>hash com bcrypt</em>',
-    'proj.lhash.desc': `Auth em Node/Express que nunca guarda senha em texto puro: a senha é hasheada com bcrypt
-            e salt por usuário, com bloqueio anti-brute-force após tentativas falhas.`,
-    'proj.cppds.name': 'Estruturas de Dados em <em>C / C++</em>',
-    'proj.cppds.desc': `Fundamentos de baixo nível em C e C++: pilhas, filas, arrays e matrizes, funções e
-            ponteiros, alocação dinâmica de memória e OOP — a base por trás de código de engine.`,
-    'proj.ctcp.name': 'Chat TCP — <em>sockets Node</em>',
-    'proj.ctcp.desc': `Chat multi-cliente sobre sockets TCP puros em Node.js: o servidor aceita conexões e faz
-            broadcast de cada mensagem pros demais clientes, com saída colorida no terminal.`,
-    'proj.tmap.name': '<em>TreeMap</em> de Ações',
-    'proj.tmap.desc': `Treemap interativo que dispõe ações como blocos proporcionais à área — ganhos em verde,
-            perdas em vermelho — dimensionando e colorindo cada retângulo pelo valor.`,
-    'proj.roman.name': 'Conversor <em>Romano ⇄ Inteiro</em>',
-    'proj.roman.desc': `Conversor bidirecional entre inteiros (1–3999) e algarismos romanos com validação completa
-            de entrada, numa pequena interface web em PHP.`,
     'proj.shaders.name': 'URP Shader Pack — <em>HLSL na mão</em>',
     'proj.shaders.desc': `Quatro shaders URP em tempo real escritos à mão em HLSL — dissolve, hologram, force-field
             e toon — com todo o noise (value, fbm, voronoi) feito do zero. Controle de rendering de baixo nível
@@ -354,7 +300,7 @@ const i18n = {
     'skills.messaging': 'Mensageria & APIs',
     'skills.db': 'Banco de Dados',
     'skills.security': 'Segurança',
-    'skills.testing': 'Testes',
+    'skills.arch': 'Arquitetura & Testes',
     'skills.observability': 'Observabilidade',
     'skills.methodology': 'Metodologia',
 
@@ -370,7 +316,7 @@ const i18n = {
 
     'contact.eyebrow': 'Contato',
     'contact.title': 'Vamos <em>conversar</em>?',
-    'contact.desc': `Aberto a posições full-time, freelas e colaborações.
+    'contact.desc': `Aberto a posições full-time, contratos e colaborações — remoto ou híbrido.
         Me chame pelo canal que preferir — respondo rápido.`,
     'contact.email': 'E-mail',
     'contact.cv': 'Baixar CV',
@@ -461,16 +407,27 @@ window.closeMobile = function() {
   mob.classList.remove('open');
 };
 
-/* Project category tabs */
+/* Project category tabs — a card may belong to several categories
+   (space-separated in data-cat); counts are derived from the cards. */
 (function initProjectTabs() {
   const grid = document.querySelector('.projects-grid');
   const tabs = document.querySelectorAll('.proj-tab');
   if (!grid || !tabs.length) return;
 
+  const cards = Array.from(grid.querySelectorAll('.proj'));
+  const catsOf = card => (card.dataset.cat || '').split(/\s+/).filter(Boolean);
+
+  tabs.forEach(tab => {
+    const cat = tab.dataset.cat;
+    const n = cat === 'all' ? cards.length : cards.filter(c => catsOf(c).includes(cat)).length;
+    const badge = tab.querySelector('.count');
+    if (badge) badge.textContent = n;
+  });
+
   function filter(cat) {
     let visible = 0;
-    grid.querySelectorAll('.proj').forEach(card => {
-      const match = cat === 'all' || card.dataset.cat === cat;
+    cards.forEach(card => {
+      const match = cat === 'all' || catsOf(card).includes(cat);
       card.classList.toggle('hide', !match);
       if (match) { visible++; card.classList.add('visible'); }
     });

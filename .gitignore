@@ -1,0 +1,5 @@
+# Local working folder with project sources/context (not part of the site)
+projetos-prontos-para-ir-adicionando-e-claude-saber-contexto/
+
+# CV build intermediates
+cv/out-*.pdf
