@@ -7,6 +7,7 @@ if (-not (Test-Path $chrome)) { $chrome = "C:\Program Files (x86)\Microsoft\Edge
 foreach ($lang in @("en", "pt")) {
   $src = Join-Path $PSScriptRoot "cv-$lang.html"
   $out = Join-Path $root "pedro-delgado-henriques-cv-$lang.pdf"
-  & $chrome --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="$out" "file:///$($src -replace '\','/')" 2>$null | Out-Null
+  $url = "file:///" + $src.Replace('\', '/')
+  & $chrome --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="$out" "$url" 2>$null | Out-Null
   Write-Host "built $out"
 }
