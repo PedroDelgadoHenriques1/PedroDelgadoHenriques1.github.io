@@ -77,11 +77,8 @@ em vez de "Engenheiro de Software", que ninguém busca. O iGaming vira diferenci
 O texto atual está bom, mas perdeu a pontuação em três frases ("development REST APIs", "proprietary
 engine RNG"), não cita a recomendação de mentoria que você já tem e não fala do seu uso de IA.
 
-> **Como falar de IA sem se queimar.** Nunca escreva "uso IA para programar" sozinho. Isso lê como
-> "produz código que não entende". A formulação que funciona é **IA mais rigor de engenharia**: você usa
-> IA para acelerar, e prova a correção com teste, CI e revisão. Foi exatamente assim que o Diego, o perfil
-> que você mandou, escreveu, e ele cita o número de testes como prova. Você tem a mesma prova: 30 testes
-> xUnit, CI no GitHub Actions, simulação de 5 milhões de rodadas.
+> **Sobre IA.** Uma menção factual basta: uso diário, sem discurso. A prova do rigor vem dos números
+> que já estão no texto (30 testes xUnit, CI, 5 milhões de rodadas simuladas).
 
 **PT**
 
@@ -94,10 +91,9 @@ engine RNG"), não cita a recomendação de mentoria que você já tem e não fa
     diferentes perfis de volatilidade e código sensível a performance. Poucos devs backend têm experiência
     prática em sistemas de iGaming.
 
-    Uso IA todos os dias como ferramenta de engenharia, e é justamente por isso que mantenho a régua alta:
-    tudo que entrego passa por teste automatizado, CI verde e revisão. No SlotForge isso significou 30
-    testes xUnit e um simulador que prova o RTP em 5 milhões de rodadas, em vez de afirmar que está certo.
-    Velocidade de IA só vale com evidência.
+    Uso IA todos os dias no fluxo de trabalho. Tudo que entrego passa por teste automatizado, CI verde e
+    revisão: no SlotForge isso significou 30 testes xUnit e um simulador que prova o RTP em 5 milhões de
+    rodadas.
 
     Antes disso, entreguei e-commerce full-stack de ponta a ponta na Bis2Bis, com PHP, JavaScript, Magento
     e integrações SOAP/XML com ERPs. Fui promovido de Júnior a Pleno e virei referência técnica para devs
@@ -110,7 +106,8 @@ engine RNG"), não cita a recomendação de mentoria que você já tem e não fa
     Stack principal: C# · .NET 8 · ASP.NET Core · Entity Framework Core · APIs REST · Microsserviços ·
     SQL Server · Docker · CI/CD · Git · C++ · PHP · JavaScript
 
-    Aberto a vagas remotas no Brasil e no exterior. Inglês avançado.
+    Aberto a vagas remotas no Brasil e no exterior. Inglês avançado. Brasileiro, com cidadania portuguesa
+    (UE) em processo por descendência de avô português.
 
     Portfólio: pedrodelgadohenriques1.github.io
     GitHub: github.com/PedroDelgadoHenriques1
@@ -126,10 +123,9 @@ engine RNG"), não cita a recomendação de mentoria que você já tem e não fa
     volatility profiles, and performance-critical code. Few backend engineers bring hands-on iGaming
     systems experience.
 
-    I use AI every day as an engineering tool, and that is exactly why I hold the bar high: everything I
-    ship goes through automated tests, green CI and review. On SlotForge that meant 30 xUnit tests and a
-    simulator that proves the RTP across 5 million rounds, rather than claiming it is correct. AI speed
-    only counts with evidence behind it.
+    I use AI every day in my workflow. Everything I ship goes through automated tests, green CI and
+    review: on SlotForge that meant 30 xUnit tests and a simulator that proves the RTP across 5 million
+    rounds.
 
     Before that I delivered full-stack e-commerce end to end at Bis2Bis, with PHP, JavaScript, Magento and
     SOAP/XML integrations to ERPs. I was promoted from Junior to Mid-Level and became a technical reference
@@ -286,7 +282,7 @@ Pauta pronta pras próximas semanas:
 1. Lançamento do SlotForge, texto abaixo
 2. Por que RTP é emergente da reel strip e do paytable, e não um número que se configura
 3. Como o RNG de um slot evita viés de módulo, com o código
-4. Como eu uso IA no dia a dia sem abrir mão de teste e CI
+4. Como eu uso IA no dia a dia
 5. O que aprendi migrando jogos legados entre versões de engine na Firepot
 6. Arquitetura do FIAP Cloud Games, por que Kong na frente de 5 microsserviços
 7. Integração SOAP/XML com ERP em e-commerce, o que ninguém conta
@@ -322,8 +318,7 @@ arquitetura. Post com imagem rende bem mais que post com link.
     97,65%, com hit frequency de 28% e volatilidade 5,63.
 
     Essa é a rotina real da matemática de slots: você constrói, mede, ajusta e mede de novo. Não se afirma
-    o RTP, se prova. Uso IA todos os dias pra acelerar esse ciclo, e é exatamente por isso que a prova
-    precisa ser automatizada.
+    o RTP, se prova. Uso IA todos os dias nesse ciclo, e a prova é sempre automatizada.
 
     Repositório: github.com/PedroDelgadoHenriques1/SlotForge
 
@@ -355,8 +350,7 @@ arquitetura. Post com imagem rende bem mais que post com link.
     hit frequency and 5.63 volatility.
 
     That is the real loop of slot maths: build it, measure it, tune it, measure again. You do not assert
-    RTP, you prove it. I use AI every day to speed that loop up, which is exactly why the proof has to be
-    automated.
+    RTP, you prove it. I use AI every day in that loop, and the proof is always automated.
 
     Repo: github.com/PedroDelgadoHenriques1/SlotForge
 

@@ -42,9 +42,9 @@ const i18n = {
           SlotForge, a .NET 8 slot engine with a Monte-Carlo RTP simulator, xUnit tests and CI. I've also taught
           <strong>Python</strong> to beginner classes — explaining code changed how I write it.`,
     'about.p3': `I enjoy problems that mix <strong>performance</strong>, <strong>math</strong> and <strong>product</strong>
-          — measured, tested and documented. I use <strong>AI daily</strong> as an engineering tool, and back every
-          change with automated tests and CI. Advanced English, remote-ready, comfortable both in the terminal and
-          in a planning meeting.`,
+          — measured, tested and documented. I use <strong>AI daily</strong>, and back every change with automated
+          tests and CI. Brazilian, with Portuguese (EU) citizenship in progress. Advanced English, remote-ready,
+          comfortable both in the terminal and in a planning meeting.`,
     'about.fact.today.label': 'Now',
     'about.fact.today.val': 'Software <span class="pop">Engineer</span>',
     'about.fact.today.sub': 'Open to opportunities',
@@ -56,7 +56,7 @@ const i18n = {
     'about.fact.bg.sub': 'C++ slots · PHP/Magento · 4.5 years',
     'about.fact.lang.label': 'Languages',
     'about.fact.lang.val': 'PT-BR · <span class="pop">EN</span>',
-    'about.fact.lang.sub': 'Native Portuguese · B2 English',
+    'about.fact.lang.sub': 'Native Brazilian Portuguese · B2 English',
 
     'exp.eyebrow': 'Career',
     'exp.title': 'From online stores to <em>slot engines</em>.',
@@ -138,7 +138,7 @@ const i18n = {
 
     'skills.eyebrow': 'Stack',
     'skills.title': 'Tools in <em>daily use</em>.',
-    'skills.ai': 'AI-Assisted Engineering',
+    'skills.ai': 'AI Tooling',
     'skills.messaging': 'Messaging & APIs',
     'skills.db': 'Databases',
     'skills.security': 'Security',
@@ -203,9 +203,10 @@ const i18n = {
           construí o SlotForge, um motor de slot em .NET 8 com simulador de RTP Monte Carlo, testes xUnit e CI.
           Também ensinei <strong>Python</strong> pra turmas iniciantes — explicar código mudou como eu escrevo.`,
     'about.p3': `Gosto de problemas que misturam <strong>performance</strong>, <strong>matemática</strong> e
-          <strong>produto</strong> — medidos, testados e documentados. Uso <strong>IA diariamente</strong> como
-          ferramenta de engenharia, e sustento cada mudança com testes automatizados e CI. Inglês avançado, pronto
-          pra remoto, à vontade tanto no terminal quanto numa reunião de planejamento.`,
+          <strong>produto</strong> — medidos, testados e documentados. Uso <strong>IA diariamente</strong>, e
+          sustento cada mudança com testes automatizados e CI. Brasileiro, com cidadania portuguesa (UE) em
+          processo. Inglês avançado, pronto pra remoto, à vontade tanto no terminal quanto numa reunião de
+          planejamento.`,
     'about.fact.today.label': 'Agora',
     'about.fact.today.val': 'Eng. de <span class="pop">Software</span>',
     'about.fact.today.sub': 'Aberto a oportunidades',
@@ -217,7 +218,7 @@ const i18n = {
     'about.fact.bg.sub': 'Slots em C++ · PHP/Magento · 4,5 anos',
     'about.fact.lang.label': 'Idiomas',
     'about.fact.lang.val': 'PT-BR · <span class="pop">EN</span>',
-    'about.fact.lang.sub': 'Português nativo · Inglês B2',
+    'about.fact.lang.sub': 'Português do Brasil nativo · Inglês B2',
 
     'exp.eyebrow': 'Trajetória',
     'exp.title': 'De lojas online a <em>slot engines</em>.',
@@ -300,7 +301,7 @@ const i18n = {
 
     'skills.eyebrow': 'Stack',
     'skills.title': 'Ferramentas em <em>uso diário</em>.',
-    'skills.ai': 'Engenharia com IA',
+    'skills.ai': 'Ferramentas de IA',
     'skills.messaging': 'Mensageria & APIs',
     'skills.db': 'Banco de Dados',
     'skills.security': 'Segurança',

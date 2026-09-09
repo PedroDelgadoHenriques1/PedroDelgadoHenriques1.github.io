@@ -28,6 +28,7 @@ Today my focus is **backend and systems architecture in .NET**: ASP.NET Core mic
 - 🎓 **.NET Systems Architecture postgrad** @ FIAP + Alura — microservices, Clean Architecture, DDD (Oct/2025 → Oct/2026)
 - 🎰 **SlotForge** — .NET 8 slot engine + Monte-Carlo RTP simulator, tested and CI'd
 - 💼 Open to **.NET / backend**, **C++ / game dev** and **full-stack** roles — remote or hybrid
+- 🇵🇹 Brazilian; **Portuguese (EU) citizenship in progress** by descent from my grandfather
 
 ---
 
@@ -39,6 +40,7 @@ Today my focus is **backend and systems architecture in .NET**: ASP.NET Core mic
 **Game Dev** &nbsp; `Custom C++ Engine` &nbsp; `RNG / RTP / Volatility` &nbsp; `Monte Carlo` &nbsp; `GDD` &nbsp; `Unity` &nbsp; `URP / HLSL`
 **Web & E-commerce** &nbsp; `Magento` &nbsp; `React` &nbsp; `SOAP / XML` &nbsp; `ERP Integration` &nbsp; `Technical SEO`
 **Databases** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Redis` &nbsp; `SQLite`
+**AI (daily)** &nbsp; `Claude Code` &nbsp; `GitHub Copilot` &nbsp; `ChatGPT`
 
 ---
 
@@ -126,6 +128,7 @@ Hoje meu foco é **backend e arquitetura de sistemas em .NET**: microsserviços 
 - 🎓 **Pós em Arquitetura de Sistemas .NET** @ FIAP + Alura — microsserviços, Clean Architecture, DDD (out/2025 → out/2026)
 - 🎰 **SlotForge** — motor de slot em .NET 8 + simulador de RTP Monte Carlo, com testes e CI
 - 💼 Aberto a vagas **.NET / backend**, **C++ / game dev** e **full-stack** — remoto ou híbrido
+- 🇵🇹 Brasileiro; **cidadania portuguesa (UE) em processo**, por descendência de avô português
 
 ---
 
@@ -137,6 +140,7 @@ Hoje meu foco é **backend e arquitetura de sistemas em .NET**: microsserviços 
 **Game Dev** &nbsp; `Engine C++ própria` &nbsp; `RNG / RTP / Volatilidade` &nbsp; `Monte Carlo` &nbsp; `GDD` &nbsp; `Unity` &nbsp; `URP / HLSL`
 **Web & E-commerce** &nbsp; `Magento` &nbsp; `React` &nbsp; `SOAP / XML` &nbsp; `Integração ERP` &nbsp; `SEO técnico`
 **Banco** &nbsp; `SQL Server` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Redis` &nbsp; `SQLite`
+**IA (uso diário)** &nbsp; `Claude Code` &nbsp; `GitHub Copilot` &nbsp; `ChatGPT`
 
 ---
 
