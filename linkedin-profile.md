@@ -360,6 +360,84 @@ arquitetura. Post com imagem rende bem mais que post com link.
 
 ---
 
+## 12. Vídeo + post do FIAP Cloud Games (âncora da stack .NET)
+
+**Projeto em equipe.** Deixe isso explícito no vídeo e no post. Os commits no GitHub mostram quem fez
+o quê, e recrutador técnico confere. Sua parte, confirmada nos commits:
+- **NotificationsAPI**: você criou o microsserviço (09/03/2026), integrou com RabbitMQ via MassTransit e
+  corrigiu os nomes das filas e a desserialização do JSON pra bater com o produtor.
+- **Cache Redis na UsersAPI**: você implementou (maio/2026).
+- **start-ecosystem.ps1**: duas correções no script de subida.
+
+Kong, Grafana/Prometheus e Kubernetes foram feitos principalmente pelos colegas. Mostre isso no vídeo
+como a arquitetura do time, e dê o detalhe técnico só na sua parte.
+
+**Antes de gravar:** peça pro dono do repo apagar o arquivo solto `how 30472b6 --stat  more` do
+OrchestrationApi. Quem clicar no link do post vai ver.
+
+### Roteiro (75 a 90 segundos, vídeo nativo no LinkedIn)
+
+Grave a tela em 1080p com o OBS e a sua voz por cima. Se der, coloque a webcam num canto nos primeiros
+10 segundos. **Legenda é obrigatória**: a maioria assiste sem som. Use a legenda automática do CapCut e
+revise os termos técnicos.
+
+| Tempo | Tela | Fala |
+|---|---|---|
+| 0–8s | Diagrama de arquitetura do README | "Esse é o FIAP Cloud Games, uma plataforma de jogos em microsserviços .NET que meu time construiu na pós em Arquitetura .NET da FIAP." |
+| 8–20s | Terminal rodando `start-ecosystem.ps1` (acelere 4x na edição) | "Um único script sobe tudo: quatro APIs em .NET 8, SQL Server, MongoDB, Redis, RabbitMQ, Kong como API Gateway, e Prometheus com Grafana." |
+| 20–32s | Postman: chamada no Kong **sem** token → 401, **com** token → 200 | "Tudo entra pelo Kong. Sem token JWT, a requisição nem chega na API." |
+| 32–55s | Código do consumer MassTransit na NotificationsAPI → RabbitMQ Management mostrando a fila `user-created-queue-notifications` → log da notificação chegando | "A minha parte foi a NotificationsAPI. Quando um usuário se cadastra ou um pagamento é processado, a API publica um evento no RabbitMQ, e o meu serviço consome esse evento com MassTransit, de forma assíncrona. O cadastro não espera a notificação terminar." |
+| 55–70s | Código do `IDistributedCache` na UsersAPI → `docker exec redis redis-cli KEYS "UsersAPI:*"` → chamada repetida mais rápida | "Também implementei o cache com Redis na UsersAPI. A busca de usuário fica 10 minutos em cache e é invalidada quando o usuário é atualizado." |
+| 70–85s | Dashboard do Grafana com latência P95 | "E dá pra ver tudo em tempo real no Grafana. O código está no GitHub, link no post. Estou buscando vaga de desenvolvedor backend .NET." |
+
+**Dicas de gravação**
+- Aumente a fonte do VS Code e do terminal pra 18 ou mais. No celular, fonte pequena não dá pra ler.
+- Corte todo tempo de espera. Ninguém assiste build de Docker.
+- A primeira frase decide se a pessoa continua assistindo. Não comece com "Olá, pessoal, tudo bem?".
+- Capa do vídeo: o diagrama com o texto "5 microsserviços .NET".
+
+### Texto do post (PT)
+
+    Microsserviços em .NET na prática: o projeto que meu time entregou na pós em Arquitetura .NET da FIAP. 🎥
+
+    O FIAP Cloud Games é uma plataforma de jogos com 4 APIs em .NET 8 que se comunicam por eventos.
+    Um único script sobe o ecossistema inteiro:
+
+    🔐 Kong API Gateway com JWT, rate limiting e CORS
+    📨 RabbitMQ para comunicação assíncrona entre os serviços
+    ⚡ Redis como cache distribuído
+    🗄️ SQL Server e MongoDB, cada um onde faz sentido
+    ☁️ AWS Lambda com Terraform, rodando local no LocalStack
+    📊 Prometheus e Grafana para observabilidade
+
+    Minha parte:
+    → Construí a NotificationsAPI, que consome os eventos de cadastro e pagamento do RabbitMQ usando
+      MassTransit. O cadastro não espera a notificação: publica o evento e segue.
+    → Implementei o cache com Redis na UsersAPI, com expiração de 10 minutos e invalidação quando o
+      usuário é atualizado.
+
+    O bug que mais me ensinou: as mensagens saíam do produtor e nunca chegavam no consumidor. O motivo era
+    que o nome da fila configurado no meu serviço não era o mesmo do lado de quem publicava. Em sistema
+    distribuído, o contrato entre os serviços importa tanto quanto o código.
+
+    Obrigado ao time: [marque os colegas aqui].
+
+    Código: github.com/FIAP-PosTech-2025/OrchestrationApi
+
+    Estou buscando vaga de Desenvolvedor Backend .NET, remoto ou híbrido. Se souber de alguma, me chama.
+
+    #dotnet #csharp #microsservicos #rabbitmq #backend #fiap
+
+**Como publicar**
+- Suba o vídeo **direto no LinkedIn**. Link do YouTube tem alcance bem menor.
+- Coloque o link do GitHub no texto do post, como está acima.
+- Publique de terça a quinta, entre 8h e 10h.
+- Responda todo comentário na primeira hora. É isso que faz o LinkedIn mostrar o post pra mais gente.
+- Marcar os colegas no post leva ele pra rede deles também, de graça.
+- Depois de publicar, fixe o post em **Destaques**, no lugar do post do SlotForge ou ao lado dele.
+
+---
+
 ## Regras permanentes
 
 - Título do cargo **igual** no LinkedIn, no CV e no portfólio.

@@ -103,12 +103,13 @@ const i18n = {
             integer-only money math, payline/wild/scatter evaluator and free spins. A Monte-Carlo simulator proves the
             RTP — 5M rounds at ~228k spins/s tuned Gem Rush from 157% to 97.65%. ASP.NET Core Minimal API, 30 xUnit
             unit + integration tests, Docker and GitHub Actions CI.`,
-    'proj.p1.status': 'In progress',
+    'proj.p1.status': 'Team project',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
-    'proj.p1.desc': `Orchestration of a games platform across 5 .NET microservices, with Kong API Gateway (JWT,
-            rate-limit, CORS), serverless Lambda (LocalStack + Terraform), polyglot persistence
-            (SQL Server, MongoDB, Redis) and observability via Prometheus + Grafana. Boots end-to-end
-            with docker-compose or Kubernetes.`,
+    'proj.p1.desc': `Games platform across 5 .NET microservices, with Kong API Gateway (JWT, rate-limit, CORS),
+            serverless Lambda (LocalStack + Terraform), polyglot persistence (SQL Server, MongoDB, Redis)
+            and observability via Prometheus + Grafana. Boots end-to-end with docker-compose or Kubernetes.
+            <b>My part:</b> built the NotificationsAPI microservice consuming RabbitMQ events with MassTransit,
+            and added Redis caching to UsersAPI.`,
     'proj.p2.glove': 'Professional Boxing Glove 14oz',
     'proj.p2.cart': 'Add to cart',
     'proj.p2.name': 'World Combat — <em>Magento</em> e-commerce',
@@ -266,12 +267,13 @@ const i18n = {
             dinheiro só em inteiros, avaliador de paylines/wilds/scatters e free spins. Um simulador Monte Carlo prova
             o RTP — 5M rodadas a ~228k spins/s ajustaram o Gem Rush de 157% pra 97,65%. ASP.NET Core Minimal API,
             30 testes xUnit (unitários + integração), Docker e CI no GitHub Actions.`,
-    'proj.p1.status': 'Em construção',
+    'proj.p1.status': 'Projeto em equipe',
     'proj.p1.name': 'FIAP Cloud Games — <em>OrchestrationApi</em>',
-    'proj.p1.desc': `Orquestração de uma plataforma de jogos em 5 microsserviços .NET, com Kong API Gateway (JWT,
-            rate-limit, CORS), Lambda serverless (LocalStack + Terraform), persistência poliglota
-            (SQL Server, MongoDB, Redis) e observabilidade via Prometheus + Grafana. Sobe inteiro
-            com docker-compose ou Kubernetes.`,
+    'proj.p1.desc': `Plataforma de jogos em 5 microsserviços .NET, com Kong API Gateway (JWT, rate-limit, CORS),
+            Lambda serverless (LocalStack + Terraform), persistência poliglota (SQL Server, MongoDB, Redis)
+            e observabilidade via Prometheus + Grafana. Sobe inteira com docker-compose ou Kubernetes.
+            <b>Minha parte:</b> construí o microsserviço NotificationsAPI, que consome eventos do RabbitMQ
+            com MassTransit, e implementei o cache com Redis na UsersAPI.`,
     'proj.p2.glove': 'Luva de Boxe Profissional 14oz',
     'proj.p2.cart': 'Adicionar ao carrinho',
     'proj.p2.name': 'World Combat — e-commerce em <em>Magento</em>',

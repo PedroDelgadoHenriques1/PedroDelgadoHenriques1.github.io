@@ -456,7 +456,7 @@
                 <rect class="node-bg" x="0" y="0" width="170" height="60" rx="10" />
                 <text class="node-icon" x="22" y="36" fill="#6fa8d3">▣</text>
                 <text class="node-label" x="44" y="28">CatalogAPI</text>
-                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">products · search</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">games · ratings</text>
               </g>
 
               <!-- node: Payments -->
@@ -464,7 +464,7 @@
                 <rect class="node-bg" x="0" y="0" width="170" height="60" rx="10" />
                 <text class="node-icon" x="22" y="36" fill="#d4a857">$</text>
                 <text class="node-label" x="44" y="28">PaymentsAPI</text>
-                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">stripe · pix · cards</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">payments · events</text>
               </g>
 
               <!-- node: Orchestration -->
@@ -472,7 +472,7 @@
                 <rect class="node-bg hot" x="0" y="0" width="170" height="60" rx="10" />
                 <text class="node-icon" x="22" y="36" fill="#ff7a3c">◆</text>
                 <text class="node-label" x="44" y="28">Orchestrator</text>
-                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">RabbitMQ · saga</text>
+                <text class="node-label" x="44" y="46" fill="#807c73" font-size="9">RabbitMQ · events</text>
               </g>
 
               <!-- node: Notifications -->
@@ -496,14 +496,15 @@
             <span class="pill fiap">FIAP · Pós-Tech</span>
             <span>2025–2026</span>
             <span>·</span>
-            <span data-i18n="proj.p1.status">In progress</span>
+            <span data-i18n="proj.p1.status">Team project</span>
           </div>
           <div class="proj-name" data-i18n="proj.p1.name">FIAP Cloud Games — <em>OrchestrationApi</em></div>
           <div class="proj-desc" data-i18n="proj.p1.desc">
-            Orchestration of a games platform across 5 .NET microservices, with Kong API Gateway (JWT,
-            rate-limit, CORS), serverless Lambda (LocalStack + Terraform), polyglot persistence
-            (SQL Server, MongoDB, Redis) and observability via Prometheus + Grafana. Boots end-to-end
-            with docker-compose or Kubernetes.
+            Games platform across 5 .NET microservices, with Kong API Gateway (JWT, rate-limit, CORS),
+            serverless Lambda (LocalStack + Terraform), polyglot persistence (SQL Server, MongoDB, Redis)
+            and observability via Prometheus + Grafana. Boots end-to-end with docker-compose or Kubernetes.
+            <b>My part:</b> built the NotificationsAPI microservice consuming RabbitMQ events with MassTransit,
+            and added Redis caching to UsersAPI.
           </div>
           <div class="proj-tech">
             <span class="tag">.NET 8</span><span class="tag">C#</span>
